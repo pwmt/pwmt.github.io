@@ -25,13 +25,10 @@ main = hakyll $ do
     compile templateCompiler
 
   -- index --
-  match "home.md" $ do
-    compile $ pageCompiler
-
   match  "index.html" $ route idRoute
   create "index.html" $ constA mempty
     >>> arr (setField "title" "home")
-    >>> setFieldPage "home" "home.md"
+    >>> setFieldPage "home" "content/home.md"
     >>> applyTemplateCompiler "templates/index.html"
     >>> applyTemplateCompiler "templates/default.html"
     >>> relativizeUrlsCompiler
@@ -50,8 +47,11 @@ main = hakyll $ do
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
 
-  -- pages --
-  match "pages/**" $ do
+  -- content --
+  match "content/home.md" $ do
+    compile $ pageCompiler
+
+  match "content/**" $ do
     route $ setRoot `composeRoutes` cleanURL
     compile $ pageCompiler
       >>> applyTemplateCompiler "templates/default.html"
