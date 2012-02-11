@@ -54,6 +54,7 @@ main = hakyll $ do
   match "content/**" $ do
     route $ setRoot `composeRoutes` cleanURL
     compile $ pageCompiler
+      >>> applyTemplateCompiler "templates/page.html"
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
 

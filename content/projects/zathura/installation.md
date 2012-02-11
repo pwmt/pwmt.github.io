@@ -14,7 +14,7 @@ additional libraries to build those file type plugins.
 
 #### Core dependencies
 * [girara](http://pwmt.org/projects/girara/), our simplistic user interface library
-* [GTK+](http://www.gtk.org/>), a cross-platform widget toolkit
+* [GTK+](http://www.gtk.org/), a cross-platform widget toolkit
 
 #### Additional dependencies
 * [poppler](http://poppler.freedesktop.org/) for PDF support
