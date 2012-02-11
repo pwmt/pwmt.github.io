@@ -1,8 +1,8 @@
 ---
-title: zathura
-description: a document viewer
+title: girara
+description: user interface library
 ---
 
-## zathura
+## girara
 
 More to come ...
