@@ -16,23 +16,27 @@
           <li><a href=/about><span>about</span></a></li>
           <li><a href=/news><span>news</span></a></li>
           <li><a href=/projects><span>projects</span></a></li>
-          <li><a href=http://bt.pwmt.org><span>bug tracker</span></a></li>
+          <li><a target=_href href=http://bt.pwmt.org><span>bug tracker</span></a></li>
         </ul>
       </nav>
     </header>
     <div id=main>
       <div id=sidebar>
-        $sidebar$
+        <div class=submenu>
+          $sidebar$
+        </div>
+        <div id=footer>
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="irc://irc.oftc.net/#pwmt">#pwmt@irc.oftc.net</a></li>
+            <li><a target="_href" href="http://lists.pwmt.org">Mailing
+              lists</a></li>
+          </ul>
+        </div>
       </div>
-      <!--<div id=content class="clearfix $container$">-->
       <div id=content>
         $body$
       </div>
     </div>
-    <!--<footer>-->
-      <!--<div class=right>-->
-        <!--&copy; Copyright 2012 pwmt.org-->
-      <!--</div>-->
-    <!--</footer>-->
   </body>
 </html>
