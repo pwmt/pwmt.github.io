@@ -3,6 +3,10 @@ title: pwmt.org
 description: programs with movie titles
 ---
 
+<center>
+<img src=/img/home.png class="home" />
+</center>
+
 ## Who we are
 \#pwmt.org - programs with movie titles - is a community developing functional
 open source applications and libaries that mainly focus on simplistic and space

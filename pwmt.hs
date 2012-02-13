@@ -51,6 +51,14 @@ main = hakyll $ do
   match "content/home.md" $ do
     compile $ pageCompiler
 
+  match "content/projects/zathura**" $ do
+    route $ setRoot `composeRoutes` cleanURL
+    compile $ pageCompiler
+      >>> applyTemplateCompiler "templates/page.html"
+      >>> applyTemplateCompiler "templates/zathura-menu.html"
+      >>> applyTemplateCompiler "templates/default.html"
+      >>> relativizeUrlsCompiler
+
   match "content/**" $ do
     route $ setRoot `composeRoutes` cleanURL
     compile $ pageCompiler

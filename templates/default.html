@@ -12,21 +12,27 @@
     <header class=clearfix>
       <nav>
         <ul id=menu>
-          <li><a href=/>home</a></li>
-          <li><a href=/about>about</a></li>
-          <li><a href=/projects>projects</a></li>
-          <li><a href=http://bt.pwmt.org>bug tracker</a></li>
-          <li><a href=/contact>contact</a></li>
+          <li><a class=logo href=/>pwmt</a></li>
+          <li><a href=/about><span>about</span></a></li>
+          <li><a href=/news><span>news</span></a></li>
+          <li><a href=/projects><span>projects</span></a></li>
+          <li><a href=http://bt.pwmt.org><span>bug tracker</span></a></li>
         </ul>
       </nav>
     </header>
-    <div id=content class="clearfix $container$">
-      $body$
-    </div>
-    <footer>
-      <div class=right>
-        &copy; Copyright 2012 pwmt.org
+    <div id=main>
+      <div id=sidebar>
+        $sidebar$
       </div>
-    </footer>
+      <!--<div id=content class="clearfix $container$">-->
+      <div id=content>
+        $body$
+      </div>
+    </div>
+    <!--<footer>-->
+      <!--<div class=right>-->
+        <!--&copy; Copyright 2012 pwmt.org-->
+      <!--</div>-->
+    <!--</footer>-->
   </body>
 </html>
