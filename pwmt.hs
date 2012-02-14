@@ -17,6 +17,10 @@ main = hakyll $ do
       , (".styl", stylusCompiler)
       ]
 
+  match "css/fonts/**" $ do
+    route idRoute
+    compile copyFileCompiler
+
   match "img/*" $ do
     route idRoute
     compile copyFileCompiler
