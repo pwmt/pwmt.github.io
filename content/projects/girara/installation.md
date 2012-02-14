@@ -1,15 +1,18 @@
-## Installation
+---
+title: installation
+description: How to install jumanji
+---
 
-### Dependencies
+## Dependencies
 libgirara depends on [GTK+](http://www.gtk.org/), a cross-platform widget
 toolkit. It can be build for gtk2 as well as for gtk3.
 
 * [GTK+](http://www.gtk.org/), a cross-platform widget toolkit
 
-### Stable version
+## Stable version
 No official version of libgirara has been released yet.
 
-### Developer version
+## Developer version
 If you are interested to use the current version of libgirara you need to pull
 the source from our git repository and build it by hand:
 

@@ -3,26 +3,24 @@ title: installation
 description: a document viewer
 ---
 
-## Installation
-
-### Dependencies
+## Dependencies
 The core of zathura depends on two external libraries,
 [girara](http://pwmt.org/projects/girara/), our simplistic user interface
 library and [GTK+](http://www.gtk.org/), a cross-platform widget toolkit.
 Depending on which filetypes should be supported you are going to need
 additional libraries to build those file type plugins.
 
-#### Core dependencies
+### Core dependencies
 * [girara](http://pwmt.org/projects/girara/), our simplistic user interface library
 * [GTK+](http://www.gtk.org/), a cross-platform widget toolkit
 
-#### Additional dependencies
+### Additional dependencies
 * [poppler](http://poppler.freedesktop.org/) for PDF support
-* [mupdf]<http://mupdf.com/) for PDF support
+* [mupdf](http://mupdf.com/) for PDF support
 * [djvulibre](http://djvu.sourceforge.net/) for DjVu support
 * [libspectre](http://libspectre.freedesktop.org/) for PostScript support
 
-### Stable version
+## Stable version
 Since zathura packages are available in many distributions it is recommended to
 install it from their with your prefered package manager. Otherwise you can grab
 the latest version of the source code from our website and build it by hand::
@@ -32,7 +30,7 @@ the latest version of the source code from our website and build it by hand::
     $ make
     $ make install
 
-### Known supported distributions
+## Known supported distributions
 
 * [Arch Linux](http://www.archlinux.org/packages/community/x86_64/zathura)
 * [Debian](http://packages.debian.org/en/sid/zathura)
@@ -41,7 +39,7 @@ the latest version of the source code from our website and build it by hand::
 * [Ubuntu](http://packages.ubuntu.com/maverick/zathura)
 * [OpenBSD](http://openports.se/textproc/zathura)
 
-### Developer version
+## Developer version
 If you are interested in testing the very latest versions with all its new
 features, that we are working on, type in the following commands. At first you
 have to install the latest version of girara::

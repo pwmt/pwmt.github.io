@@ -1,3 +1,8 @@
+---
+title: plugins
+description: Which documents are supported?
+---
+
 ## Plugins
 Each file type that is supported by zathura is implemented by its own plugin.
 This section should give an overview about the supported file types of zathura

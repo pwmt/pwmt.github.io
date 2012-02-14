@@ -3,7 +3,6 @@ title: configuration
 description: Customize zathura
 ---
 
-## Configuration
 The customization of zathura is be managed via a configuration file called
 *zathurarc*. By default zathura will evaluate the following files:
 
@@ -16,7 +15,7 @@ going to describe in the following subsections. Each line (besides empty lines
 and comments (which start with a prepended *\#*) is evaluated on its own, so it
 is not possible to write multiple commands in one single line.
 
-### set - Changing options
+## set - Changing options
 In addition to the build-in *:set* command zathura offers more options to be
 changed and makes those changes permanent. To overwrite an option you just have
 to add a line structured like the following
@@ -44,14 +43,14 @@ can be used
     set option4 hello\ world
     set option5 "hello world"
 
-### map - Mapping a shortcut
+## map - Mapping a shortcut
 It is possible to map or remap new key bindings to shortcut functions which
 allows a high level of customization. The *:map* command can also be used in
 the *zathurarc* file to make those changes permanent:
 
     map [mode] <binding> <shortcut function> <argument>
 
-#### Mode
+### Mode
 The *map* command expects several arguments where only the *binding* as well as
 the *shortcut-function* argument is required. Since zathura uses several modes
 it is possible to map bindings only for a specific mode by passing the *mode*
@@ -64,7 +63,7 @@ argument which can take one of the following values:
 
 The brackets around the value are mandatory.
 
-##### Single key binding
+#### Single key binding
 The (possible) second argument defines the used key binding that should be
 mapped to the shortcut function and is structured like the following. On the one
 hand it is possible to just assign single letters, numbers or signs to it:
@@ -78,7 +77,7 @@ hand it is possible to just assign single letters, numbers or signs to it:
     map ! shortcut_function
     map ? shortcut_function
 
-##### Using modifiers
+#### Using modifiers
 It is also possible to use modifiers like the *Control* or *Alt* button on the
 keyboard. It is possible to use the following modifiers:
 
@@ -91,7 +90,7 @@ Now it is required to define the *binding* with the following structure:
     map <A-a> shortcut_function
     map <C-a> shortcut_function
 
-##### Special keys
+#### Special keys
 zathura allows it also to assign keys like the space bar or the tab button which
 also have to be written in between angle brackets. The following special keys
 are currently available:
@@ -130,7 +129,7 @@ usage of those keys should be explained by the following examples:
     map <Space> shortcut_function
     map <C-Space> shortcut_function
 
-##### Mouse buttons
+#### Mouse buttons
 It is also possible to map mouse buttons to shortcuts by using the following
 special keys:
 
@@ -147,14 +146,14 @@ They can also be combined with modifiers:
     map <Button1> shortcut_function
     map <C-Button1> shortcut_function
 
-##### Buffer commands
+#### Buffer commands
 If a mapping does not match one of the previous definition but is still a valid
 mapping it will be mapped as a buffer command:
 
     map abc quit
     map test quit
 
-##### Shortcut functions
+#### Shortcut functions
 The following shortcut functions can be mapped:
 
 Function           Description
@@ -179,7 +178,7 @@ toggle_inputbar    *Show or hide inputbar*
 toggle_statusbar   *Show or hide statusbar*
 zoom               *Zoom in or out*
 
-##### Pass arguments
+#### Pass arguments
 Some shortcut function require or have optional arguments which influence the
 behaviour of them. Those can be passed as the last argument:
 
