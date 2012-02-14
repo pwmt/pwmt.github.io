@@ -1,7 +1,4 @@
-<h1>zathura</h1>
-<p>a document viewer</h1>
-
-<nav>
+<div class=submenu>
   <ul id=submenu>
     <li><a href=/projects/zathura>about</a></li>
     <li><a href=/projects/zathura/installation>installation</a></li>
@@ -9,7 +6,4 @@
     <li><a href=/projects/zathura/configuration>configuration</a></li>
     <li><a href=/projects/zathura/options>options</a></li>
   </ul>
-  <div style="clear: both;"></div>
-</nav>
-
-$body$
+</div>

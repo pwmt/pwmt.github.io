@@ -48,20 +48,40 @@ main = hakyll $ do
       >>> relativizeUrlsCompiler
 
   -- content --
+  match "sidebar/*.md" $ do
+    compile $ pageCompiler
+
   match "content/home.md" $ do
     compile $ pageCompiler
 
   match "content/projects/zathura**" $ do
     route $ setRoot `composeRoutes` cleanURL
     compile $ pageCompiler
+      >>> setFieldPage "sidebar" "sidebar/zathura.md"
       >>> applyTemplateCompiler "templates/page.html"
-      >>> applyTemplateCompiler "templates/zathura-menu.html"
+      >>> applyTemplateCompiler "templates/default.html"
+      >>> relativizeUrlsCompiler
+
+  match "content/projects/girara**" $ do
+    route $ setRoot `composeRoutes` cleanURL
+    compile $ pageCompiler
+      >>> setFieldPage "sidebar" "sidebar/girara.md"
+      >>> applyTemplateCompiler "templates/page.html"
+      >>> applyTemplateCompiler "templates/default.html"
+      >>> relativizeUrlsCompiler
+
+  match "content/projects/jumanji**" $ do
+    route $ setRoot `composeRoutes` cleanURL
+    compile $ pageCompiler
+      >>> setFieldPage "sidebar" "sidebar/jumanji.md"
+      >>> applyTemplateCompiler "templates/page.html"
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
 
   match "content/**" $ do
     route $ setRoot `composeRoutes` cleanURL
     compile $ pageCompiler
+      >>> arr (setField "sidebar" "")
       >>> applyTemplateCompiler "templates/page.html"
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
