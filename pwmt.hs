@@ -35,6 +35,7 @@ main = hakyll $ do
     >>> arr (setField "sidebar" "")
     >>> setFieldPage "home" "content/home.md"
     >>> applyTemplateCompiler "templates/index.html"
+    >>> applyTemplateCompiler "templates/home.html"
     >>> applyTemplateCompiler "templates/default.html"
     >>> relativizeUrlsCompiler
 
@@ -43,6 +44,7 @@ main = hakyll $ do
   create "news/index.html" $ constA mempty
     >>> arr (setField "sidebar" "")
     >>> applyTemplateCompiler "templates/news.html"
+    >>> applyTemplateCompiler "templates/content.html"
     >>> applyTemplateCompiler "templates/default.html"
     >>> relativizeUrlsCompiler
 
@@ -51,6 +53,7 @@ main = hakyll $ do
     compile $ pageCompiler
       >>> arr (setField "sidebar" "")
       >>> applyTemplateCompiler "templates/news-post.html"
+      >>> applyTemplateCompiler "templates/content.html"
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
 
@@ -66,6 +69,7 @@ main = hakyll $ do
     compile $ pageCompiler
       >>> setFieldPage "sidebar" "sidebar/zathura.md"
       >>> applyTemplateCompiler "templates/page.html"
+      >>> applyTemplateCompiler "templates/content_sidebar.html"
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
 
@@ -74,6 +78,7 @@ main = hakyll $ do
     compile $ pageCompiler
       >>> setFieldPage "sidebar" "sidebar/girara.md"
       >>> applyTemplateCompiler "templates/page.html"
+      >>> applyTemplateCompiler "templates/content_sidebar.html"
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
 
@@ -82,14 +87,15 @@ main = hakyll $ do
     compile $ pageCompiler
       >>> setFieldPage "sidebar" "sidebar/jumanji.md"
       >>> applyTemplateCompiler "templates/page.html"
+      >>> applyTemplateCompiler "templates/content_sidebar.html"
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
 
   match "content/**" $ do
     route $ setRoot `composeRoutes` cleanURL
     compile $ pageCompiler
-      >>> arr (setField "sidebar" "")
       >>> applyTemplateCompiler "templates/page.html"
+      >>> applyTemplateCompiler "templates/content.html"
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
 
