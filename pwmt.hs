@@ -28,6 +28,7 @@ main = hakyll $ do
   match  "index.html" $ route idRoute
   create "index.html" $ constA mempty
     >>> arr (setField "title" "home")
+    >>> arr (setField "sidebar" "")
     >>> setFieldPage "home" "content/home.md"
     >>> applyTemplateCompiler "templates/index.html"
     >>> applyTemplateCompiler "templates/default.html"
@@ -36,6 +37,7 @@ main = hakyll $ do
   -- news --
   match  "news/index.html" $ route idRoute
   create "news/index.html" $ constA mempty
+    >>> arr (setField "sidebar" "")
     >>> applyTemplateCompiler "templates/news.html"
     >>> applyTemplateCompiler "templates/default.html"
     >>> relativizeUrlsCompiler
@@ -43,6 +45,7 @@ main = hakyll $ do
   match "news/*" $ do
     route $ cleanURL
     compile $ pageCompiler
+      >>> arr (setField "sidebar" "")
       >>> applyTemplateCompiler "templates/news-post.html"
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
