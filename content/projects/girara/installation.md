@@ -1,6 +1,6 @@
 ---
 title: installation
-description: How to install jumanji
+description: How to install girara on your system
 ---
 
 ## Dependencies
