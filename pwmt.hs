@@ -68,6 +68,7 @@ main = hakyll $ do
     route $ setRoot `composeRoutes` cleanURL
     compile $ pageCompiler
       >>> setFieldPage "sidebar" "sidebar/zathura.md"
+      >>> arr (setField "project" "zathura")
       >>> applyTemplateCompiler "templates/page.html"
       >>> applyTemplateCompiler "templates/content_sidebar.html"
       >>> applyTemplateCompiler "templates/default.html"
@@ -76,6 +77,7 @@ main = hakyll $ do
   match "content/projects/girara**" $ do
     route $ setRoot `composeRoutes` cleanURL
     compile $ pageCompiler
+      >>> arr (setField "project" "girara")
       >>> setFieldPage "sidebar" "sidebar/girara.md"
       >>> applyTemplateCompiler "templates/page.html"
       >>> applyTemplateCompiler "templates/content_sidebar.html"
@@ -85,6 +87,7 @@ main = hakyll $ do
   match "content/projects/jumanji**" $ do
     route $ setRoot `composeRoutes` cleanURL
     compile $ pageCompiler
+      >>> arr (setField "project" "jumanji")
       >>> setFieldPage "sidebar" "sidebar/jumanji.md"
       >>> applyTemplateCompiler "templates/page.html"
       >>> applyTemplateCompiler "templates/content_sidebar.html"
