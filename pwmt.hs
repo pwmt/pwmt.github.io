@@ -91,6 +91,13 @@ main = hakyll $ do
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
 
+  match "content/projects.md" $ do
+    route $ setRoot `composeRoutes` cleanURL
+    compile $ pageCompiler
+      >>> applyTemplateCompiler "templates/page.html"
+      >>> applyTemplateCompiler "templates/default.html"
+      >>> relativizeUrlsCompiler
+
   match "content/**" $ do
     route $ setRoot `composeRoutes` cleanURL
     compile $ pageCompiler

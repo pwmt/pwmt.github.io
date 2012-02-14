@@ -6,6 +6,36 @@ width = 960px
   font-weight: normal;
   font-style: normal;
 
+@font-face 
+  font-family: 'ConsolaMono';
+  src url(fonts/ConsolaMono.ttf);
+  font-weight: normal;
+  font-style: normal;
+
+@font-face 
+  font-family: 'OSP-DIN';
+  src url(fonts/OSP-DIN.ttf);
+  font-weight: normal;
+  font-style: normal;
+
+@font-face 
+  font-family: 'Alfphabet';
+  src url(fonts/Alfphabet-IV.ttf);
+  font-weight: normal;
+  font-style: normal;
+
+@font-face 
+  font-family: 'intuitive';
+  src url(fonts/intuitive.ttf);
+  font-weight: normal;
+  font-style: normal;
+
+@font-face 
+  font-family: 'HiLoDeCo';
+  src url(fonts/HiLoDeCo.ttf);
+  font-weight: normal;
+  font-style: normal;
+
 /* mixins */
 border-radius(n)
   -webkit-border-radius n
@@ -120,7 +150,7 @@ nav
       padding 0
 
       a
-        font-family "Logisoso"
+        font-family "ConsolaMono"
         font-size 1.2em
         letter-spacing 0.05em
         background-color #F1F1F1
@@ -139,7 +169,7 @@ nav
           display block
           width 100%
           height 100%
-          padding-top 20px
+          padding-top 19px
 
       a.logo
         background-color #333333
@@ -165,7 +195,6 @@ nav
   position relative
   overflow hidden
   margin-left 10px
-  margin-right 10px
 
 div.sidebar
   width 20%
@@ -211,3 +240,36 @@ ul#submenu
   margin-left 10px
   padding 15px
   margin-bottom 10px
+
+div.project_col
+  width 33.33%
+  display block
+  float left
+  margin-bottom 10px
+
+div.project_col_inner
+  border-radius 5px
+  padding 10px
+  margin-right 10px
+  text-align center
+
+  a
+    height 200px
+    padding-top 200px
+    display block
+    width 100%
+    text-decoration none
+    color white
+    font-size 2em
+
+    font-family 'Logisoso'
+    //font-family 'intuitive'
+
+div.zathura
+  background-color #60AFD4
+
+div.girara
+  background-color #EC6672
+
+div.jumanji
+  background-color #BCDC0E
