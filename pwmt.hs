@@ -1,8 +1,10 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Main where
 
-import Control.Arrow ((>>>), arr)
-import Data.Monoid (mempty)
+import Prelude hiding (id)
+import Control.Category (id)
+import Control.Arrow ((>>>), (***), arr)
+import Data.Monoid (mempty, mconcat)
 import System.FilePath
 
 import Hakyll
@@ -31,7 +33,7 @@ main = hakyll $ do
   -- index --
   match  "index.html" $ route idRoute
   create "index.html" $ constA mempty
-    >>> arr (setField "title" "home")
+    >>> arr (setField "title" "Home")
     >>> arr (setField "sidebar" "")
     >>> setFieldPage "home" "content/home.md"
     >>> applyTemplateCompiler "templates/index.html"
@@ -68,7 +70,6 @@ main = hakyll $ do
     route $ setRoot `composeRoutes` cleanURL
     compile $ pageCompiler
       >>> setFieldPage "sidebar" "sidebar/zathura.md"
-      >>> arr (setField "project" "zathura")
       >>> applyTemplateCompiler "templates/page.html"
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
@@ -76,7 +77,6 @@ main = hakyll $ do
   match "content/projects/girara**" $ do
     route $ setRoot `composeRoutes` cleanURL
     compile $ pageCompiler
-      >>> arr (setField "project" "girara")
       >>> setFieldPage "sidebar" "sidebar/girara.md"
       >>> applyTemplateCompiler "templates/page.html"
       >>> applyTemplateCompiler "templates/default.html"
@@ -85,7 +85,6 @@ main = hakyll $ do
   match "content/projects/jumanji**" $ do
     route $ setRoot `composeRoutes` cleanURL
     compile $ pageCompiler
-      >>> arr (setField "project" "jumanji")
       >>> setFieldPage "sidebar" "sidebar/jumanji.md"
       >>> applyTemplateCompiler "templates/page.html"
       >>> applyTemplateCompiler "templates/default.html"
