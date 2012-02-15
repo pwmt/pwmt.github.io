@@ -1,5 +1,5 @@
 ---
-title: options
+title: Options
 description: List of options
 ---
 

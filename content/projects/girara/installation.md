@@ -1,5 +1,5 @@
 ---
-title: installation
+title: Installation
 description: How to install girara on your system
 ---
 

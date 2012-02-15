@@ -1,5 +1,5 @@
 ---
-title: configuration
+title: Configuration
 description: Customize zathura
 ---
 
