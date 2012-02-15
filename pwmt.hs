@@ -93,6 +93,7 @@ main = hakyll $ do
   match "content/projects.md" $ do
     route $ setRoot `composeRoutes` cleanURL
     compile $ pageCompiler
+      >>> arr (setField "sidebar" "")
       >>> applyTemplateCompiler "templates/page.html"
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
