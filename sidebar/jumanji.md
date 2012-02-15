@@ -1,5 +1,7 @@
 <div class=submenu>
   <ul id=submenu>
+    <li>jumanji</li>
+    <li>|</li>
     <li><a href=/projects/jumanji>about</a></li>
     <li><a href=/projects/jumanji/installation>installation</a></li>
     <li><a href=/projects/jumanji/plugins>plugins</a></li>
