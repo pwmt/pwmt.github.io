@@ -1,6 +1,6 @@
 ---
-title: installation
-description: a document viewer
+title: Installation
+description: 
 ---
 
 ## Dependencies
@@ -23,7 +23,7 @@ additional libraries to build those file type plugins.
 ## Stable version
 Since zathura packages are available in many distributions it is recommended to
 install it from their with your prefered package manager. Otherwise you can grab
-the latest version of the source code from our website and build it by hand::
+the latest version of the source code from our website and build it by hand:
 
     $ tar xfv zathura-<version>.tar.gz
     $ cd zathura-<version>
@@ -42,7 +42,7 @@ the latest version of the source code from our website and build it by hand::
 ## Developer version
 If you are interested in testing the very latest versions with all its new
 features, that we are working on, type in the following commands. At first you
-have to install the latest version of girara::
+have to install the latest version of girara:
 
     $ git clone git://pwmt.org/girara.git
     $ cd girara
@@ -50,7 +50,7 @@ have to install the latest version of girara::
     $ make install
 
 After the successful installation of the user interface library, grab the latest
-version of zathura and install it::
+version of zathura and install it:
 
     $ git clone git://pwmt.org/zathura.git
     $ cd zathura

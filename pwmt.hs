@@ -44,7 +44,7 @@ main = hakyll $ do
   create "news/index.html" $ constA mempty
     >>> arr (setField "sidebar" "")
     >>> applyTemplateCompiler "templates/news.html"
-    >>> applyTemplateCompiler "templates/content.html"
+    >>> applyTemplateCompiler "templates/page.html"
     >>> applyTemplateCompiler "templates/default.html"
     >>> relativizeUrlsCompiler
 
@@ -53,7 +53,7 @@ main = hakyll $ do
     compile $ pageCompiler
       >>> arr (setField "sidebar" "")
       >>> applyTemplateCompiler "templates/news-post.html"
-      >>> applyTemplateCompiler "templates/content.html"
+      >>> applyTemplateCompiler "templates/page.html"
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
 
@@ -70,7 +70,6 @@ main = hakyll $ do
       >>> setFieldPage "sidebar" "sidebar/zathura.md"
       >>> arr (setField "project" "zathura")
       >>> applyTemplateCompiler "templates/page.html"
-      >>> applyTemplateCompiler "templates/content_sidebar.html"
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
 
@@ -80,7 +79,6 @@ main = hakyll $ do
       >>> arr (setField "project" "girara")
       >>> setFieldPage "sidebar" "sidebar/girara.md"
       >>> applyTemplateCompiler "templates/page.html"
-      >>> applyTemplateCompiler "templates/content_sidebar.html"
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
 
@@ -90,7 +88,6 @@ main = hakyll $ do
       >>> arr (setField "project" "jumanji")
       >>> setFieldPage "sidebar" "sidebar/jumanji.md"
       >>> applyTemplateCompiler "templates/page.html"
-      >>> applyTemplateCompiler "templates/content_sidebar.html"
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
 
@@ -104,8 +101,8 @@ main = hakyll $ do
   match "content/**" $ do
     route $ setRoot `composeRoutes` cleanURL
     compile $ pageCompiler
+      >>> arr (setField "sidebar" "")
       >>> applyTemplateCompiler "templates/page.html"
-      >>> applyTemplateCompiler "templates/content.html"
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
 

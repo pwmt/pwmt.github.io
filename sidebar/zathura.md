@@ -6,4 +6,5 @@
     <li><a href=/projects/zathura/configuration>configuration</a></li>
     <li><a href=/projects/zathura/options>options</a></li>
   </ul>
+  <div class="clear"></div>
 </div>
