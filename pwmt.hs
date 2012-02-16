@@ -51,6 +51,8 @@ main = hakyll $ do
   -- news --
   match  "news/index.html" $ route idRoute
   create "news/index.html" $ constA mempty
+    >>> arr (setField "title" "News")
+    >>> arr (setField "description" "Anything new?")
     >>> arr (setField "sidebar" "")
     >>> applyTemplateCompiler "templates/news.html"
     >>> requireAllA "news/*.md" (id *** arr (take 3 . reverse . chronological) >>> addPostList)
