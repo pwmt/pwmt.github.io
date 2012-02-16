@@ -19,6 +19,13 @@ main = hakyll $ do
       , (".styl", stylusCompiler)
       ]
 
+  match "js/*" $ do
+    route $ setExtension "js"
+    compile $ byExtension (error "Not a JS/CoffeScript file")
+      [ (".js", compressJsCompiler)
+      , (".coffee", coffeeCompiler)
+      ]
+
   match "css/fonts/**" $ do
     route idRoute
     compile copyFileCompiler
@@ -42,13 +49,14 @@ main = hakyll $ do
     >>> relativizeUrlsCompiler
 
   -- news --
-  match  "news/index.html" $ route idRoute
-  create "news/index.html" $ constA mempty
-    >>> arr (setField "sidebar" "")
-    >>> applyTemplateCompiler "templates/news.html"
-    >>> applyTemplateCompiler "templates/page.html"
-    >>> applyTemplateCompiler "templates/default.html"
-    >>> relativizeUrlsCompiler
+  {-match  "news/index.html" $ route idRoute-}
+  {-create "news/index.html" $ constA mempty-}
+    {->>> arr (setField "sidebar" "")-}
+    {->>> applyTemplateCompiler "templates/news.html"-}
+    {->>> requireAllA "news/*" (id *** arr (take 3 . reverse . sortByBaseName) >>> addPostList)-}
+    {->>> applyTemplateCompiler "templates/page.html"-}
+    {->>> applyTemplateCompiler "templates/default.html"-}
+    {->>> relativizeUrlsCompiler-}
 
   match "news/*" $ do
     route $ cleanURL
@@ -141,3 +149,17 @@ fileToDirectory = (flip combine) "index.html" . dropExtension . toFilePath
 
 stylusCompiler :: Compiler Resource String
 stylusCompiler = getResourceString >>> unixFilter "stylus" ["-c"]
+
+compressJsCompiler :: Compiler Resource String
+compressJsCompiler = getResourceString >>> unixFilter "yuicompressor" ["--type", "js"]
+
+coffeeCompiler :: Compiler Resource String
+coffeeCompiler = getResourceString >>> unixFilter "coffee" ["-s", "-c"]
+                                   >>> unixFilter "yuicompressor" ["--type", "js"]
+
+addPostList :: Compiler (Page String, [Page String]) (Page String)
+addPostList = setFieldA "news" $
+  arr (reverse . sortByBaseName)
+    >>> require "templates/news-post.html" (\p t -> map (applyTemplate t) p)
+    >>> arr mconcat
+    >>> arr pageBody
