@@ -91,4 +91,5 @@ Defines the amount of percent that is zoomed in or out on each comand.
 ## Girara settings
 Most of the options affecting the appearance of zathura are derived from the
 options that are offered by our user interface library called girara and can be
-found in its documentation.
+found in its [documentation](/projects/girara/options). Those values can also be
+set via the *zathurarc* file.
