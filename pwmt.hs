@@ -49,16 +49,16 @@ main = hakyll $ do
     >>> relativizeUrlsCompiler
 
   -- news --
-  {-match  "news/index.html" $ route idRoute-}
-  {-create "news/index.html" $ constA mempty-}
-    {->>> arr (setField "sidebar" "")-}
-    {->>> applyTemplateCompiler "templates/news.html"-}
-    {->>> requireAllA "news/*" (id *** arr (take 3 . reverse . sortByBaseName) >>> addPostList)-}
-    {->>> applyTemplateCompiler "templates/page.html"-}
-    {->>> applyTemplateCompiler "templates/default.html"-}
-    {->>> relativizeUrlsCompiler-}
+  match  "news/index.html" $ route idRoute
+  create "news/index.html" $ constA mempty
+    >>> arr (setField "sidebar" "")
+    >>> applyTemplateCompiler "templates/news.html"
+    >>> requireAllA "news/*.md" (id *** arr (take 3 . reverse . chronological) >>> addPostList)
+    >>> applyTemplateCompiler "templates/page.html"
+    >>> applyTemplateCompiler "templates/default.html"
+    >>> relativizeUrlsCompiler
 
-  match "news/*" $ do
+  match "news/*.md" $ do
     route $ cleanURL
     compile $ pageCompiler
       >>> arr (setField "sidebar" "")
@@ -120,10 +120,10 @@ main = hakyll $ do
 
   -- newsfeed --
   match  "rss.xml" $ route idRoute
-  create "rss.xml" $ requireAll_ "news/*" >>> renderRss feedConfiguration
+  create "rss.xml" $ requireAll_ "news/*.md" >>> renderRss feedConfiguration
 
   match  "atom.xml" $ route idRoute
-  create "atom.xml" $ requireAll_ "news/*" >>> renderAtom feedConfiguration
+  create "atom.xml" $ requireAll_ "news/*.md" >>> renderAtom feedConfiguration
 
 -- rss --
 feedConfiguration :: FeedConfiguration
@@ -159,7 +159,7 @@ coffeeCompiler = getResourceString >>> unixFilter "coffee" ["-s", "-c"]
 
 addPostList :: Compiler (Page String, [Page String]) (Page String)
 addPostList = setFieldA "news" $
-  arr (reverse . sortByBaseName)
+  arr (reverse . chronological)
     >>> require "templates/news-post.html" (\p t -> map (applyTemplate t) p)
     >>> arr mconcat
     >>> arr pageBody
