@@ -66,7 +66,7 @@ main = hakyll $ do
   match "content/home.md" $ do
     compile $ pageCompiler
 
-  match "content/projects/zathura**" $ do
+  match "content/projects/zathura**.md" $ do
     route $ setRoot `composeRoutes` cleanURL
     compile $ pageCompiler
       >>> setFieldPage "sidebar" "sidebar/zathura.md"
@@ -74,7 +74,7 @@ main = hakyll $ do
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
 
-  match "content/projects/girara**" $ do
+  match "content/projects/girara**.md" $ do
     route $ setRoot `composeRoutes` cleanURL
     compile $ pageCompiler
       >>> setFieldPage "sidebar" "sidebar/girara.md"
@@ -82,7 +82,7 @@ main = hakyll $ do
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
 
-  match "content/projects/jumanji**" $ do
+  match "content/projects/jumanji**.md" $ do
     route $ setRoot `composeRoutes` cleanURL
     compile $ pageCompiler
       >>> setFieldPage "sidebar" "sidebar/jumanji.md"
@@ -98,13 +98,17 @@ main = hakyll $ do
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
 
-  match "content/**" $ do
+  match "content/**.md" $ do
     route $ setRoot `composeRoutes` cleanURL
     compile $ pageCompiler
       >>> arr (setField "sidebar" "")
       >>> applyTemplateCompiler "templates/page.html"
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
+
+  match "content/**" $ do
+    route idRoute
+    compile copyFileCompiler
 
   -- newsfeed --
   match  "rss.xml" $ route idRoute
