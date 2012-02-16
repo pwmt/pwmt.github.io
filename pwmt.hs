@@ -19,13 +19,6 @@ main = hakyll $ do
       , (".styl", stylusCompiler)
       ]
 
-  match "js/*" $ do
-    route $ setExtension "js"
-    compile $ byExtension (error "Not a JS/CoffeScript file")
-      [ (".js", compressJsCompiler)
-      , (".coffee", coffeeCompiler)
-      ]
-
   match "css/fonts/**" $ do
     route idRoute
     compile copyFileCompiler
@@ -54,8 +47,8 @@ main = hakyll $ do
     >>> arr (setField "title" "News")
     >>> arr (setField "description" "Anything new?")
     >>> arr (setField "sidebar" "")
+    >>> requireAllA "news/*.md" addPostList
     >>> applyTemplateCompiler "templates/news.html"
-    >>> requireAllA "news/*.md" (id *** arr (take 3 . reverse . chronological) >>> addPostList)
     >>> applyTemplateCompiler "templates/page.html"
     >>> applyTemplateCompiler "templates/default.html"
     >>> relativizeUrlsCompiler
@@ -151,13 +144,6 @@ fileToDirectory = (flip combine) "index.html" . dropExtension . toFilePath
 
 stylusCompiler :: Compiler Resource String
 stylusCompiler = getResourceString >>> unixFilter "stylus" ["-c"]
-
-compressJsCompiler :: Compiler Resource String
-compressJsCompiler = getResourceString >>> unixFilter "yuicompressor" ["--type", "js"]
-
-coffeeCompiler :: Compiler Resource String
-coffeeCompiler = getResourceString >>> unixFilter "coffee" ["-s", "-c"]
-                                   >>> unixFilter "yuicompressor" ["--type", "js"]
 
 addPostList :: Compiler (Page String, [Page String]) (Page String)
 addPostList = setFieldA "news" $
