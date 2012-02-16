@@ -5,13 +5,13 @@ description:
 
 ## Dependencies
 The core of zathura depends on two external libraries,
-[girara](http://pwmt.org/projects/girara/), our simplistic user interface
+[girara](/projects/girara/), our simplistic user interface
 library and [GTK+](http://www.gtk.org/), a cross-platform widget toolkit.
 Depending on which filetypes should be supported you are going to need
 additional libraries to build those file type plugins.
 
 ### Core dependencies
-* [girara](http://pwmt.org/projects/girara/), our simplistic user interface library
+* [girara](/projects/girara/), our simplistic user interface library
 * [GTK+](http://www.gtk.org/), a cross-platform widget toolkit
 
 ### Additional dependencies
@@ -34,9 +34,9 @@ the latest version of the source code from our website and build it by hand:
 
 * [Arch Linux](http://www.archlinux.org/packages/community/x86_64/zathura)
 * [Debian](http://packages.debian.org/en/sid/zathura)
-* [Fedora](http://pkgs.org/fedora-rawhide/fedora-i386/zathura-0.0.8.2-4.fc15.i686.rpm.html)
+* [Fedora](http://pkgs.org/fedora-rawhide/fedora-i386/zathura-0.0.8.5.fc17.i686.rpm.html)
 * [Gentoo](http://packages.gentoo.org/package/app-text/zathura)
-* [Ubuntu](http://packages.ubuntu.com/maverick/zathura)
+* [Ubuntu](http://packages.ubuntu.com/precise/zathura)
 * [OpenBSD](http://openports.se/textproc/zathura)
 
 ## Developer version
