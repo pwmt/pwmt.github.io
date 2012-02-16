@@ -7,6 +7,8 @@
     <link rel=stylesheet href=/css/reset.css media=screen, projection>
     <link rel=stylesheet href=/css/style.css media=screen, projection>
     <link rel=stylesheet href=/css/highlighting.css media=screen, projection>
+    <link rel=alternate href=/atom.xml title="pwmt.org - programs with movie titles" type=application/atom+xml>
+    <link rel=alternate href=/rss.xml  title="pwmt.org - programs with movie titles" type=application/rss+xml>
   </head>
   <body>
     <div class="page_wrapper">
@@ -29,8 +31,14 @@
         $body$
       </div>
       <div id=footer>
-        &copy; 2012 <a href=http://pwmt.org>pwmt.org</a> powered by <a
-          href="http://jaspervdj.be/hakyll">hakyll</a>
+        <a href=/atom.xml class=rss title=Feed>Atom</a>
+        | <a href=/rss.xml class=rss title=Feed>RSS</a>
+        | <a href="javascript:window.bookmark();return false;" class=bookmark title=Bookmark>Bookmark</a>
+        | <a href=/sitemap.html>Sitemap</a>
+        <div class=right>
+          &copy; 2012 <a href=http://pwmt.org>pwmt.org</a> powered by <a
+            href="http://jaspervdj.be/hakyll">hakyll</a>
+        </div>
       </div>
     </div>
   </body>
