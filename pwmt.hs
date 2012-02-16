@@ -148,6 +148,6 @@ stylusCompiler = getResourceString >>> unixFilter "stylus" ["-c"]
 addPostList :: Compiler (Page String, [Page String]) (Page String)
 addPostList = setFieldA "news" $
   arr (reverse . chronological)
-    >>> require "templates/news-post.html" (\p t -> map (applyTemplate t) p)
+    >>> require "templates/news-item.html" (\p t -> map (applyTemplate t) p)
     >>> arr mconcat
     >>> arr pageBody
