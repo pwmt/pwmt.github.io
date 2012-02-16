@@ -159,10 +159,10 @@ The following shortcut functions can be mapped:
 Function           Description
 -----------------  ------------------------------------
 abort              *Switch back to normal mode*
-adjust             *Adjust page width*
+adjust_window      *Adjust page width*
 change_mode        *Change current mode*
-focus_inputbar     *Focus inputbar*
 follow             *Follow a link*
+focus_inputbar     *Focus inputbar*
 goto               *Go to a certain page*
 index_navigate     *Navigate through the index*
 navigate           *Navigate to the next/previous page*
@@ -172,6 +172,7 @@ reload             *Reload the document*
 rotate             *Rotate the page*
 scroll             *Scroll*
 search             *Search next/previous item*
+set                *Set an option*
 toggle_fullscreen  *Toggle fullscreen*
 toggle_index       *Show or hide index*
 toggle_inputbar    *Show or hide inputbar*
@@ -184,6 +185,27 @@ behaviour of them. Those can be passed as the last argument:
 
     map <C-i> zoom in
     map <C-o> zoom out
+
+Possible arguments are:
+
+* bottom
+* default
+* down
+* full-down
+* full-up
+* half-down
+* half-up
+* in
+* left
+* next
+* out
+* previous
+* right
+* specific
+* top
+* up
+* best-fit
+* width
 
 ### unmap - Removing a shortcut
 In addition to mapping or remaping custom key bindings it is possible to remove
