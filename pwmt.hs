@@ -107,7 +107,7 @@ main = hakyll $ do
       >>> relativizeUrlsCompiler
 
   match "content/**" $ do
-    route idRoute
+    route $ setRoot
     compile copyFileCompiler
 
   -- newsfeed --
