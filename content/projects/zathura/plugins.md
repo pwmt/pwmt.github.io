@@ -1,11 +1,27 @@
 ---
 title: Plugins
-description: Which documents are supported?
+description: Which document types are supported?
 ---
 
 Each file type that is supported by zathura is implemented by its own plugin.
 This section should give an overview about the supported file types of zathura
 and how to install them.
+
+## Overview
+The following table should give an overview about which functionality has been
+already implemented in which plugin and which is still missing.
+
+Function                pdf-poppler pdf-mupdf djvu  ps
+--------                ----------- --------- ----- --
+Render                  X           X         X     X
+Search text             X           -         -     -
+Document information    X           -         -     -
+Document index          X           -         -     -
+Select text             X           -         -     -
+Attachments             X           -         -     -
+Links                   X           -         -     -
+Form fields             -           -         -     -
+Images                  X           -         -     -
 
 ## PDF
 For the support of PDF documents we are developing two plugins which differ on

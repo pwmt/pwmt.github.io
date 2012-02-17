@@ -1,6 +1,7 @@
 ---
 title: girara 0.1 
-tags: girara
+description:  
+date: 2012/02/12
 ---
 
 Coming soon...
