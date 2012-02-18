@@ -30,3 +30,11 @@ features that those applications share.
 * Useful data structures and utility functions
 * Possibility to use tabs
 * Support for either GTK2 or GTK3 applications
+
+## Source code
+If you are interested in the source code you can either
+[browse](http://git.pwmt.org) it online or clone the repository:
+
+    $ git clone git://pwmt.org/girara.git
+
+In addition a doxygen documentation is [available](doxygen).

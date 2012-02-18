@@ -52,3 +52,11 @@ saved quickmark just use "'" and then the previously used letter or number.
 * Show and browse the document index
 * Display document information
 * Support for [tabbed](http://tools.suckless.org/tabbed)
+
+## Source code
+If you are interested in the source code you can either
+[browse](http://git.pwmt.org) it online or clone the repository:
+
+    $ git clone git://pwmt.org/zathura.git
+
+In addition a doxygen documentation is [available](doxygen).
