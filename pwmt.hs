@@ -35,7 +35,7 @@ main = hakyll $ do
   create "index.html" $ constA mempty
     >>> arr (setField "title" "Home")
     >>> arr (setField "sidebar" "")
-    >>> requireAllA "news/*" (id *** arr (take 3 . reverse . chronological) >>> addPostList)
+    >>> requireAllA "news/*.md" (id *** arr (take 5 . reverse . chronological) >>> addPostList)
     >>> setFieldPage "home" "content/home.md"
     >>> applyTemplateCompiler "templates/index.html"
     >>> applyTemplateCompiler "templates/home.html"
@@ -59,7 +59,6 @@ main = hakyll $ do
     compile $ pageCompiler
       >>> arr (setField "sidebar" "")
       >>> applyTemplateCompiler "templates/news-post.html"
-      >>> applyTemplateCompiler "templates/page.html"
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
 
