@@ -10,6 +10,8 @@ saving user interfaces and key board interaction.
 ## Latest news
 More to come ...
 
+$news$
+
 ## Contact
 If you have any suggestions, ideas, problems or just want to talk feel free to
 join us on our IRC channel, contact us per e-mail or discuss it on one of our

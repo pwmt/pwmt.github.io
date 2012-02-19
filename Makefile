@@ -5,7 +5,7 @@ pwmt: pwmt.hs
 
 rebuild: pwmt
 	@./pwmt rebuild
-	$(MAKE) doxygen
+	#$(MAKE) doxygen
 
 build: pwmt
 	@./pwmt build
