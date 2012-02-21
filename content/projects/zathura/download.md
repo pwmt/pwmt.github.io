@@ -5,6 +5,7 @@ description: Get zathura
 
 Version  Release Date  SHA-1 Checksum                             Download 
 -------- ------------  ------------------------------------------ ----------------------------------
+0.1.0    2012/02/21    `cf0cbd81e77c2c8fe26d9d1e93f930f179a82621` [Download](zathura-0.1.0.tar.gz)
 0.0.8.5  2011/11/09    `8d65b964fc80f380cfee5ebe1a7fcbebf38cfbf7` [Download](zathura-0.0.8.5.tar.gz)
 0.0.8.4  2011/07/12    `5c0f02181baa555ff2e7ed0f4c68ca2a2a2a5893` [Download](zathura-0.0.8.4.tar.gz)
 0.0.8.3  2011/03/24    `8d998ad0defc8d6eabb3da28f6115ce26489d4f4` [Download](zathura-0.0.8.3.tar.gz)
@@ -21,6 +22,14 @@ Version  Release Date  SHA-1 Checksum                             Download
 
 ## Changelog
 Here you can view the changes between the different versions:
+
+### 0.1.0 (2012/02/21)
+* Complete rewrite of zathura
+* Uses the [girara](/projects/girara) interface library
+* [Plugin system](/projects/zathura/plugins) for different document types
+* Better [configuration](/projects/zathura/configuration)
+* Quickmarks
+* and much more
 
 ### 0.0.8.5 (2011/11/09)
 * Ignoring MOD5 which is used on some keyboards
