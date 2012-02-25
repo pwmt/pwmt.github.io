@@ -14,14 +14,15 @@ already implemented in which plugin and which is still missing.
 Function                pdf-poppler pdf-mupdf djvu  ps
 --------                ----------- --------- ----- --
 Render                  X           X         X     X
-Search text             X           -         -     -
-Document information    X           -         -     -
+Search text             X           X         -     -
+Document information    X           -         -     X
 Document index          X           -         -     -
-Select text             X           -         -     -
+Select text             X           X         -     -
 Attachments             X           -         -     -
-Links                   X           -         -     -
+Links                   X           X         -     -
 Form fields             -           -         -     -
 Images                  X           -         -     -
+Save                    X           -         X     X
 
 ## PDF
 For the support of PDF documents we are developing two plugins which differ on
