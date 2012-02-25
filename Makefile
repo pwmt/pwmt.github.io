@@ -21,4 +21,4 @@ doxygen:
 	@./scripts/generate-doxygen.sh
 
 sync:
-	@rsync -ave ssh _site/* mlq@pwmt.org:/var/www/pwmt.org/site
+	@rsync -ae ssh _site/* mlq@pwmt.org:/var/www/pwmt.org/site
