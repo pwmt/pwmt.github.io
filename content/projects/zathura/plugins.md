@@ -52,7 +52,7 @@ least version 0.8.165. If you are using the git version of *mupdf*, make sure
 you checkout the *mupdf-git* branch in our plugin repository.
 
 #### Dependencies
-* [mupdf](<http://mupdf.com/)
+* [mupdf](http://mupdf.com/)
 
 #### Installation (Developer version)
 For the installation of the *zathura-pdf-mupdf* plugin follow the
