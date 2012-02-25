@@ -15,12 +15,11 @@ Function                pdf-poppler pdf-mupdf djvu  ps
 --------                ----------- --------- ----- --
 Render                  X           X         X     X
 Search text             X           X         -     -
-Document information    X           -         -     X
+Document information    X           X         -     X
 Document index          X           -         -     -
 Select text             X           X         -     -
 Attachments             X           -         -     -
 Links                   X           X         -     -
-Form fields             -           -         -     -
 Images                  X           -         -     -
 Save                    X           -         X     X
 
