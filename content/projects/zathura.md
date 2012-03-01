@@ -61,6 +61,7 @@ saved quickmark just use "'" and then the previously used letter or number.
 * Search the document
 * Show and browse the document index
 * Display document information
+* Optional [sqlite](http://sqlite.org) database backend
 * Support for [tabbed](http://tools.suckless.org/tabbed)
 
 ## Source code
