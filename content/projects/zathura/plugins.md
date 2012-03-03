@@ -14,7 +14,7 @@ already implemented in which plugin and which is still missing.
 Function                pdf-poppler pdf-mupdf djvu  ps
 --------                ----------- --------- ----- --
 Render                  X           X         X     X
-Search text             X           X         -     -
+Search text             X           X         X     -
 Document information    X           X         -     X
 Document index          X           -         -     -
 Select text             X           X         -     -
