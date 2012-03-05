@@ -17,7 +17,7 @@ Render                  X           X         X     X
 Search text             X           X         X     -
 Document information    X           X         -     X
 Document index          X           -         -     -
-Select text             X           X         -     -
+Select text             X           X         X     -
 Attachments             X           -         -     -
 Links                   X           X         -     -
 Images                  X           -         -     -
