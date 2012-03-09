@@ -13,7 +13,7 @@ The *zathura-pdf-poppler* plugin adds PDF support to zathura by using the
 
 Version  Release Date  SHA-1 Checksum                             Download
 -------- ------------  ------------------------------------------ --------------------------------------------------------
-0.1.1    2012/03/09    `3c767dfb4139f18fb3c5f43251ad20c303a5f213` [Download](../download/zathura-pdf-poppler-0.1.1.tar.gz)
+0.1.1    2012/03/09    `6a644127f272c0bbb1582334935a0206ead8e4b9` [Download](../download/zathura-pdf-poppler-0.1.1.tar.gz)
 0.1.0    2012/02/21    `3631b4f608f2fc5a856953326e1f48f61f51c173` [Download](../download/zathura-pdf-poppler-0.1.0.tar.gz)
 
 ## Installation
