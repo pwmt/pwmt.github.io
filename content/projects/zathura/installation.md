@@ -1,6 +1,6 @@
 ---
 title: Installation
-description: 
+description: Get it up and running
 ---
 
 ## Dependencies
@@ -13,12 +13,6 @@ additional libraries to build those file type plugins.
 ### Core dependencies
 * [girara](/projects/girara/), our simplistic user interface library
 * [GTK+](http://www.gtk.org/), a cross-platform widget toolkit
-
-### Additional dependencies
-* [poppler](http://poppler.freedesktop.org/) for PDF support
-* [mupdf](http://mupdf.com/) for PDF support
-* [djvulibre](http://djvu.sourceforge.net/) for DjVu support
-* [libspectre](http://libspectre.freedesktop.org/) for PostScript support
 
 ## Stable version
 Since zathura packages are available in many distributions it is recommended to
@@ -46,6 +40,7 @@ have to install the latest version of girara:
 
     $ git clone git://pwmt.org/girara.git
     $ cd girara
+    $ git checkout --track -b develop origin/develop
     $ make
     $ make install
 
