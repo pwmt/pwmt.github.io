@@ -5,7 +5,7 @@ description: Get zathura
 
 Version  Release Date  SHA-1 Checksum                             Download
 -------- ------------  ------------------------------------------ ----------------------------------
-0.1.1    2012/03/09    `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx` [Download](zathura-0.1.1.tar.gz)
+0.1.1    2012/03/09    `d9ade9d4f1d6e3326afbd908ca7247ebe2d99090` [Download](zathura-0.1.1.tar.gz)
 0.1.0    2012/02/21    `d3a6c3233833adb6c678f70e4758a589a4cde4d9` [Download](zathura-0.1.0.tar.gz)
 0.0.8.5  2011/11/09    `8d65b964fc80f380cfee5ebe1a7fcbebf38cfbf7` [Download](zathura-0.0.8.5.tar.gz)
 0.0.8.4  2011/07/12    `5c0f02181baa555ff2e7ed0f4c68ca2a2a2a5893` [Download](zathura-0.0.8.4.tar.gz)

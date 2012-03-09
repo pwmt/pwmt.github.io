@@ -16,7 +16,7 @@ you checkout the *mupdf-git* branch in our plugin repository.
 
 Version  Release Date  SHA-1 Checksum                             Download
 -------- ------------  ------------------------------------------ ------------------------------------------------------
-0.1.0    2012/03/09    `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx` [Download](../download/zathura-pdf-mupdf-0.1.0.tar.gz)
+0.1.0    2012/03/09    `9d13a298a73eba12c73ca6de608a3f32fd3d98d8` [Download](../download/zathura-pdf-mupdf-0.1.0.tar.gz)
 
 ## Installation
 There are no packages currently available.
