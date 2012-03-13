@@ -10,7 +10,20 @@ toolkit. It can be build for gtk2 as well as for gtk3.
 * [GTK+](http://www.gtk.org/), a cross-platform widget toolkit
 
 ## Stable version
-No official version of libgirara has been released yet.
+Since girara packages are available in many distributions it is recommended to
+install it from their with your prefered package manager. Otherwise you can grab
+the latest version of the source code from our website and build it by hand:
+
+    $ tar xfv girara-<version>.tar.gz
+    $ cd zathura-<version>
+    $ make
+    $ make install
+
+## Known supported distributions
+
+* [Arch Linux](http://www.archlinux.org/packages/community/x86_64/girara)
+* [Debian](http://packages.debian.org/en/source/experimental/girara)
+* [Gentoo](http://packages.gentoo.org/package/dev-libs/girara)
 
 ## Developer version
 If you are interested to use the current version of libgirara you need to pull
