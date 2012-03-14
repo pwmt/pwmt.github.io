@@ -58,5 +58,4 @@ version of zathura and install it:
     $ make
     $ make install
 
-For the installation of a file type plugin check the :doc:`plugins`
-section.
+For the installation of a file type plugin check the [plugins](../plugins) section.
