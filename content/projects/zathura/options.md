@@ -46,6 +46,12 @@ Defines the number of pages that are rendered next to each other in a row.
 * Value-type: Integer
 * Default value: 1
 
+### recolor
+En/Disables recoloring
+
+* Value-type: Boolean
+* Default value: false
+
 ### recolor-darkcolor
 Defines the color value that is used to represent dark colors in recoloring mode
 
@@ -69,6 +75,12 @@ Defines the step size of scrolling by calling the scroll command once
 
 * Value-type: Float
 * Default value: 40
+
+### scroll-wrap
+Defines if the last/first page should be wrapped
+
+* Value-type: Boolean
+* Default value: false
 
 ### zoom-max
 Defines the maximum percentage that the zoom level can be
