@@ -53,7 +53,7 @@ saved quickmark just use "'" and then the previously used letter or number.
 
 ![Save and open bookmarks](img/bookmarks.png)
 
-### Other features
+## Other features
 
 * Export images and attachments
 * Open encrypted documents
