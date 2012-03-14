@@ -3,7 +3,7 @@
 REPOSITORIES=("zathura" "girara" "jumanji")
 CWD=`pwd`
 REPOSITORY_PATH="`pwd`/repositories/"
-echo $REPOSITORY_PATH
+BRANCH="develop"
 
 for repo in "${REPOSITORIES[@]}"; do
   path=$REPOSITORY_PATH$repo
@@ -11,10 +11,9 @@ for repo in "${REPOSITORIES[@]}"; do
   # Clone or pull latest changes from repository
   if [ ! -d $path ]; then
     git clone git@pwmt.org:$repo.git $path
-    cd $path
+    cd $path && git checkout --track -b $BRANCH origin/$BRANCH
   else
-    cd $path
-    git pull
+    cd $path && git pull origin
   fi
 
   # Generate documentation

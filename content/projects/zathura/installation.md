@@ -12,7 +12,12 @@ additional libraries to build those file type plugins.
 
 ### Core dependencies
 * [girara](/projects/girara/), our simplistic user interface library
-* [GTK+](http://www.gtk.org/), a cross-platform widget toolkit
+* [GTK+](http://www.gtk.org/), a cross-platform widget toolkit (version 2)
+
+### Optional and build dependencies
+* [sqlite3](https://www.sqlite.org/), a SQL database engine
+* [intltool](https://launchpad.net/intltool), utility scripts for internationalization
+* [check](http://check.sourceforge.net/), a unit testing framework for C
 
 ## Stable version
 Since zathura packages are available in many distributions it is recommended to
