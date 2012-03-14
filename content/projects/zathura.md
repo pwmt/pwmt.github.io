@@ -19,7 +19,7 @@ zathura now uses a [plugin](plugins) based system for supported document types
 which makes it possible for you to choose which file formats you want your
 version of zathura to support. This also makes it possible to use different
 backends for the same document type: For instance we provide a plugin for PDF
-documents using either poppler or the mupdf library.
+documents using either the poppler or the mupdf library.
 
 ![Multiple file formats](img/fileformat.png)
 
