@@ -42,6 +42,7 @@ can be used
     set option3 hello
     set option4 hello\ world
     set option5 "hello world"
+    set option6 "#00BB00"
 
 ## map - Mapping a shortcut
 It is possible to map or remap new key bindings to shortcut functions which
