@@ -103,7 +103,7 @@ Esc         *Escape*
 Down        *Arrow down*
 Up          *Arrow up*
 Left        *Arrow left*
-Right       *A7row right*
+Right       *Arrow right*
 F1          *F1*
 F2          *F2*
 F3          *F3*
