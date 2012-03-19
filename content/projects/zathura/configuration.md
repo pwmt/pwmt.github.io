@@ -206,6 +206,8 @@ Possible arguments are:
 * up
 * best-fit
 * width
+* rotate-cw
+* rotate-ccw
 
 ### unmap - Removing a shortcut
 In addition to mapping or remaping custom key bindings it is possible to remove
