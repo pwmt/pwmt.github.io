@@ -3,13 +3,24 @@ title: Downloads
 description: Get girara
 ---
 
-Version  Release Date  SHA-1 Checksum                             Download 
+Version  Release Date  SHA-1 Checksum                             Download
 -------- ------------  ------------------------------------------ ----------------------------------
+0.1.2    2012/03/24    `e36044cb2ad2a54f5c0cc0b5ab722f6284ea0f42` [Download](girara-0.1.2.tar.gz)
 0.1.1    2012/03/09    `87f1f28f8eeeaec483fb6c5bb2645c3feba55a42` [Download](girara-0.1.1.tar.gz)
 0.1.0    2012/02/21    `ebb8d46cf3339c95f5dd0f6fb7b03790f9ef5982` [Download](girara-0.1.0.tar.gz)
 
 ## Changelog
 Here you can view the changes between the different versions:
+
+### 0.1.2 (2012/03/24)
+* \*BSD compatible
+* Updated completion function
+* Display command description in completion
+* Fixed inputbar color for GTK3
+* Add debug levels
+* Resolved some memory leaks
+* Updated translations
+* Updated Makefile
 
 ### 0.1.1 (2012/03/09)
 * Multi-language support
