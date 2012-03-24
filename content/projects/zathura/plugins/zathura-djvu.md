@@ -13,6 +13,7 @@ The *zathura-djvu* plugin adds DjVu support to zathura by using the
 
 Version  Release Date  SHA-1 Checksum                             Download
 -------- ------------  ------------------------------------------ -------------------------------------------------
+0.1.1    2012/03/24    `843e210c615b3b24d49f163b061754d878e67592` [Download](../download/zathura-djvu-0.1.1.tar.gz)
 0.1.0    2012/03/09    `a808cddd4fffead3d9c6958de4a1258fbbe40f7e` [Download](../download/zathura-djvu-0.1.0.tar.gz)
 
 ## Installation
@@ -34,3 +35,8 @@ If you are interested in the source code you can either
 repository:
 
     $ git clone git://pwmt.org/zathura-djvu.git
+
+## Changelog
+
+### 0.1.1 (2012/03/24)
+* Fix djvu_document_save_as
