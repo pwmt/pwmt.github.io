@@ -12,6 +12,8 @@ to install it. We are currently developing the following plugins:
 * [zathura-djvu](zathura-djvu)
 * [zathura-ps](zathura-ps)
 
+## Plugin functionality
+
 The following table should give an overview about which functionality has been
 already implemented in which plugin and which is still missing.
 
@@ -26,3 +28,7 @@ Attachments             X           -         -     -
 Links                   X           X         -     -
 Images                  X           -         -     -
 Save                    X           -         X     X
+
+## Development guide
+We have written a short guide which explains how to write a new plugin for
+zathura. You can find it [here](development).
