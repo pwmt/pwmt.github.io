@@ -27,7 +27,7 @@ instructions:
 
     $ git clone git://pwmt.org/zathura-pdf-mupdf.git
     $ cd zathura-pdf-mupdf
-    $ git checkout --track develop origin/develop
+    $ git checkout --track -b develop origin/develop
     $ make
     $ make install
 

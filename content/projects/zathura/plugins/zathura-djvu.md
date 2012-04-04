@@ -25,7 +25,7 @@ instructions:
 
     $ git clone git://pwmt.org/zathura-djvu.git
     $ cd zathura-djvu
-    $ git checkout --track develop origin/develop
+    $ git checkout --track -b develop origin/develop
     $ make
     $ make install
 

@@ -25,7 +25,7 @@ instructions:
 
     $ git clone git://pwmt.org/zathura-pdf-poppler.git
     $ cd zathura-pdf-poppler
-    $ git checkout --track develop origin/develop
+    $ git checkout --track -b develop origin/develop
     $ make
     $ make install
 
