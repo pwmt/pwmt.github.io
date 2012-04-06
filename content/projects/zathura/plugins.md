@@ -11,23 +11,24 @@ to install it. We are currently developing the following plugins:
 * [zathura-pdf-mupdf](zathura-pdf-mupdf)
 * [zathura-djvu](zathura-djvu)
 * [zathura-ps](zathura-ps)
+* [zathura-cb](zathura-cb)
 
 ## Plugin functionality
 
 The following table should give an overview about which functionality has been
 already implemented in which plugin and which is still missing.
 
-Function                pdf-poppler pdf-mupdf djvu  ps
---------                ----------- --------- ----- --
-Render                  X           X         X     X
-Search text             X           X         X     -
-Document information    X           X         -     X
-Document index          X           -         -     -
-Select text             X           X         X     -
-Attachments             X           -         -     -
-Links                   X           X         -     -
-Images                  X           -         -     -
-Save                    X           -         X     X
+Function                pdf-poppler pdf-mupdf djvu  ps cb
+--------                ----------- --------- ----- -- --
+Render                  X           X         X     X  X
+Search text             X           X         X     -  0
+Document information    X           X         -     X  -
+Document index          X           -         -     -  -
+Select text             X           X         X     -  -
+Attachments             X           -         -     -  -
+Links                   X           X         -     -  -
+Images                  X           -         -     -  -
+Save                    X           -         X     X  -
 
 ## Development guide
 We have written a short guide which explains how to write a new plugin for
