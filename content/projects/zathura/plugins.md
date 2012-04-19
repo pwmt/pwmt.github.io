@@ -23,7 +23,7 @@ Function                pdf-poppler pdf-mupdf djvu  ps cb
 Render                  X           X         X     X  X
 Search text             X           X         X     -  0
 Document information    X           X         -     X  -
-Document index          X           X         -     -  -
+Document index          X           X         X     -  -
 Select text             X           X         X     -  -
 Attachments             X           -         -     -  -
 Links                   X           X         -     -  -
