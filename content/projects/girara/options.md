@@ -12,6 +12,12 @@ Defines the maximum number of displayed completion entries
 * Value-type: Integer
 * Default value: 15
 
+### exec-command
+Defines a command the should be prepanded to any command run with exec.
+
+* Value-type: String
+* Default value:
+
 ## Appearance settings
 This section describes settings concerning the look of zathura
 
