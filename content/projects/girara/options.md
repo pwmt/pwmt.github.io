@@ -75,6 +75,17 @@ Defines the font that will be used
 * Value-type: String
 * Default value: monospace normal 9
 
+### guioptions
+Shows or hide certain GUI elements
+
+Character  Description
+---------  -----------
+c          Always show the command line, even when empty
+s          Statusbar
+
+* Value-type: String
+* Default value: s
+
 ### inputbar-bg
 Defines the background color for the inputbar
 
