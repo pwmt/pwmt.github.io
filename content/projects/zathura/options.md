@@ -6,6 +6,12 @@ description: Description of all possible options
 ## General settings
 This section describes settings concerning the behaviour of zathura
 
+### abort-clear-search
+Defines if the search results should be cleared on abort.
+
+* Value-type: Boolean
+* Default value: true
+
 ### adjust-open
 Defines which auto adjustment mode should be used if a document is loaded.
 Possible options are "best-fit" and "width".
