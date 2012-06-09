@@ -11,6 +11,12 @@ The *zathura-cb* plugin adds comic book support to zathura.
 * [p7zip](http://p7zip.sourceforge.net)
 * [tar](http://gnu.org/software/tar/tar.html)
 
+## Download
+
+Version  Release Date  SHA-1 Checksum                             Download
+-------- ------------  ------------------------------------------ -----------------------------------------------
+0.1.0    2012/06/09    `22ad7407843a543dd48ebfb06a6ffcd782c30ad6` [Download](../download/zathura-cb-0.1.0.tar.gz)
+
 ## Installation
 There are no packages currently available.
 
