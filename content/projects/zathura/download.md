@@ -26,6 +26,16 @@ Version  Release Date  SHA-1 Checksum                             Download
 ## Changelog
 Here you can view the changes between the different versions:
 
+### 0.2.0 (2012/06/09)
+* New languages
+* Better print support
+* Improve document links
+* Render last-viewed pages with a higher priority
+* Export images and attachments
+* Open multiple documents
+* Plugin manager
+* Several memory leaks and small bugs
+
 ### 0.1.2 (2012/03/24)
 * Add 'open-first-page' setting
 * Free invisible pages after specific time
