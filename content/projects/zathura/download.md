@@ -5,6 +5,7 @@ description: Get zathura
 
 Version  Release Date  SHA-1 Checksum                             Download
 -------- ------------  ------------------------------------------ ----------------------------------
+0.2.1    2012/08/30    `6d508f8c0e8a4d8e21b7bae815a83abae402e828` [Download](zathura-0.2.1.tar.gz)
 0.2.0    2012/06/09    `41310cd103a99d54145b21bf11afa0fdfa740d81` [Download](zathura-0.2.0.tar.gz)
 0.1.2    2012/03/24    `11508530f39500cb6863829678eeda3bff2527bc` [Download](zathura-0.1.2.tar.gz)
 0.1.1    2012/03/09    `a39044d410e6c9208a795f8eebe9f72b433a54c5` [Download](zathura-0.1.1.tar.gz)
@@ -25,6 +26,15 @@ Version  Release Date  SHA-1 Checksum                             Download
 
 ## Changelog
 Here you can view the changes between the different versions:
+
+### 0.2.1 (2012/08/30)
+* Syntex backwards synchronisation
+* Fix request-page-setup
+* Fix window adustment
+* Better GTK3 integration
+* Added first-page-colum setting
+* Added recolor-keephue setting
+* Updated translations
 
 ### 0.2.0 (2012/06/09)
 * New languages
