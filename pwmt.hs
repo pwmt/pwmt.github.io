@@ -133,6 +133,7 @@ feedConfiguration = FeedConfiguration
   { feedTitle       = "pwmt.org - news feed"
   , feedDescription = "programs with movie titles"
   , feedAuthorName  = "pwmt.org"
+  , feedAuthorEmail = "mail@pwmt.org"
   , feedRoot        = "http://pwmt.org"
   }
 
