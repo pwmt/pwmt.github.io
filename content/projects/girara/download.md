@@ -5,6 +5,7 @@ description: Get girara
 
 Version  Release Date  SHA-1 Checksum                             Download
 -------- ------------  ------------------------------------------ ----------------------------------
+0.1.4    2012/08/30    `525f14dc7e4f6aab2be15aaae5b7803950737d5e` [Download](girara-0.1.4.tar.gz)
 0.1.3    2012/06/09    `813da803052c6255f1779dd74998b44a759862aa` [Download](girara-0.1.3.tar.gz)
 0.1.2    2012/03/24    `e36044cb2ad2a54f5c0cc0b5ab722f6284ea0f42` [Download](girara-0.1.2.tar.gz)
 0.1.1    2012/03/09    `87f1f28f8eeeaec483fb6c5bb2645c3feba55a42` [Download](girara-0.1.1.tar.gz)
@@ -12,6 +13,21 @@ Version  Release Date  SHA-1 Checksum                             Download
 
 ## Changelog
 Here you can view the changes between the different versions:
+
+### 0.1.4 (2012/08/30)
+* Check correct mode for buffer command
+* Use gtk_label_set_ellipsize
+* Set background color of window/viewport
+* Implement include statement for config files
+* Implemented girara_exec_with_argument_list
+
+### 0.1.3 (2012/06/09)
+* Fixed setting description
+* Updated translations
+* Added guioptions
+* Command history
+* feedkeys shortcut
+* Translate number keys on numpad
 
 ### 0.1.2 (2012/03/24)
 * \*BSD compatible
