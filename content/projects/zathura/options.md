@@ -25,6 +25,11 @@ Defines if the number of pages per row should be honored when advancing a page.
 * Value-type: Boolean
 * Default value: false
 
+### database
+Defines the used database backend. Possible options are 'plain' and 'sqlite'
+
+* Value-type: String
+* Default value: plain
 
 ### highlight-color
 Defines the color that is used for highlighting parts of the document (e.g.:
