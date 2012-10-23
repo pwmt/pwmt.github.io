@@ -8,8 +8,8 @@ open source applications and libraries that mainly focus on simplistic and space
 saving user interfaces and key board interaction.
 
 ## Contact
-If you have any suggestions, ideas, problems or just want to talk feel free to
-join us on our IRC channel, contact us per e-mail or discuss it on one of our
+If you have any suggestions, ideas, problems or just want to talk, feel free to
+join us on our IRC channel, contact us by e-mail or discuss it on one of our
 mailing lists.
 
 * [#pwmt@irc.oftc.net](irc://irc.oftc.net/#pwmt)
