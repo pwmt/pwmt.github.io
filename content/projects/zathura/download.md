@@ -5,6 +5,7 @@ description: Get zathura
 
 Version  Release Date  SHA-1 Checksum                             Download
 -------- ------------  ------------------------------------------ ----------------------------------
+0.2.2    2013/01/20    `0aa88b31cf574cb70a1936c317a567a94f680896` [Download](zathura-0.2.2.tar.gz)
 0.2.1    2012/08/30    `6d508f8c0e8a4d8e21b7bae815a83abae402e828` [Download](zathura-0.2.1.tar.gz)
 0.2.0    2012/06/09    `41310cd103a99d54145b21bf11afa0fdfa740d81` [Download](zathura-0.2.0.tar.gz)
 0.1.2    2012/03/24    `11508530f39500cb6863829678eeda3bff2527bc` [Download](zathura-0.1.2.tar.gz)
@@ -26,6 +27,15 @@ Version  Release Date  SHA-1 Checksum                             Download
 
 ## Changelog
 Here you can view the changes between the different versions:
+
+### 0.2.2 (2013/01/20)
+* Implemented jumplist (^o, ^i)
+* Update current page when following links
+* Scroll horizontally with shift and mouse wheel
+* Page aware scrolling
+* Synctex forward synchronisation
+* Update shortcuts
+* Some other bug fixes and updated translations
 
 ### 0.2.1 (2012/08/30)
 * Syntex backwards synchronisation
