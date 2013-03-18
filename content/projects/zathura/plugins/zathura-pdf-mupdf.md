@@ -5,9 +5,10 @@ description: PDF support
 
 The *zathura-pdf-mupdf* plugin adds PDF support to zathura by using the
 [mupdf](http://mupdf.com/) rendering library. *mupdf* has to be built with
-*-fPIC* before it can be linked successfully to our plugin. You have to use at
-least version 0.2.3. If you are using the git version of *mupdf*, make sure
-you checkout the *mupdf-git* branch in our plugin repository.
+*-fPIC* before it can be linked successfully to our plugin. For the latest
+version you have to use at least mupdf >= 1.2. If you are using the git version
+of *mupdf*, make sure you checkout the *mupdf-git* branch in our plugin
+repository.
 
 ## Dependencies
 * [mupdf](http://mupdf.com/)
