@@ -13,6 +13,7 @@ The *zathura-ps* plugin adds PostScript support to zathura by using the
 
 Version  Release Date  SHA-1 Checksum                             Download
 -------- ------------  ------------------------------------------ -----------------------------------------------
+0.2.1    2013/01/20    `7a48e3af108b2ebd2687f3d13809aadb794f44a6` [Download](../download/zathura-ps-0.2.1.tar.gz)
 0.2.0    2012/06/09    `75fa2580a3f61aeadf424b73e524f9346907f24f` [Download](../download/zathura-ps-0.2.0.tar.gz)
 0.1.0    2012/03/09    `c6b6a2c3fbd9a37081461a361c859af0910f5bc3` [Download](../download/zathura-ps-0.1.0.tar.gz)
 
