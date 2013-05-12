@@ -5,6 +5,7 @@ description: Get zathura
 
 Version  Release Date  SHA-1 Checksum                             Download
 -------- ------------  ------------------------------------------ ----------------------------------
+0.2.3    2013/05/12    `cc3cb49f3bc9e7f787773ac7c3db18ca2ff6dce3` [Download](zathura-0.2.3.tar.gz)
 0.2.2    2013/01/20    `0aa88b31cf574cb70a1936c317a567a94f680896` [Download](zathura-0.2.2.tar.gz)
 0.2.1    2012/08/30    `6d508f8c0e8a4d8e21b7bae815a83abae402e828` [Download](zathura-0.2.1.tar.gz)
 0.2.0    2012/06/09    `41310cd103a99d54145b21bf11afa0fdfa740d81` [Download](zathura-0.2.0.tar.gz)
@@ -27,6 +28,18 @@ Version  Release Date  SHA-1 Checksum                             Download
 
 ## Changelog
 Here you can view the changes between the different versions:
+
+### 0.2.3 (2013/05/17)
+* LRU caching algorithm
+* Bisect functionality
+* Allow negative offsets
+* Option --page to open at the specified page
+* Scale vertical/horizontal scrolling in respect to the buffer
+* Add statusbar-basename option
+* Implement colors for 'Loading...'-text
+* Don't render same page multiple times
+* Use libmagic if available
+* Some other bug fixes and updated translations
 
 ### 0.2.2 (2013/01/20)
 * Implemented jumplist (^o, ^i)

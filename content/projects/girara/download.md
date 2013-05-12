@@ -5,6 +5,7 @@ description: Get girara
 
 Version  Release Date  SHA-1 Checksum                             Download
 -------- ------------  ------------------------------------------ ----------------------------------
+0.1.6    2013/05/12    `cd514b26cec2fea14d6e7ff8467609645a415fda` [Download](girara-0.1.6.tar.gz)
 0.1.5    2013/01/20    `8fd5ce35536835b66197e83f0d5e1ba04c144065` [Download](girara-0.1.5.tar.gz)
 0.1.4    2012/08/30    `525f14dc7e4f6aab2be15aaae5b7803950737d5e` [Download](girara-0.1.4.tar.gz)
 0.1.3    2012/06/09    `813da803052c6255f1779dd74998b44a759862aa` [Download](girara-0.1.3.tar.gz)
@@ -14,6 +15,14 @@ Version  Release Date  SHA-1 Checksum                             Download
 
 ## Changelog
 Here you can view the changes between the different versions:
+
+### 0.1.6 (2013/05/12)
+* Additional functions for girara_lists
+* Allow " documents
+* Update default focus
+* Command history
+* GiraraInputHistoryIO interface
+* Updated translations
 
 ### 0.1.5 (2013/01/20)
 * Use locale independent strtod
