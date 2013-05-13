@@ -13,7 +13,7 @@ The *zathura-djvu* plugin adds DjVu support to zathura by using the
 
 Version  Release Date  SHA-1 Checksum                             Download
 -------- ------------  ------------------------------------------ -------------------------------------------------
-0.2.3    2013/05/17    `6a69c495a3afd94c407d5127d5a133d15d2b40b6` [Download](../download/zathura-djvu-0.2.3.tar.gz)
+0.2.3    2013/05/12    `6a69c495a3afd94c407d5127d5a133d15d2b40b6` [Download](../download/zathura-djvu-0.2.3.tar.gz)
 0.2.2    2013/01/20    `825489e94cd8f882c38cc4820f9d76d4a1825c73` [Download](../download/zathura-djvu-0.2.2.tar.gz)
 0.2.1    2012/08/30    `a690bd9b0e7c60107b29b70f808d1246277853de` [Download](../download/zathura-djvu-0.2.1.tar.gz)
 0.2.0    2012/06/09    `03f257c29fb03f7609300e227ce7d95dba0fa4af` [Download](../download/zathura-djvu-0.2.0.tar.gz)
