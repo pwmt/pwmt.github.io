@@ -21,7 +21,20 @@ Version  Release Date  SHA-1 Checksum                             Download
 0.1.0    2012/02/21    `3631b4f608f2fc5a856953326e1f48f61f51c173` [Download](../download/zathura-pdf-poppler-0.1.0.tar.gz)
 
 ## Installation
-There are no packages currently available.
+It is recommended to install it from your prefered package manager. Otherwise
+you can grab the latest version of the source code from our website and build it
+by hand:
+
+    $ tar xfv zathura-pdf-poppler-<version>.tar.gz
+    $ cd zathura-pdf-poppler-<version>
+    $ make
+    $ make install
+
+## Known supported distributions
+* [Arch Linux](https://www.archlinux.org/packages/community/x86_64/zathura-pdf-poppler/)
+* [Debian](http://packages.debian.org/en/sid/zathura)
+* [Gentoo](http://packages.gentoo.org/package/app-text/zathura-pdf-poppler)
+* [Ubuntu](https://launchpad.net/ubuntu/saucy/+package/zathura)
 
 ## Installation (Developer version)
 For the installation of the *zathura-pdf-poppler* plugin follow the

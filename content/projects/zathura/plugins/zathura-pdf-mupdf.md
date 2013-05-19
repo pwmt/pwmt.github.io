@@ -25,7 +25,17 @@ Version  Release Date  SHA-1 Checksum                             Download
 0.1.0    2012/03/09    `9d13a298a73eba12c73ca6de608a3f32fd3d98d8` [Download](../download/zathura-pdf-mupdf-0.1.0.tar.gz)
 
 ## Installation
-There are no packages currently available.
+It is recommended to install it from your prefered package manager. Otherwise
+you can grab the latest version of the source code from our website and build it
+by hand:
+
+    $ tar xfv zathura-pdf-mupdf-<version>.tar.gz
+    $ cd zathura-pdf-mupdf-<version>
+    $ make
+    $ make install
+
+## Known supported distributions
+* [Arch Linux](https://www.archlinux.org/packages/community/x86_64/zathura-pdf-mupdf/)
 
 ## Installation (Developer version)
 For the installation of the *zathura-pdf-mupdf* plugin follow the

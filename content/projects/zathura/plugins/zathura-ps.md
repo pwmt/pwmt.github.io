@@ -19,7 +19,20 @@ Version  Release Date  SHA-1 Checksum                             Download
 0.1.0    2012/03/09    `c6b6a2c3fbd9a37081461a361c859af0910f5bc3` [Download](../download/zathura-ps-0.1.0.tar.gz)
 
 ## Installation
-There are no packages currently available.
+It is recommended to install it from your prefered package manager. Otherwise
+you can grab the latest version of the source code from our website and build it
+by hand:
+
+    $ tar xfv zathura-ps-<version>.tar.gz
+    $ cd zathura-ps-<version>
+    $ make
+    $ make install
+
+## Known supported distributions
+* [Arch Linux](https://www.archlinux.org/packages/community/x86_64/zathura-ps/)
+* [Debian](http://packages.debian.org/en/sid/zathura-ps)
+* [Gentoo](http://packages.gentoo.org/package/app-text/zathura-ps)
+* [Ubuntu](https://launchpad.net/ubuntu/saucy/+package/zathura-ps)
 
 ## Installation (Developer version)
 For the installation of the *zathura-ps* plugin follow the

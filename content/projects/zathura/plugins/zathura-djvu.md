@@ -21,7 +21,20 @@ Version  Release Date  SHA-1 Checksum                             Download
 0.1.0    2012/03/09    `a808cddd4fffead3d9c6958de4a1258fbbe40f7e` [Download](../download/zathura-djvu-0.1.0.tar.gz)
 
 ## Installation
-There are no packages currently available.
+It is recommended to install it from your prefered package manager. Otherwise
+you can grab the latest version of the source code from our website and build it
+by hand:
+
+    $ tar xfv zathura-djvu-<version>.tar.gz
+    $ cd zathura-djvu-<version>
+    $ make
+    $ make install
+
+## Known supported distributions
+* [Arch Linux](https://www.archlinux.org/packages/community/x86_64/zathura-djvu/)
+* [Debian](http://packages.debian.org/en/sid/zathura-djvu)
+* [Gentoo](http://packages.gentoo.org/package/app-text/zathura-djvu)
+* [Ubuntu](https://launchpad.net/ubuntu/saucy/+package/zathura-djvu)
 
 ## Installation (Developer version)
 For the installation of the *zathura-djvu* plugin follow the
