@@ -11,7 +11,7 @@ Depending on which filetypes should be supported you are going to need
 additional libraries to build those file type plugins.
 
 ### Core dependencies
-* [girara](/projects/girara/), our simplistic user interface library (>= 0.1.4)
+* [girara](/projects/girara/), our simplistic user interface library (>= 0.1.6)
 * [GTK+](http://www.gtk.org/), a cross-platform widget toolkit (>= 2.28)
 
 ### Optional and build dependencies
