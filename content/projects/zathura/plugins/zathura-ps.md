@@ -31,6 +31,7 @@ by hand:
 ## Known supported distributions
 * [Arch Linux](https://www.archlinux.org/packages/community/x86_64/zathura-ps/)
 * [Debian](http://packages.debian.org/en/sid/zathura-ps)
+* [Fedora](https://admin.fedoraproject.org/pkgdb/acls/name/zathura-ps)
 * [Gentoo](http://packages.gentoo.org/package/app-text/zathura-ps)
 * [Ubuntu](https://launchpad.net/ubuntu/saucy/+package/zathura-ps)
 

@@ -33,6 +33,7 @@ by hand:
 ## Known supported distributions
 * [Arch Linux](https://www.archlinux.org/packages/community/x86_64/zathura-djvu/)
 * [Debian](http://packages.debian.org/en/sid/zathura-djvu)
+* [Fedora](https://admin.fedoraproject.org/pkgdb/acls/name/zathura-djvu)
 * [Gentoo](http://packages.gentoo.org/package/app-text/zathura-djvu)
 * [Ubuntu](https://launchpad.net/ubuntu/saucy/+package/zathura-djvu)
 

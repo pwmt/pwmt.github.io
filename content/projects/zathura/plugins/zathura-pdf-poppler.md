@@ -33,6 +33,7 @@ by hand:
 ## Known supported distributions
 * [Arch Linux](https://www.archlinux.org/packages/community/x86_64/zathura-pdf-poppler/)
 * [Debian](http://packages.debian.org/en/sid/zathura)
+* [Fedora](https://admin.fedoraproject.org/pkgdb/acls/name/zathura-pdf-poppler)
 * [Gentoo](http://packages.gentoo.org/package/app-text/zathura-pdf-poppler)
 * [Ubuntu](https://launchpad.net/ubuntu/saucy/+package/zathura)
 
