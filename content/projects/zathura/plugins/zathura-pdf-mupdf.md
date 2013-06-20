@@ -36,6 +36,7 @@ by hand:
 
 ## Known supported distributions
 * [Arch Linux](https://www.archlinux.org/packages/community/x86_64/zathura-pdf-mupdf/)
+* [Gentoo](http://packages.gentoo.org/package/app-text/zathura-pdf-mupdf)
 
 ## Installation (Developer version)
 For the installation of the *zathura-pdf-mupdf* plugin follow the
