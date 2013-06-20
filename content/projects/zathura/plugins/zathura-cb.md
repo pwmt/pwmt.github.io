@@ -28,7 +28,7 @@ by hand:
 
 ## Known supported distributions
 * [Arch Linux](https://aur.archlinux.org/packages/zathura-cb/)
-* [Debian](http://packages.debian.org/en/experimental/zathura-cb)
+* [Debian](http://packages.debian.org/en/sid/zathura-cb)
 * [Gentoo](http://packages.gentoo.org/package/app-text/zathura-cb)
 
 ## Installation (Developer version)
