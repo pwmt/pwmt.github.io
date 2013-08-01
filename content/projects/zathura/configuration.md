@@ -7,7 +7,7 @@ The customization of zathura is be managed via a configuration file called
 *zathurarc*. By default zathura will evaluate the following files:
 
 * */etc/zathurarc*
-* *$XDG_CONFIG_HOME/zathura/zathurarc*
+* *$XDG_CONFIG_HOME/zathura/zathurarc* (default: ~/.config/zathura/zathurarc)
 
 The *zathurarc* file is a simple plain text file that can be populated with
 various commands to change the behaviour and the look of zathura which we are
@@ -60,6 +60,7 @@ argument which can take one of the following values:
 * normal (default)
 * visual
 * insert
+* fullscreen
 * index
 
 The brackets around the value are mandatory.
