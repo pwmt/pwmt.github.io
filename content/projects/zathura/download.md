@@ -5,6 +5,7 @@ description: Get zathura
 
 Version  Release Date  SHA-1 Checksum                             Download
 -------- ------------  ------------------------------------------ ----------------------------------
+0.2.4    2013/08/15    `9a11aa7adab7ecdb311bdb477edaf06793552c61` [Download](zathura-0.2.4.tar.gz)
 0.2.3    2013/05/12    `cc3cb49f3bc9e7f787773ac7c3db18ca2ff6dce3` [Download](zathura-0.2.3.tar.gz)
 0.2.2    2013/01/20    `0aa88b31cf574cb70a1936c317a567a94f680896` [Download](zathura-0.2.2.tar.gz)
 0.2.1    2012/08/30    `6d508f8c0e8a4d8e21b7bae815a83abae402e828` [Download](zathura-0.2.1.tar.gz)
@@ -28,6 +29,19 @@ Version  Release Date  SHA-1 Checksum                             Download
 
 ## Changelog
 Here you can view the changes between the different versions:
+
+### 0.2.4 (2015/08/15)
+* Resolve memory leak
+* Report missing plugin or unsupported file types
+* More vim-like search behaviour
+* Introduced show-{h,v}-scrollbar settings
+* Enhancement of the jumplist mechanism
+* Use jumplists with marks
+* More vim-like jump behaviour
+* Improved bisect
+* Update page number on mouse scroll
+* Introduced window-title-page option
+* Updated translations
 
 ### 0.2.3 (2013/05/17)
 * LRU caching algorithm
