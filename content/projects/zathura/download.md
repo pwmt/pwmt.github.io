@@ -5,6 +5,7 @@ description: Get zathura
 
 Version  Release Date  SHA-1 Checksum                             Download
 -------- ------------  ------------------------------------------ ----------------------------------
+0.2.5    2013/11/08    `ce795ca03140778f442d796a9e807f283a69253a` [Download](zathura-0.2.5.tar.gz)
 0.2.4    2013/08/15    `9a11aa7adab7ecdb311bdb477edaf06793552c61` [Download](zathura-0.2.4.tar.gz)
 0.2.3    2013/05/12    `cc3cb49f3bc9e7f787773ac7c3db18ca2ff6dce3` [Download](zathura-0.2.3.tar.gz)
 0.2.2    2013/01/20    `0aa88b31cf574cb70a1936c317a567a94f680896` [Download](zathura-0.2.2.tar.gz)
@@ -30,7 +31,17 @@ Version  Release Date  SHA-1 Checksum                             Download
 ## Changelog
 Here you can view the changes between the different versions:
 
-### 0.2.4 (2015/08/15)
+### 0.2.5 (2013/11/08)
+* Use GTK+3 by default
+* Rewritten render logic
+* Fixed page refresh in certain situations
+* Make the X clipboard buffer
+* Allow number in quickmarks
+* Workaround for print quality issues
+* Update documentation
+* Updated translations
+
+### 0.2.4 (2013/08/15)
 * Resolve memory leak
 * Report missing plugin or unsupported file types
 * More vim-like search behaviour
