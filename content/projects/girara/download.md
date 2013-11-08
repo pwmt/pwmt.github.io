@@ -5,7 +5,7 @@ description: Get girara
 
 Version  Release Date  SHA-1 Checksum                             Download
 -------- ------------  ------------------------------------------ ----------------------------------
-0.1.8    2013/11/08    `0b34f8ee0e3e598812707556ceb815fbe5aa8ba8` [Download](girara-0.1.7.tar.gz)
+0.1.8    2013/11/08    `0b34f8ee0e3e598812707556ceb815fbe5aa8ba8` [Download](girara-0.1.8.tar.gz)
 0.1.7    2013/08/15    `c154e474f22c2d6b6c5f2287d8e347a3091d5378` [Download](girara-0.1.7.tar.gz)
 0.1.6    2013/05/12    `cd514b26cec2fea14d6e7ff8467609645a415fda` [Download](girara-0.1.6.tar.gz)
 0.1.5    2013/01/20    `8fd5ce35536835b66197e83f0d5e1ba04c144065` [Download](girara-0.1.5.tar.gz)
