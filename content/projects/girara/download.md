@@ -5,6 +5,7 @@ description: Get girara
 
 Version  Release Date  SHA-1 Checksum                             Download
 -------- ------------  ------------------------------------------ ----------------------------------
+0.1.9    2013/11/18    `6280b7554c4744ea8cc6deedb5f4bc9aa2155f1a` [Download](girara-0.1.9.tar.gz)
 0.1.8    2013/11/08    `0b34f8ee0e3e598812707556ceb815fbe5aa8ba8` [Download](girara-0.1.8.tar.gz)
 0.1.7    2013/08/15    `c154e474f22c2d6b6c5f2287d8e347a3091d5378` [Download](girara-0.1.7.tar.gz)
 0.1.6    2013/05/12    `cd514b26cec2fea14d6e7ff8467609645a415fda` [Download](girara-0.1.6.tar.gz)
@@ -17,6 +18,10 @@ Version  Release Date  SHA-1 Checksum                             Download
 
 ## Changelog
 Here you can view the changes between the different versions:
+
+### 0.1.9 (2013/11/18)
+* Fix scroll events in GTK+3
+* Ellipsize items on the left side of the statusbar
 
 ### 0.1.8 (2013/11/08)
 * Use GTK+3 by default
