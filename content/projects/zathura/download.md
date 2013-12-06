@@ -5,6 +5,7 @@ description: Get zathura
 
 Version  Release Date  SHA-1 Checksum                             Download
 -------- ------------  ------------------------------------------ ----------------------------------
+0.2.6    2013/11/24    `d84878388969d523027a1661f49fd29638bd460b` [Download](zathura-0.2.6.tar.gz)
 0.2.5    2013/11/08    `ce795ca03140778f442d796a9e807f283a69253a` [Download](zathura-0.2.5.tar.gz)
 0.2.4    2013/08/15    `9a11aa7adab7ecdb311bdb477edaf06793552c61` [Download](zathura-0.2.4.tar.gz)
 0.2.3    2013/05/12    `cc3cb49f3bc9e7f787773ac7c3db18ca2ff6dce3` [Download](zathura-0.2.3.tar.gz)
@@ -30,6 +31,10 @@ Version  Release Date  SHA-1 Checksum                             Download
 
 ## Changelog
 Here you can view the changes between the different versions:
+
+### 0.2.6 (2013/11/24)
+* Update documentation
+* Resolve layout problems
 
 ### 0.2.5 (2013/11/08)
 * Use GTK+3 by default

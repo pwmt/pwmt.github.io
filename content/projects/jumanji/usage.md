@@ -42,3 +42,12 @@ It is possible to use flash with the gtk3 version by installing
     $ nspluginwrapper -i /usr/lib32/mozilla/plugins/libflashplayer.so
 
 flash support should be available.
+
+## Hide scrollbars in GTK+-3.0
+Since the 'show-scrollbars' option will not have any effect with GTK+-3.0 you
+can add the following to your `~/.config/gtk-3.0/gtk.css` file:
+
+    #jumanji GtkScrollbar {
+      -GtkRange-slider-width: 0;
+      -GtkRange-trough-border: 0;
+    }
