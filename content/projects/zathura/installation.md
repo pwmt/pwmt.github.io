@@ -21,7 +21,7 @@ additional libraries to build those file type plugins.
 
 ## Stable version
 Since zathura packages are available in many distributions it is recommended to
-install it from their with your prefered package manager. Otherwise you can grab
+install it from there with your prefered package manager. Otherwise you can grab
 the latest version of the source code from our website and build it by hand:
 
     $ tar xfv zathura-<version>.tar.gz

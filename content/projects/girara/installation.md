@@ -11,7 +11,7 @@ toolkit. It can be build for gtk2 as well as for gtk3.
 
 ## Stable version
 Since girara packages are available in many distributions it is recommended to
-install it from their with your prefered package manager. Otherwise you can grab
+install it from there with your prefered package manager. Otherwise you can grab
 the latest version of the source code from our website and build it by hand:
 
     $ tar xfv girara-<version>.tar.gz
