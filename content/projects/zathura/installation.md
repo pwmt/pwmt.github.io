@@ -11,13 +11,15 @@ Depending on which filetypes should be supported you are going to need
 additional libraries to build those file type plugins.
 
 ### Core dependencies
-* [girara](/projects/girara/), our simplistic user interface library (>= 0.1.6)
+* [girara](/projects/girara/), our simplistic user interface library (>= 0.1.8)
 * [GTK+](http://www.gtk.org/), a cross-platform widget toolkit (>= 2.28)
 
 ### Optional and build dependencies
 * [sqlite3](https://www.sqlite.org/), a SQL database engine
 * [intltool](https://launchpad.net/intltool), utility scripts for internationalization
 * [check](http://check.sourceforge.net/), a unit testing framework for C
+* libmagic from [file](http://www.darwinsys.com/file/), a file type guesser
+* [docutils](http://docutils.sourceforge.net), documentation utilities
 
 ## Stable version
 Since zathura packages are available in many distributions it is recommended to

@@ -7,7 +7,12 @@ description: How to install girara on your system
 libgirara depends on [GTK+](http://www.gtk.org/), a cross-platform widget
 toolkit. It can be build for gtk2 as well as for gtk3.
 
+### Core dependencies
 * [GTK+](http://www.gtk.org/), a cross-platform widget toolkit
+
+### Optional and build dependencies
+* [intltool](https://launchpad.net/intltool), utility scripts for internationalization
+* [check](http://check.sourceforge.net/), a unit testing framework for C
 
 ## Stable version
 Since girara packages are available in many distributions it is recommended to
