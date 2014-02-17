@@ -17,6 +17,7 @@ repository.
 
 Version  Release Date  SHA-1 Checksum                             Download
 -------- ------------  ------------------------------------------ ------------------------------------------------------
+0.2.6    2014/02/17    `da25c48da6e119dfc454807486c6fbd3dec0aaf3` [Download](../download/zathura-pdf-mupdf-0.2.6.tar.gz)
 0.2.5    2013/10/25    `168a3143ff10d07dc34080661da26b285a1f7d44` [Download](../download/zathura-pdf-mupdf-0.2.5.tar.gz)
 0.2.4    2013/05/12    `1d7cb4fd3c07bb009d7d0b08b4bc12065c394ca6` [Download](../download/zathura-pdf-mupdf-0.2.4.tar.gz)
 0.2.3    2013/03/18    `8bc711c68fbf53800b2897f5500e00a58b9663f3` [Download](../download/zathura-pdf-mupdf-0.2.3.tar.gz)
