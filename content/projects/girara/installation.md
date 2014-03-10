@@ -20,7 +20,7 @@ install it from there with your prefered package manager. Otherwise you can grab
 the latest version of the source code from our website and build it by hand:
 
     $ tar xfv girara-<version>.tar.gz
-    $ cd zathura-<version>
+    $ cd girara-<version>
     $ make
     $ make install
 
@@ -37,8 +37,3 @@ the source from our git repository and build it by hand:
     $ git clone git://pwmt.org/girara.git
     $ make
     $ make install
-
-libgirara is build for gtk2 by default. If you want to build it for gtk3 just
-pass the GIRARA_GTK_VERSION argument to make:
-
-    $ make GIRARA_GTK_VERSION=3 install
