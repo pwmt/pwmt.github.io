@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+{% import "utils.html" as utils %}
+
+{% block content %}
+<div class="project project-{{ project.name }}">
+  <div class="page-title">
+    <div class="container">
+      <h1>{{ project.name }} <small>{{ project.description }}</small></h1>
+    </div>
+  </div>
+
+  {% include "project-submenu.html" %}
+
+  <div class="container page-content">
+    <div class="row">
+      <div class="col-sm-12">
+        {{ page.html|markdown }}
+      </div>
+    </div>
+  </div>
+
+  {% if is_index %}
+    {% if project.versions|length > 0 %}
+    <div class="latest-version">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>Download</h1>
+            <p>The latest version of {{ project.name }} is
+            {{ project.versions[0].name }}.</p>
+
+            <a href="{{ url_for("project_download",
+              project_name=project.name, path=project.versions[0].filename) }}">
+              <img src="{{ url_for('static', filename='img/icon-download-128.png')
+              }}" />
+            </a>
+
+            <p>If you are searching for older verions of {{ project.name }}
+            follow <a href="download">this link</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  <div class="source-code">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Source code</h1>
+          <p>If you are interested in the source code you can either <a
+            href="http://git.pwmt.org">browse</a> it online or clone the
+          repository:</p>
+
+          <span class="url">git clone git://pwmt.org/{{ project.name }}.git</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</div>
+{% endblock content %}
+{% block extrajs %}
+  <script src="{{ url_for('static', filename='js/jquery.flexverticalcenter.js') }}"></script>
+  <script type="text/javascript">
+  jQuery(function($) {
+    $('.features .row .col-xs-4').flexVerticalCenter();
+    $('.features .row .col-xs-8').flexVerticalCenter();
+
+    $('.features .row').waypoint(function() {
+      $(this).addClass("animated fadeInDown");
+      }, {
+        offset: '80%',
+        triggerOnce: true
+      });
+  });
+  </script>
+{% endblock extrajs %}

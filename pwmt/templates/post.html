@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+  <h1>{{ post.title|safe }} <small>{{ post.date }}</small></h1>
+  {% for category in post.categories %}
+    {% if loop.first %}
+    <p class="categories">
+    posted in: 
+    {% endif %}
+    <a href="{{ url_for("category", category=category) }}">{{ category }} </a>
+    {% if not loop.last %}
+    ,
+    {% else %}
+    </p>
+    {% endif %}
+  {% endfor %}
+  {% for tag in post.tags %}
+    {% if loop.first %}
+    <p class="tags">
+    tagged with: 
+    {% endif %}
+    <a href="{{ url_for("tags", tag=tag) }}">{{ tag }} </a>
+    {% if not loop.last %}
+    ,
+    {% else %}
+    </p>
+    {% endif %}
+  {% endfor %}
+  {{ post.body|safe }}
+</div>
+{% endblock content %}

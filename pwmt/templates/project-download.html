@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% import "utils.html" as utils %}
+
+{% block content %}
+<div class="project project-{{ project.name }}">
+  <div class="page-title">
+    <div class="container">
+      <h1>{{ project.name }} <small>{{ project.description }}</h1>
+    </div>
+  </div>
+
+  {% include "project-submenu.html" %}
+
+  <div class="container page-content">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Downloads</h1>
+        {{ utils.render_project_version_table(project) }}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

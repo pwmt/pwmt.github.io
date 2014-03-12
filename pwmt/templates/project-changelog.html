@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="project project-{{ project.name }}">
+  <div class="page-title">
+    <div class="container">
+      <h1>{{ project.name }} <small>{{ project.description }}</h1>
+    </div>
+  </div>
+
+  {% include "project-submenu.html" %}
+
+  <div class="container page-content">
+    <div class="row">
+      <div class="col-sm-12">
+        {% if version %}
+          {% if version.changelog|length > 0 %}
+            <h1>Version {{ version.name }}</h1>
+            <ul>
+            {% for change in version.changelog %}
+              <li>{{ change }}</li>  
+            {% endfor %}
+            </ul>
+          {% else %}
+          <h1>Version {{ version.name }}</h1>
+          <p>No changes have been made in this version.</p>
+          {% endif %}
+        {% else %}
+          {% for version in project.versions %}
+            {% if version.changelog|length > 0 %}
+              <h2>{{ version.name }}</h2>
+              <ul>
+              {% for change in version.changelog %}
+                <li>{{ change }}</li>  
+              {% endfor %}
+              </ul>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="xxx">
+    <div class="row">
+      <div class="col-xs-12">
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

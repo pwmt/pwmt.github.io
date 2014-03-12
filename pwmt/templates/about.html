@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block content %}
+{{ page.html|markdown }}
+<div class="about-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Who we are</h1>
+        <p>pwmt.org – programs with movie titles – is a community developing
+        functional open source applications and libraries that mainly focus on
+        simplistic and space saving user interfaces and key board
+        interaction.</p>
+      </div>
+    </div>
+
+    <div class="row item-list">
+      <div class="col-sm-4 item">
+        <img class="img-responsive" src="{{ url_for('static', filename='img/icon-deer.png') }}" />
+        <h1>Open Source</h1>
+        <p>All of our projects are free and open source software and we are
+        going to keep it that way!</p>
+      </div>
+      <div class="col-sm-4 item">
+        <img class="img-responsive" src="{{ url_for('static', filename='img/icon-book.png') }}" />
+        <h1>Clean Code</h1>
+        <p>We try to keep our code as documented and tested as possible, so that
+        easily everyone can understand and extend it. 
+        </p>
+      </div>
+      <div class="col-sm-4 item">
+        <img class="img-responsive" src="{{ url_for('static',
+        filename='img/icon-users.png') }}" />
+        <h1>Community</h1>
+        <p>We are people too. So if you have any questions or ideas don't be
+        afraid to get in touch!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="our-team">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Our Team</h1>
+      </div>
+    </div>
+    <div class="row item-list">
+      <div class="col-sm-6 item">
+        <img class="img-responsive" src="{{ url_for('static',
+        filename='img/icon-user-01.png') }}" />
+        <h1>Moritz Lipp <small>mlq</small></h1>
+        <ul class="icons">
+          <li><a href="https://mlq.me"><i class="fa 
+              fa-globe"></i></a></li>
+          <li><a href="mailto:mlq@pwmt.org"><i class="fa 
+              fa-user"></i></a></li>
+          <li><a href="https://github.com/mlq"><i class="fa 
+              fa-github"></i></a></li>
+        </ul>
+        <p>Moritz studies computer science at Graz University of Technology and
+        is the founder of pwmt. He loves photography, spending time in the
+        kitchen to cook and bake and to build things.</p>
+      </div>
+      <div class="col-sm-6 item">
+        <img class="img-responsive" src="{{ url_for('static',
+        filename='img/icon-user-02.png') }}" />
+        <h1>Sebastian Ramacher <small>sebastinas</small></h1>
+        <ul class="icons">
+          <li><a href="https://ramacher.at"><i class="fa 
+              fa-globe"></i></a></li>
+          <li><a href="mailto:sebastinas@pwmt.org"><i class="fa 
+              fa-user"></i></a></li>
+          <li><a href="https://github.com/sebastinas"><i class="fa 
+              fa-github"></i></a></li>
+        </ul>
+        <p>Sebastian studies mathematics at the University of Graz and computer
+        science at the Graz University of Technology. Besides developing quality
+        code for pwmt he is a debian developer and a coffee enthusiast.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
+{% block extrajs %}
+<script type="text/javascript">
+jQuery(function($) {
+  $('.item img').waypoint(function() {
+    $(this).addClass("animated pulse");
+    }, {
+      offset: '80%',
+      triggerOnce: true
+    });
+});
+</script>
+{% endblock extrajs %}

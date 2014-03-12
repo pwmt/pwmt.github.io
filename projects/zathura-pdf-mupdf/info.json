@@ -1,0 +1,73 @@
+{
+  "name": "zathura-pdf-mupdf",
+  "description": "PDF support for zathura (mupdf backend)",
+  "options": {
+    "show_index": false,
+    "plugin": true
+  },
+  "versions" : [
+      { 
+        "name": "0.2.6",
+        "date": "2014/02/17",
+        "changelog": [
+          "Fix link order"
+        ]
+      },
+      { 
+        "name": "0.2.5",
+        "date": "2013/10/25",
+        "changelog": [
+          "Make compatible with mupdf 1.3",
+          "Fix selection function",
+          "Fix search function",
+          "Support unicode for selections"
+        ]
+      },
+      { 
+        "name": "0.2.4",
+        "date": "2013/05/12",
+        "changelog": [
+          "Free context",
+          "Fix segmentation faults while writing",
+          "Add desktop file for MimeType registration"
+        ]
+      },
+      { 
+        "name": "0.2.3",
+        "date": "2013/03/18",
+        "changelog": [
+          "Changes to match latest mupdf version",
+          "Handle FZ_LINK_NONE"
+        ]
+      },
+      { 
+        "name": "0.2.2",
+        "date": "2013/01/20",
+        "changelog": [
+          "Catch fz_write_document exception"
+        ]
+      },
+      { 
+        "name": "0.2.1",
+        "date": "2012/08/30",
+        "changelog": [
+          "Implement document_save_as",
+          "Compatible with mupdf 1.1"
+        ]
+      },
+      { 
+        "name": "0.2.0",
+        "date": "2012/06/09",
+        "changelog": [
+          "Copy correct colors",
+          "Support new link types"
+        ]
+      },
+      { 
+        "name": "0.1.0",
+        "date": "2012/03/09",
+        "changelog": [
+        ]
+      }
+    ]
+}

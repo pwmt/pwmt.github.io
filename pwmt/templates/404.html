@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="error-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>404 Error</h1>
+        <img class="img-responsive" src="{{ url_for('static', filename='img/icon-man.png') }}" />
+        <p>I am sorry, but the page you were looking for does not exist.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
+{% block extrajs %}
+<script type="text/javascript">
+jQuery(function($) {
+  $('.item img').waypoint(function() {
+    $(this).addClass("animated pulse");
+    }, {
+      offset: '80%',
+      triggerOnce: true
+    });
+});
+</script>
+{% endblock extrajs %}

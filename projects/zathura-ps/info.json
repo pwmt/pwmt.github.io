@@ -1,0 +1,38 @@
+{
+  "name": "zathura-ps",
+  "description": "PostScript support for zathura",
+  "options": {
+    "show_index": false,
+    "plugin": true
+  },
+  "versions" : [
+      { 
+        "name": "0.2.2",
+        "date": "2013/05/12",
+        "changelog": [
+          "Add desktop file with MimeType registration"
+        ]
+      },
+      { 
+        "name": "0.2.1",
+        "date": "2013/01/20",
+        "changelog": [
+          "Use the same GTK+ version as zathura",
+          "Fix crash in ps_page_render_cairo"
+        ]
+      },
+      { 
+        "name": "0.2.0",
+        "date": "2012/06/09",
+        "changelog": [
+          "Necessary changes for zathura 0.2.0"
+        ]
+      },
+      { 
+        "name": "0.1.0",
+        "date": "2012/03/09",
+        "changelog": [
+        ]
+      }
+    ]
+}

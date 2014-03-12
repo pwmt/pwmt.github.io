@@ -1,0 +1,26 @@
+{% macro render_project_version_table(project) %}
+<table class="table project-download-table">
+  <thead>
+    <tr>
+      <th>Version</th>
+      <th>Release Date</th>
+      <th>SHA-1</th>
+      <th>Download</th>
+      <th>Changelog</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for version in project.versions %}
+    <tr>
+      <td>{{ version.name }}</td>
+      <td>{{ version.date }}</td>
+      <td><code>{{ version.sha1 }}</code></td>
+      <td><a href="{{ url_for("project_download",
+          project_name=project.name,path=version.filename) }}">Download</a></td>
+      <td><a href="{{ url_for("project_changelog",
+          project_name=project.name,version_number=version.name) }}">Changelog</a></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endmacro %}

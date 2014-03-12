@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="news-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>News <small>Latest news and updates</small></h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="posts">
+  <div class="container page-content">
+    <div class="row">
+      <div class="col-sm-8">
+        {% for post in posts %}
+          <div class="panel panel-default post
+            {% for category in post.categories %}
+              post-{{ category }}
+            {% endfor %}">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a href="{{ url_for("post", slug=post.slug) }}">{{ post.title }}</a> <br /><small>{{ post.date }}</small>
+              </h2>
+            </div>
+            <div class="panel-body">
+              {{ post.body|markdown }}
+            </div>
+          </div>
+        {% else %}
+          <p>No posts available.</p>
+        {% endfor %}
+
+        {{ pagination.links|safe }}
+      </div>
+      <div class="col-sm-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">
+              Categories
+            </h2>
+          </div>
+          <div class="panel-body">
+            <ul>
+            {% for category in categories %}
+            <li>
+              <a href="{{ url_for("category", category=category) }}">{{ category }}</a>
+            </li>
+            {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">
+              Tags
+            </h2>
+          </div>
+          <div class="panel-body">
+            <ul>
+            {% for tag in tags %}
+            <li>
+              <a href="{{ url_for("tags", tag=tag) }}">{{ tag }}</a>
+            </li>
+            {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">
+              Subscribe
+            </h2>
+          </div>
+          <div class="panel-body">
+            If you want you can subscribe to our
+            <p><a href="{{ url_for('recent_feed') }}">Atom feed</a> and get
+            all the updates instantly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

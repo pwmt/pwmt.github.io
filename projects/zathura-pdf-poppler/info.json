@@ -1,0 +1,72 @@
+{
+  "name": "zathura-pdf-poppler",
+  "description": "PDF support for zathura (poppler backend)",
+  "options": {
+    "show_index": false,
+    "plugin": true
+  },
+  "versions" : [
+      { 
+        "name": "0.2.5",
+        "date": "2014/02/17",
+        "changelog": [
+          "Fix memory leak in search function"
+        ]
+      },
+      { 
+        "name": "0.2.4",
+        "date": "2013/11/09",
+        "changelog": [
+          "Fix handling of time properties"
+        ]
+      },
+      { 
+        "name": "0.2.3",
+        "date": "2013/05/12",
+        "changelog": [
+          "Add desktop file with MimeType registration",
+          "Set correct type for time values in get_information",
+          "Honor poppler's change_{top,zoom,left} flags",
+          "Fix off-by-one error in size calculation"
+        ]
+      },
+      { 
+        "name": "0.2.2",
+        "date": "2013/01/20",
+        "changelog": [
+          "Replace GTK+ dependency with cairo"
+        ]
+      },
+      { 
+        "name": "0.2.1",
+        "date": "2012/08/30",
+        "changelog": [
+          "Fix NULL pointer access"
+        ]
+      },
+      { 
+        "name": "0.2.0",
+        "date": "2012/06/09",
+        "changelog": [
+          "Support new link types"
+        ]
+      },
+      { 
+        "name": "0.1.1",
+        "date": "2012/03/09",
+        "changelog": [
+          "Return error if document could not be saved",
+          "Use correct free function",
+          "Update Makefile",
+          "Use PLUGIN_REGISTER macro to register plugin",
+          "Check the minim required version of zathura"
+        ]
+      },
+      { 
+        "name": "0.1.0",
+        "date": "2012/02/21",
+        "changelog": [
+        ]
+      }
+    ]
+}

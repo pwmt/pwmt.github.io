@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Contact us</h1>
+        <p>If you have any suggestions, ideas, problems or just want to talk,
+        feel free to join us on our IRC channel, contact us by e-mail or discuss
+        it on one of our mailing lists.</p>
+      </div>
+    </div>
+
+    <div class="row item-list">
+      <div class="col-sm-4 item">
+        <img class="img-responsive" src="{{ url_for('static',
+        filename='img/icon-monitor-chat.png') }}" />
+        <h1>Mailing list</h1>
+        <p>We are overseeing several mailing lists for our projects, feel free
+        to <a href="https://lists.pwmt.org">subscribe</a> to them!</p>
+      </div>
+      <div class="col-sm-4 item">
+        <img class="img-responsive" src="{{ url_for('static',
+        filename='img/icon-chat.png') }}" />
+        <h1>IRC Channel</h1>
+        <p>Join us on our <a href="irc://irc.oftc.net/#pwmt">IRC channel</a> on
+        the <a href="http://oftc.net">Open and Free Technology</a> server and
+        and chat with us!</p>
+      </div>
+      <div class="col-sm-4 item">
+        <img class="img-responsive" src="{{ url_for('static',
+        filename='img/icon-mail-open.png') }}" />
+        <h1>E-Mail</h1>
+        <p>If you want to get in touch with us personally you can write us an <a
+          href="mailto://mail@pwmt.org">e-mail</a> or checkout our
+        <a href="/about">about</a> page.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
+{% block extrajs %}
+<script type="text/javascript">
+jQuery(function($) {
+  $('.item img').waypoint(function() {
+    $(this).addClass("animated pulse");
+    }, {
+      offset: '80%',
+      triggerOnce: true
+    });
+});
+</script>
+{% endblock extrajs %}

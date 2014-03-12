@@ -1,0 +1,7 @@
+pwmt-web
+========
+
+Dependencies:
+  * Flask
+  * Frozen-Flask
+  * Flask-MenuBuilder

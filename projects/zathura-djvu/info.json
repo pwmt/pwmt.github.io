@@ -1,0 +1,53 @@
+{
+  "name": "zathura-djvu",
+  "description": "DjVu support for zathura",
+  "options": {
+    "show_index": false,
+    "plugin": true
+  },
+  "versions" : [
+      { 
+        "name": "0.2.3",
+        "date": "2013/05/12",
+        "changelog": [
+          "Add desktop with MimeType registration"
+        ]
+      },
+      { 
+        "name": "0.2.2",
+        "date": "2013/01/20",
+        "changelog": [
+          "Check the cairo surface correctly"
+        ]
+      },
+      { 
+        "name": "0.2.1",
+        "date": "2012/08/30",
+        "changelog": [
+          "Fix inequality",
+          "Fixed bug regarding djvu index not following links",
+          "Fixed djvu index when referring page id"
+        ]
+      },
+      { 
+        "name": "0.2.0",
+        "date": "2012/06/09",
+        "changelog": [
+          "Extract the document index"
+        ]
+      },
+      { 
+        "name": "0.1.1",
+        "date": "2012/03/24",
+        "changelog": [
+          "Fix djvu_document_save_as"
+        ]
+      },
+      { 
+        "name": "0.1.0",
+        "date": "2012/03/19",
+        "changelog": [
+        ]
+      }
+    ]
+}

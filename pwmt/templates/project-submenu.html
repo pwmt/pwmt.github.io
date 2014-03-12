@@ -1,0 +1,13 @@
+<nav class="navbar navbar-submenu" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+        data-target="#submenu-collapse">
+        <i class="fa fa-lg fa-chevron-down"></i> Open submenu
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="submenu-collapse">
+    {{ project.getMenu().render()|safe }}
+  </div>
+</nav>

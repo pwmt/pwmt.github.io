@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="index">
+  <div id="index-carousel" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      {% for project in projects %}
+      {% if loop.first %}
+      <div class="item active">
+      {% else %}
+      <div class="item">
+      {% endif %}
+        <div class="container item-inner">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="item-content">
+                <div class="item-content-center">
+                  <h1>{{ project.name }}</h1>
+                  <p>{{ project.description }}</p>
+                  <a href="{{ url_for('project', project_name=project.name) }}">
+                  <button type="button" class="btn btn-default">Read more</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="item-image">
+                {# <img src="/static/img/icon-cash.png" /> #}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#index-carousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#index-carousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+
+  <div class="container">
+    <div class="row feature">
+      <div class="col-sm-3 item">
+        <img src="/static/img/icon-deer.png" />
+        <h1>Open Source</h1>
+        <p>
+          All our projects are free and open source software and we are happy
+          to share it with you.
+        </p>
+      </div>
+      <div class="col-sm-3 item">
+        <img src="/static/img/icon-bookmark.png" />
+        <h1>You need help?</h1>
+        <p>
+          Or you want to help us out? Either way check out our <a href="/help">
+            help section</a>
+        </p>
+      </div>
+      <div class="col-sm-3 item">
+        <img src="/static/img/icon-chat.png" />
+        <h1>Contact Us!</h1>
+        <p>
+        If you have any suggestions, ideas, problems or just want to talk feel 
+        free to <a href="/contact">contact</a> us.
+        </p>
+      </div>
+      <div class="col-sm-3 item">
+        <img src="/static/img/icon-piggy-bank.png" />
+        <h1>Support Us!</h1>
+        <p>The development and hosting of our
+        projects requires time and money. We are grateful if you
+        <a href="/help/donate">can help us out</a> a bit.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
+{% block extrajs %}
+    <script type="text/javascript">
+    jQuery(function($) {
+      $('#index-carousel').on('slide.bs.carousel', function () {
+        $('.item-content h1').addClass("animated fadeInDownBig");
+        $('.item-content p').addClass("animated fadeInLeftBig");
+        $('.item-content button').addClass("animated fadeInUpBig");
+        $('.item-image img').addClass("animated fadeIn");
+      })
+      $('#index-carousel').on('slid.bs.carousel', function () {
+      })
+
+      $('.item-content').waypoint(function() {
+        }, {
+          triggerOnce: false
+        });
+    });
+    </script>
+    <script type="text/javascript">
+    jQuery(function($) {
+      $('.feature .item').waypoint(function() {
+        $(this).addClass("animated fadeInDown");
+        }, {
+          offset: '80%',
+          triggerOnce: true
+        });
+    });
+    </script>
+{% endblock extrajs %}

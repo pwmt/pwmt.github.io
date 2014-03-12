@@ -1,0 +1,121 @@
+{
+  "name": "girara",
+  "description": "a interface library",
+  "versions" : [
+      { 
+        "name": "0.2.0",
+        "date": "2014/02/17",
+        "changelog": [
+          "Drop GTK+2 support",
+          "Fix new mappings of buffered commands",
+          "Handle scrollbars with guioptions",
+          "Grab focus of view after setting viewport",
+          "Update translations"
+        ]
+      },
+      { 
+        "name": "0.1.9",
+        "date": "2013/11/18",
+        "changelog": [
+          "Fix scroll events in GTK+3",
+          "Ellipsize items on the left side of the statusbar"
+        ]
+      },
+      { 
+        "name": "0.1.8",
+        "date": "2013/11/08",
+        "changelog": [
+          "Use GTK+3 by default",
+          "Resolve some coloring issues",
+          "Configurable padding in statusbar",
+          "Updated translations"
+        ]
+      },
+      { 
+        "name": "0.1.7",
+        "date": "2013/08/15",
+        "changelog": [
+          "Make window-icon path expandable",
+          "Updated scrollbar behaviour",
+          "Updated translations"
+        ]
+      },
+      { 
+        "name": "0.1.6",
+        "date": "2013/05/12",
+        "changelog": [
+          "Additional functions for girara_lists",
+          "Allow \" documents",
+          "Update default focus",
+          "Command history",
+          "GiraraInputHistoryIO interface",
+          "Updated translations"
+        ]
+      },
+      { 
+        "name": "0.1.5",
+        "date": "2013/01/20",
+        "changelog": [
+          "Use locale independent strtod",
+          "Additional functions for girara_lists",
+          "Default focues on view",
+          "Allow \" style comments"
+        ]
+      },
+      { 
+        "name": "0.1.4",
+        "date": "2012/08/30",
+        "changelog": [
+          "Check correct mode for buffer command",
+          "Use gtk_label_set_ellipsize",
+          "Set background color of window/viewport",
+          "Implement include statement for config files",
+          "Implemented girara_exec_with_argument_list"
+        ]
+      },
+      { 
+        "name": "0.1.3",
+        "date": "2012/06/09",
+        "changelog": [
+          "Fixed setting description",
+          "Updated translations",
+          "Added guioptions",
+          "Command history",
+          "feedkeys shortcut",
+          "Translate number keys on numpad"
+        ]
+      },
+      { 
+        "name": "0.1.2",
+        "date": "2012/03/24",
+        "changelog": [
+          "*BSD compatible",
+          "Updated completion function",
+          "Display command description in completion",
+          "Fixed inputbar color for GTK3",
+          "Add debug levels",
+          "Resolved some memory leaks",
+          "Updated translations",
+          "Updated Makefile"
+        ]
+      },
+      { 
+        "name": "0.1.1",
+        "date": "2012/03/09",
+        "changelog": [
+          "Multi-language support",
+          "Resolve several memory leaks",
+          "Fixed a resource leak",
+          "Initialize memory with zeros for girara_setting_t",
+          "Updated Makefile",
+          "Additional test caess"
+        ]
+      },
+      { 
+        "name": "0.1.0",
+        "date": "2012/02/21",
+        "changelog": [
+        ]
+      }
+    ]
+}
