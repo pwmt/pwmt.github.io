@@ -13,7 +13,7 @@ Werkzeug==0.9.4
 flask-coffee2js==0.1.2
 flask-lesscss==0.9.1
 flask-paginate==0.2.1
-flask-sass==0.1
+-e git+https://github.com/imiric/flask-sass.git#egg=flask-sass
 itsdangerous==0.23
 pyScss==1.2.0.post3
 six==1.5.2
