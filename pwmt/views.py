@@ -151,7 +151,7 @@ def project(project_name, path="index"):
         if page:
             print project.plugin
             if project.plugin:
-                return render_template('project-plugin.html', project=project, page=page)
+                return render_template('project-plugin.html', project=project, page=page, is_index=is_index)
             else:
                 return render_template('project.html', project=project, page=page, is_index=is_index)
         else:

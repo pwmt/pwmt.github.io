@@ -1,4 +1,4 @@
-title: Configuration
+title: Options
 description: Customize jumanji
 
 

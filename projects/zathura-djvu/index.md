@@ -34,10 +34,3 @@ instructions:
     $ git checkout --track -b develop origin/develop
     $ make
     $ make install
-
-## Source code
-If you are interested in the source code you can either
-[browse](http://git.pwmt.org/?p=zathura-djvu.git) it online or clone the
-repository:
-
-    $ git clone git://pwmt.org/zathura-djvu.git

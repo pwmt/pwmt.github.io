@@ -70,7 +70,8 @@ class Project():
                     self.description = self.json["description"]
                     if "versions" in self.json:
                         tmp_versions = self.json["versions"]
-                    self.options = self.json["options"] if "options" in self.json else {}
+                    self.options = self.json[
+                        "options"] if "options" in self.json else {}
 
                     if "plugin" in self.options and self.options["plugin"] == True:
                         self.plugin = True
@@ -99,6 +100,10 @@ class Project():
         keylist.sort()
         menu = Menu(html_class="nav navbar-nav")
         menu.addItem(MenuItem('Home', "/projects/" + self.name))
+
+        if self.versions and len(self.versions) > 0:
+            menu.addItem(MenuItem('Download', "/projects/" + self.name +
+                                  "/download/"))
 
         for key in keylist:
             if 'index' in key:
