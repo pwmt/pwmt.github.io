@@ -11,6 +11,22 @@ development and support of our software. In addition we would like to say thanks
 to all people who have and are donating in any way to pwmt.org - We really
 appreciate it!
 
-* [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=\_s-xclick&hosted_button_id=SGAZRJZHZR28W) via PayPal
-* [Donate](https://flattr.com/thing/254992/pwmt-on-Flattr) via Flattr
-* Donate via bitcoin: 1KA1y1FtWimYdNA2WG4g5t89x26rHTBM96
+<div class="row feature">
+  <div class="col-sm-4 item">
+    <img src="/static/img/icon-bitcoin.png" />
+    <h1>Bitcoin</h1>
+    <p>Send us bitcoins: 1KA1y1FtWimYdNA2WG4g5t89x26rHTBM96</p>
+  </div>
+  <div class="col-sm-4 item">
+    <img src="/static/img/icon-paypal.png" />
+    <h1>PayPal</h1>
+    <p><a
+    href="https://www.paypal.com/cgi-bin/webscr?cmd=\_s-xclick&hosted_button_id=SGAZRJZHZR28W">Donate</a>
+    with PayPal!
+  </div>
+  <div class="col-sm-4 item">
+    <img src="/static/img/icon-flattr.png" />
+    <h1>Flattr</h1>
+    <p><a href="https://flattr.com/thing/254992/pwmt-on-Flattr">Flattr</a> us!
+  </div>
+</div>
