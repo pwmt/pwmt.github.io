@@ -1,6 +1,6 @@
 {
   "name": "girara",
-  "description": "a interface library",
+  "description": "an interface library",
   "versions" : [
       { 
         "name": "0.2.0",
