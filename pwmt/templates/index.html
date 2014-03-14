@@ -5,7 +5,7 @@
   <div id="index-carousel" class="carousel slide" data-ride="carousel">
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-      {% for project in projects %}
+      {% for project in projects if not project.plugin %}
       {% if loop.first %}
       <div class="item active">
       {% else %}
