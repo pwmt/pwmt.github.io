@@ -211,7 +211,7 @@ a {
 
     .item-image {
       img {
-        text-align: center;
+        margin: 0 auto;
       }
     }
   }
@@ -314,10 +314,6 @@ a {
     padding-bottom: 20px;
 
     text-align: center;
-    img {
-      width: 192px;
-      height: 192px;
-    }
 
     h1 {
       font-size: 18px;
@@ -674,6 +670,12 @@ a {
 }
 
 @media (max-width: 767px) {
+.feature {
+  .item {
+    img {
+      margin: 0 auto;
+    }
+  }
   .page-title {
     height: auto;
 
