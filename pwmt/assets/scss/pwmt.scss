@@ -87,6 +87,7 @@ a {
   margin-bottom: 0;
 
   .navbar-brand {
+    padding-top: 18px;
     color: black;
     font-family: $font-stack-header;
     font-size: 22px;
@@ -662,6 +663,13 @@ a {
 
   .active > a{
     background-color: $color-link;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .navbar-default .navbar-nav li a {
+    padding-left: 25px;
+    padding-right: 0px;
   }
 }
 
