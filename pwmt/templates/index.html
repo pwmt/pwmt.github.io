@@ -5,17 +5,17 @@
   <div id="index-carousel" class="carousel slide" data-ride="carousel">
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-      {% for project in projects if not project.plugin %}
+      {% for project in projects|reverse if not project.plugin %}
       {% if loop.first %}
-      <div class="item active">
+      <div class="item {{ project.name }} active">
       {% else %}
-      <div class="item">
+      <div class="item {{ project.name }}">
       {% endif %}
         <div class="container item-inner">
           <div class="row">
             <div class="col-xs-6">
               <div class="item-content">
-                <div class="item-content-center">
+                <div class="item-content-right">
                   <h1>{{ project.name }}</h1>
                   <p>{{ project.description }}</p>
                   <a href="{{ url_for('project', project_name=project.name) }}">
@@ -25,8 +25,9 @@
               </div>
             </div>
             <div class="col-xs-6">
-              <div class="item-image">
-                {# <img src="/static/img/icon-cash.png" /> #}
+              <div class="item-content">
+                <div class="item-content-center">
+                </div>
               </div>
             </div>
           </div>

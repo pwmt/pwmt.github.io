@@ -190,6 +190,12 @@ a {
       width: 100%;
 
       .item-content-center {
+        text-align: center;
+        display:table-cell;
+        vertical-align:middle;
+      }
+
+      .item-content-right {
         text-align: right;
         display:table-cell;
         vertical-align:middle;
@@ -216,16 +222,16 @@ a {
     }
   }
 
-  .item:nth-child(0) {
-    background-color: $color-blue; /* light-blue */
+  .item.girara {
+    background-color: $color-red;
   }
 
-  .item:nth-child(1) {
-    background-color: $color-red; /* red */
+  .item.zathura {
+    background-color: $color-blue;
   }
 
-  .item:nth-child(2) {
-    background-color: $color-green; /* green */
+  .item.jumanji {
+    background-color: $color-green;
   }
 
   .btn-default {
