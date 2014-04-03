@@ -10,7 +10,7 @@ for repo in "${REPOSITORIES[@]}"; do
 
   # Clone or pull latest changes from repository
   if [ ! -d $path ]; then
-    git clone git@pwmt.org:$repo.git $path
+    git clone git://pwmt.org/$repo.git $path
     cd $path && git checkout --track -b $BRANCH origin/$BRANCH
   else
     cd $path && git pull origin
