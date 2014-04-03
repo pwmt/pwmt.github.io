@@ -5,6 +5,7 @@ from pygments.formatters import HtmlFormatter as PygmentsHtmlFormatter
 from urlparse import urljoin
 from werkzeug.contrib.atom import AtomFeed
 from datetime import datetime
+import os
 
 
 def url_for_other_page(page):
@@ -55,7 +56,12 @@ def posts(page):
                             per_page=per_page,
                             bs_version=3)
 
-    return render_template('posts.html', posts=posts, tags=tags, categories=categories, pagination=pagination)
+    return render_template(
+        'posts.html',
+        posts=posts,
+        tags=tags,
+        categories=categories,
+        pagination=pagination)
 
 
 @app.route('/news/<path:slug>/')
@@ -81,7 +87,12 @@ def render_posts(posts, page):
                                 per_page=per_page,
                                 bs_version=3)
 
-        return render_template('posts.html', posts=posts, tags=tags, categories=categories, pagination=pagination)
+        return render_template(
+            'posts.html',
+            posts=posts,
+            tags=tags,
+            categories=categories,
+            pagination=pagination)
 
 
 @app.route('/news/tag/<string:tag>/', defaults={'page': 1})
@@ -137,7 +148,22 @@ def project_changelog(project_name, version_number=None):
                 break
         if version_number is not None and version is None:
             return abort(404)
-        return render_template('project-changelog.html', project=project, version=version)
+        return render_template(
+            'project-changelog.html',
+            project=project,
+            version=version)
+    return abort(404)
+
+
+@app.route('/projects/<project_name>/doxygen/')
+@app.route('/projects/<project_name>/doxygen/<path:filename>')
+def project_doxygen(project_name, filename="index.html"):
+    project = project_manager.getByName(project_name)
+    if project:
+        try:
+            return send_file(os.path.join(project.path, "doxygen", filename))
+        except:
+            return abort(404)
     return abort(404)
 
 
@@ -151,9 +177,17 @@ def project(project_name, path="index"):
         if page:
             print project.plugin
             if project.plugin:
-                return render_template('project-plugin.html', project=project, page=page, is_index=is_index)
+                return render_template(
+                    'project-plugin.html',
+                    project=project,
+                    page=page,
+                    is_index=is_index)
             else:
-                return render_template('project.html', project=project, page=page, is_index=is_index)
+                return render_template(
+                    'project.html',
+                    project=project,
+                    page=page,
+                    is_index=is_index)
         else:
             try:
                 path = '../projects/' + project_name + "/" + path
@@ -185,11 +219,12 @@ def page_not_found(e):
 @app.route('/static/css/pygments.css')
 def pygments_css():
     formatter = PygmentsHtmlFormatter(style='pastie')
-    return formatter.get_style_defs('.codehilite'), 200, {'Content-Type': 'text/css'}
+    return formatter.get_style_defs(
+        '.codehilite'), 200, {'Content-Type': 'text/css'}
 
 
 def make_external(url):
-        return urljoin(request.url_root, url)
+    return urljoin(request.url_root, url)
 
 
 @app.route('/atom.xml')
