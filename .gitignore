@@ -6,3 +6,5 @@ pwmt/static/css/pwmt.css
 *.swn
 .ropeproject
 *.swm
+projects/*/doxygen
+repositories
