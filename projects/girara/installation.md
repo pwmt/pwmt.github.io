@@ -27,6 +27,7 @@ the latest version of the source code from our website and build it by hand:
 * [Arch Linux](http://www.archlinux.org/packages/community/x86_64/girara)
 * [Debian](http://packages.debian.org/en/source/experimental/girara)
 * [Gentoo](http://packages.gentoo.org/package/dev-libs/girara)
+* [MacPorts](https://www.macports.org/ports.php?by=name&substr=girara)
 
 ## Developer version
 If you are interested to use the current version of libgirara you need to pull
