@@ -49,7 +49,7 @@ Defines the amount of percent that is zoomed in or out on each comand.
 * Default value: 10
 
 ## Girara settings
-Most of the options affecting the appearance of zathura are derived from the
+Most of the options affecting the appearance of jumanji are derived from the
 options that are offered by our user interface library called girara and can be
 found in its [documentation](/projects/girara/options). Those values can also be
-set via the *zathurarc* file.
+set via the *jumanjirc* file.
