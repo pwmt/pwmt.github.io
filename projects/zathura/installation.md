@@ -10,7 +10,7 @@ additional libraries to build those file type plugins.
 
 ### Core dependencies
 * [girara](/projects/girara/), our simplistic user interface library (>= 0.1.8)
-* [GTK+](http://www.gtk.org/), a cross-platform widget toolkit (>= 2.28)
+* [GTK+](http://www.gtk.org/), a cross-platform widget toolkit (>= 3)
 
 ### Optional and build dependencies
 * [sqlite3](https://www.sqlite.org/), a SQL database engine
