@@ -37,6 +37,7 @@ the latest version of the source code from our website and build it by hand:
 * [Gentoo](http://packages.gentoo.org/package/app-text/zathura)
 * [Ubuntu](http://packages.ubuntu.com/precise/zathura)
 * [OpenBSD](http://openports.se/textproc/zathura)
+* [MacPorts](https://www.macports.org/ports.php?by=name&substr=zathura)
 
 ## Developer version
 If you are interested in testing the very latest versions with all its new
