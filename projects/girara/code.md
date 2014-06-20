@@ -66,10 +66,9 @@ int main(int argc, char *argv[])
   girara_config_parse(session, "~/.config/girara/config");
 
   /* read settings */
-  int* tmp_val_int = girara_setting_get(session, "window-width");
-  if(tmp_val_int != NULL) {
-    fprintf(stderr, "Window width: %d\n", *tmp_val_int);
-    g_free(tmp_val_int);
+  int tmp_val_int = 0;
+  if (girara_setting_get(session, "window-width", &tmp_val_int) == true) {
+    fprintf(stderr, "Window width: %d\n", tmp_val_int);
   } else {
     fprintf(stderr, "Window width: (not set)\n");
   }
