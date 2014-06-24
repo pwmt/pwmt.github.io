@@ -3,6 +3,17 @@
   "description": "an interface library",
   "versions" : [
       { 
+        "name": "0.2.1",
+        "date": "2014/06/24",
+        "changelog": [
+          "Add libnotify support",
+          "Regex based template engine and better CSS styling",
+          "Do not resize window when opening tabs",
+          "Colored build output",
+          "Update translations"
+        ]
+      },
+      { 
         "name": "0.2.0",
         "date": "2014/02/17",
         "changelog": [

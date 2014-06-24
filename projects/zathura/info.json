@@ -3,6 +3,18 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "0.2.8",
+        "date": "2014/06/24",
+        "changelog" : [
+          "Better SyncTex support",
+          "Change cursor if mouse is over link",
+          "Colored build output",
+          "Minor bug fixes",
+          "Sphinx documentation",
+          "Updated translations"
+        ]
+      },
+      {
         "name": "0.2.7",
         "date": "2014/02/17",
         "changelog" : [
