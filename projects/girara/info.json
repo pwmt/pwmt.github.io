@@ -3,6 +3,13 @@
   "description": "an interface library",
   "versions" : [
       { 
+        "name": "0.2.2",
+        "date": "2014/06/25",
+        "changelog": [
+          "Update Makefile"
+        ]
+      },
+      { 
         "name": "0.2.1",
         "date": "2014/06/24",
         "changelog": [

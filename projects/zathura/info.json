@@ -3,6 +3,13 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "0.2.9",
+        "date": "2014/06/25",
+        "changelog" : [
+          "Updated dependency version of girara"
+        ]
+      },
+      {
         "name": "0.2.8",
         "date": "2014/06/24",
         "changelog" : [
