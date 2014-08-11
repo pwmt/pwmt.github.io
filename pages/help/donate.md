@@ -21,7 +21,7 @@ appreciate it!
     <img src="/static/img/icon-paypal.png" />
     <h1>PayPal</h1>
     <p><a
-    href="https://www.paypal.com/cgi-bin/webscr?cmd=\_s-xclick&hosted_button_id=SGAZRJZHZR28W">Donate</a>
+    href="https://www.paypal.com/cgi-bin/webscr?cmd=\_s-xclick&hosted_button_id=VZG8ZQJWALXV6">Donate</a>
     with PayPal!
   </div>
   <div class="col-sm-4 item">
