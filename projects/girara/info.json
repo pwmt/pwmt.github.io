@@ -3,6 +3,19 @@
   "description": "an interface library",
   "versions" : [
       { 
+        "name": "0.2.3",
+        "date": "2014/10/16",
+        "changelog": [
+          "Hide resize grip",
+          "Set window-icon from a name",
+          "Enable smooth scrolling",
+          "Introduce bidirectional scrolling",
+          "Add support for XDG_CACHE_HOME",
+          "Proper Shift-Insert Handling",
+          "Update translations",
+        ]
+      },
+      { 
         "name": "0.2.2",
         "date": "2014/06/25",
         "changelog": [
