@@ -7,6 +7,13 @@
   },
   "versions" : [
       { 
+        "name": "0.2.4",
+        "date": "2014/10/17",
+        "changelog": [
+          "Initialize target correctly"
+        ]
+      },
+      { 
         "name": "0.2.3",
         "date": "2013/05/12",
         "changelog": [

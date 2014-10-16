@@ -7,6 +7,17 @@
   },
   "versions" : [
       { 
+        "name": "0.2.7",
+        "date": "2014/10/17",
+        "changelog": [
+          "Catch exception while opening document",
+          "Support launch/named/go-to-remote links",
+          "Fixpassword authentication",
+          "Initialize target and type",
+          "Improve link accuracy"
+        ]
+      },
+      { 
         "name": "0.2.6",
         "date": "2014/02/17",
         "changelog": [

@@ -175,7 +175,6 @@ def project(project_name, path="index"):
         page = project.getPage("/" + path)
         is_index = True if (path == "index") else False
         if page:
-            print project.plugin
             if project.plugin:
                 return render_template(
                     'project-plugin.html',

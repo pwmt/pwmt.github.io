@@ -7,6 +7,15 @@
   },
   "versions" : [
       { 
+        "name": "0.1.3",
+        "date": "2014/10/17",
+        "changelog": [
+          "Generate index from file names",
+          "Allow uppercase file extensions in comic books",
+          "Resolve some linker issues"
+        ]
+      },
+      { 
         "name": "0.1.2",
         "date": "2013/11/09",
         "changelog": [
