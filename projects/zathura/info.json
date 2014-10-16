@@ -3,6 +3,22 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "0.3.0",
+        "date": "2014/10/16",
+        "changelog" : [
+          "Print debug information to D-Bus",
+          "Fix scroll down/up in dual-page mode",
+          "Option to hide notification after selection",
+          "Introduce cache directory",
+          "Introduce smooth-scroll and smooth-zoom",
+          "Add vim style exec",
+          "Option to ignore images while recoloring",
+          "Take advantage of shared or system SyncTex parser library",
+          "Update translations",
+          "Several fixes"
+        ]
+      },
+      {
         "name": "0.2.9",
         "date": "2014/06/25",
         "changelog" : [
