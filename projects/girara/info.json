@@ -3,6 +3,19 @@
   "description": "an interface library",
   "versions" : [
       { 
+        "name": "0.2.4",
+        "date": "2015/04/13",
+        "changelog": [
+          "Make xembed support optional",
+          "Use GDK_WINDOWING_X11",
+          "Command to dump settings to JSON file",
+          "Make undershoot transparent",
+          "Update build system",
+          "Update documentation",
+          "Update translations"
+        ]
+      },
+      { 
         "name": "0.2.3",
         "date": "2014/10/16",
         "changelog": [
