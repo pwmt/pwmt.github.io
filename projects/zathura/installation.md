@@ -36,6 +36,7 @@ the latest version of the source code from our website and build it by hand:
 * [Fedora](http://pkgs.org/fedora-rawhide/fedora-i386/zathura-0.0.8.5.fc17.i686.rpm.html)
 * [Gentoo](http://packages.gentoo.org/package/app-text/zathura)
 * [Ubuntu](http://packages.ubuntu.com/precise/zathura)
+* [openSUSE](http://software.opensuse.org/package/zathura)
 * [OpenBSD](http://openports.se/textproc/zathura)
 * [MacPorts](https://www.macports.org/ports.php?by=name&substr=zathura)
 
