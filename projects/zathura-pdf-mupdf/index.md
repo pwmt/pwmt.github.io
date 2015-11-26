@@ -30,7 +30,7 @@ by hand:
 For the installation of the *zathura-pdf-mupdf* plugin follow the
 instructions:
 
-    $ git clone git://pwmt.org/zathura-pdf-mupdf.git
+    $ git clone https://git.pwmt.org/pwmt/zathura-pdf-mupdf.git
     $ cd zathura-pdf-mupdf
     $ git checkout --track -b develop origin/develop
     $ make

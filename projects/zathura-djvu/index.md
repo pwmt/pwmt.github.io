@@ -29,7 +29,7 @@ by hand:
 For the installation of the *zathura-djvu* plugin follow the
 instructions:
 
-    $ git clone git://pwmt.org/zathura-djvu.git
+    $ git clone https://git.pwmt.org/pwmt/zathura-djvu.git
     $ cd zathura-djvu
     $ git checkout --track -b develop origin/develop
     $ make

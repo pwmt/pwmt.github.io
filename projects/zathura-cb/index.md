@@ -28,7 +28,7 @@ by hand:
 For the installation of the *zathura-cb* plugin follow the
 instructions:
 
-    $ git clone git://pwmt.org/zathura-cb.git
+    $ git clone https://git.pwmt.org/pwmt/zathura-cb.git
     $ cd zathura-cb
     $ git checkout --track -b develop origin/develop
     $ make

@@ -45,7 +45,7 @@ If you are interested in testing the very latest versions with all its new
 features, that we are working on, type in the following commands. At first you
 have to install the latest version of girara:
 
-    $ git clone git://pwmt.org/girara.git
+    $ git clone https://git.pwmt.org/pwmt/girara.git
     $ cd girara
     $ git checkout --track -b develop origin/develop
     $ make
@@ -54,7 +54,7 @@ have to install the latest version of girara:
 After the successful installation of the user interface library, grab the latest
 version of zathura and install it:
 
-    $ git clone git://pwmt.org/zathura.git
+    $ git clone https://git.pwmt.org/pwmt/zathura.git
     $ cd zathura
     $ git checkout --track -b develop origin/develop
     $ make

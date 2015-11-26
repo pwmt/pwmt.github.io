@@ -29,7 +29,7 @@ by hand:
 For the installation of the *zathura-ps* plugin follow the
 instructions:
 
-    $ git clone git://pwmt.org/zathura-ps.git
+    $ git clone https://git.pwmt.org/pwmt/zathura-ps.git
     $ cd zathura-ps
     $ git checkout --track -b develop origin/develop
     $ make
