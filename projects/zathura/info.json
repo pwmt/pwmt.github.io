@@ -3,6 +3,18 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "0.3.4",
+        "date": "2015/12/21",
+        "changelog" : [
+          "Recent files support",
+          "Substitute home with tilde",
+          "Open URLs",
+          "Several fixes and improvements",
+          "Update translations",
+          "Update buld system"
+        ]
+      },
+      {
         "name": "0.3.3",
         "date": "2015/04/13",
         "changelog" : [
