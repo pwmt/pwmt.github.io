@@ -6,14 +6,22 @@
     "plugin": true
   },
   "versions" : [
-      { 
+      {
+        "name": "0.2.3",
+        "date": "2015/12/22",
+        "changelog": [
+          "Advertise URL support",
+          "Split source code in multiple files"
+        ]
+      },
+      {
         "name": "0.2.2",
         "date": "2013/05/12",
         "changelog": [
           "Add desktop file with MimeType registration"
         ]
       },
-      { 
+      {
         "name": "0.2.1",
         "date": "2013/01/20",
         "changelog": [
@@ -21,14 +29,14 @@
           "Fix crash in ps_page_render_cairo"
         ]
       },
-      { 
+      {
         "name": "0.2.0",
         "date": "2012/06/09",
         "changelog": [
           "Necessary changes for zathura 0.2.0"
         ]
       },
-      { 
+      {
         "name": "0.1.0",
         "date": "2012/03/09",
         "changelog": [
