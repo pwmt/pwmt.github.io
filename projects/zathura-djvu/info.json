@@ -7,6 +7,13 @@
   },
   "versions" : [
       { 
+        "name": "0.2.5",
+        "date": "2015/12/22",
+        "changelog": [
+          "Advertise URL support"
+        ]
+      },
+      { 
         "name": "0.2.4",
         "date": "2014/10/17",
         "changelog": [
