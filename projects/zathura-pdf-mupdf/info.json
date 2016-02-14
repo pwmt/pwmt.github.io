@@ -7,11 +7,10 @@
   },
   "versions" : [
       {
-        "name": "0.2.9",
-        "date": "2015/12/22",
+        "name": "0.3.0",
+        "date": "2016/02/14",
         "changelog": [
-          "Improve render performance",
-          "Advertise URL support"
+          "Use correct color space"
         ]
       },
       {
