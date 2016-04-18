@@ -3,6 +3,14 @@
   "description": "an interface library",
   "versions" : [
       {
+        "name": "0.2.6",
+        "date": "2016/04/18",
+        "changelog": [
+          "GTK+ 3.20 compatibility",
+          "Update translations"
+        ]
+      },
+      {
         "name": "0.2.5",
         "date": "2015/12/21",
         "changelog": [
