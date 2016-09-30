@@ -39,6 +39,7 @@ the latest version of the source code from our website and build it by hand:
 * [openSUSE](http://software.opensuse.org/package/zathura)
 * [OpenBSD](http://openports.se/textproc/zathura)
 * [MacPorts](https://www.macports.org/ports.php?by=name&substr=zathura)
+* [Source Mage](http://mirror.sobukus.de/files/sourcemage/codex/test/doc/zathura/)
 
 ## Developer version
 If you are interested in testing the very latest versions with all its new
