@@ -7,6 +7,15 @@
   },
   "versions" : [
       {
+        "name": "0.3.1",
+        "date": "2017/01/11",
+        "changelog": [
+          "Compatible with mupdf 1.10",
+          "Added flags for freetype, harfbuzz and zlib",
+          "Correctly use pdf_save_document"
+        ]
+      },
+      {
         "name": "0.3.0",
         "date": "2016/02/14",
         "changelog": [
