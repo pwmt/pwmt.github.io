@@ -2,4 +2,4 @@
 # -*- coding: utf-8 -*-
 
 from pwmt import app
-app.run()
+app.run(host='0.0.0.0')
