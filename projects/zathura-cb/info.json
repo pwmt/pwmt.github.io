@@ -7,6 +7,14 @@
   },
   "versions" : [
       {
+        "name": "0.1.6",
+        "date": "2017/01/11",
+        "changelog": [
+          "Link with -fPIC",
+          "Update Makefile"
+        ]
+      },
+      {
         "name": "0.1.5",
         "date": "2015/12/22",
         "changelog": [
