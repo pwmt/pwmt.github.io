@@ -6,6 +6,7 @@ from unidecode import unidecode
 from flask import url_for
 import werkzeug
 import os
+import codecs
 
 
 _punct_re = re.compile(r'\W+')
@@ -34,7 +35,7 @@ class NewsItem():
             self.meta["categories"] = []
 
     def __parse_file(self, filepath):
-        with io.open(filepath, encoding='utf8') as fd:
+        with codecs.open(filepath, 'r', 'utf8') as fd:
             head = ''.join(itertools.takewhile(unicode.strip, fd))
             self.body = fd.read()
             self.meta = yaml.safe_load(head) or {}
