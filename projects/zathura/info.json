@@ -3,6 +3,16 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "0.3.7",
+        "date": "2017/01/11",
+        "changelog" : [
+          "Improved logging",
+          "Improve page mode toggling",
+          "Several fixes and improvements",
+          "Updated translations"
+        ]
+      },
+      {
         "name": "0.3.6",
         "date": "2016/04/18",
         "changelog" : [
