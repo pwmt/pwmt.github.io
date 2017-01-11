@@ -7,6 +7,16 @@
   },
   "versions" : [
       {
+        "name": "0.2.7",
+        "date": "2017/01/11",
+        "changelog": [
+          "Cache page height for improved performance",
+          "Clean-up old compatibility code",
+          "Mac OSX build support",
+          "Several fixes and improvements"
+        ]
+      },
+      {
         "name": "0.2.6",
         "date": "2015/12/22",
         "changelog": [
