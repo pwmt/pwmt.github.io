@@ -7,6 +7,14 @@
   },
   "versions" : [
       {
+        "name": "0.3.2",
+        "date": "2017/12/20",
+        "changelog": [
+          "Compatible with mupdf 1.12",
+          "Adapt to new plugin interface"
+        ]
+      },
+      {
         "name": "0.3.1",
         "date": "2017/01/11",
         "changelog": [
