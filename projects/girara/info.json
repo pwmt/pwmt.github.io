@@ -3,6 +3,16 @@
   "description": "an interface library",
   "versions" : [
       {
+        "name": "0.2.8",
+        "date": "2017/12/19",
+        "changelog": [
+          "Adopt CSS to newer GTK+ 3 releases",
+          "Remove obsolete features",
+          "Various fixes and improvments",
+          "Update translations"
+        ]
+      },
+      {
         "name": "0.2.7",
         "date": "2017/01/11",
         "changelog": [
