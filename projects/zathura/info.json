@@ -3,6 +3,16 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "0.3.8",
+        "date": "2017/12/20",
+        "changelog" : [
+          "Fix memory leaks",
+          "Rework plugin initialization",
+          "Various fixes and improvements",
+          "Updated translations"
+        ]
+      },
+      {
         "name": "0.3.7",
         "date": "2017/01/11",
         "changelog" : [
