@@ -7,6 +7,13 @@
   },
   "versions" : [
       {
+        "name": "0.2.5",
+        "date": "2017/12/20",
+        "changelog": [
+          "Adapt to new plugin interface"
+        ]
+      },
+      {
         "name": "0.2.4",
         "date": "2017/01/11",
         "changelog": [
