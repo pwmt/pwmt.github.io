@@ -9,8 +9,8 @@ Depending on which filetypes should be supported you are going to need
 additional libraries to build those file type plugins.
 
 ### Core dependencies
-* [girara](/projects/girara/), our simplistic user interface library (>= 0.1.8)
-* [GTK+](http://www.gtk.org/), a cross-platform widget toolkit (>= 3)
+* [girara](/projects/girara/), our simplistic user interface library (>= 0.2.9)
+* [GTK+](http://www.gtk.org/), a cross-platform widget toolkit (>= 3.22)
 
 ### Optional and build dependencies
 * [sqlite3](https://www.sqlite.org/), a SQL database engine
@@ -24,10 +24,13 @@ Since zathura packages are available in many distributions it is recommended to
 install it from there with your prefered package manager. Otherwise you can grab
 the latest version of the source code from our website and build it by hand:
 
-    $ tar xfv zathura-<version>.tar.gz
+    $ tar xfv zathura-<version>.tar.xz
     $ cd zathura-<version>
-    $ make
-    $ make install
+    $ mkdir build
+    $ meson build
+    $ cd build
+    $ ninja
+    $ ninja install
 
 ## Known supported distributions
 
@@ -48,17 +51,21 @@ have to install the latest version of girara:
 
     $ git clone https://git.pwmt.org/pwmt/girara.git
     $ cd girara
-    $ git checkout --track -b develop origin/develop
-    $ make
-    $ make install
+    $ mkdir build
+    $ meson build
+    $ cd build
+    $ ninja
+    $ ninja install
 
 After the successful installation of the user interface library, grab the latest
 version of zathura and install it:
 
     $ git clone https://git.pwmt.org/pwmt/zathura.git
     $ cd zathura
-    $ git checkout --track -b develop origin/develop
-    $ make
-    $ make install
+    $ mkdir build
+    $ meson build
+    $ cd build
+    $ ninja
+    $ ninja install
 
 For the installation of a file type plugin check the [plugins](../plugins) section.
