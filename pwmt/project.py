@@ -6,10 +6,10 @@ from pwmt.menu import Menu, MenuItem
 from pwmt.news import NewsItem
 
 
-def calculate_sha1_of_file(filepath):
+def calculate_sha2_of_file(filepath):
     import hashlib
     with open(filepath, 'rb') as f:
-        return hashlib.sha1(f.read()).hexdigest()
+        return hashlib.sha256(f.read()).hexdigest()
 
 
 class Version():
@@ -24,7 +24,7 @@ class Version():
         try:
             self.filename = "%s-%s.tar.gz" % (project.name, self.name)
             self.path = os.path.join(project.path, "download", self.filename)
-            self.sha1 = calculate_sha1_of_file(self.path)
+            self.sha2 = calculate_sha2_of_file(self.path)
         except:
             print "Can not read file for version '%s-%s'" % (self.project.name, self.name)
             pass

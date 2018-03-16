@@ -4,7 +4,7 @@
     <tr>
       <th>Version</th>
       <th>Release Date</th>
-      <th>SHA-1</th>
+      <th>SHA-2</th>
       <th>Download</th>
       <th>Changelog</th>
     </tr>
@@ -14,7 +14,7 @@
     <tr>
       <td>{{ version.name }}</td>
       <td>{{ version.date }}</td>
-      <td><code>{{ version.sha1 }}</code></td>
+      <td><code>{{ version.sha2 }}</code></td>
       <td><a href="{{ url_for("project_download",
           project_name=project.name,path=version.filename) }}">Download</a></td>
       <td><a href="{{ url_for("project_changelog",
