@@ -8,7 +8,7 @@
         "changelog": [
           "Adopt CSS to newer GTK+ 3 releases",
           "Remove obsolete features",
-          "Various fixes and improvments",
+          "Various fixes and improvements",
           "Update translations"
         ]
       },
@@ -17,7 +17,7 @@
         "date": "2017/01/11",
         "changelog": [
           "Updated font handling",
-          "Various fixes and improvments",
+          "Various fixes and improvements",
           "Update translations"
         ]
       },
