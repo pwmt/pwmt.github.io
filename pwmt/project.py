@@ -24,6 +24,9 @@ class Version():
         try:
             self.filename = "%s-%s.tar.gz" % (project.name, self.name)
             self.path = os.path.join(project.path, "download", self.filename)
+            if not os.path.exists(self.path):
+                self.filename = "%s-%s.tar.xz" % (project.name, self.name)
+                self.path = os.path.join(project.path, "download", self.filename)
             self.sha2 = calculate_sha2_of_file(self.path)
         except:
             print "Can not read file for version '%s-%s'" % (self.project.name, self.name)
