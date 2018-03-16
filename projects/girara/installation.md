@@ -17,10 +17,13 @@ Since girara packages are available in many distributions it is recommended to
 install it from there with your prefered package manager. Otherwise you can grab
 the latest version of the source code from our website and build it by hand:
 
-    $ tar xfv girara-<version>.tar.gz
+    $ tar xfv girara-<version>.tar.xz
     $ cd girara-<version>
-    $ make
-    $ make install
+    $ mkdir build
+    $ meson build
+    $ cd build
+    $ ninja
+    $ ninja install
 
 ## Known supported distributions
 
@@ -35,5 +38,9 @@ If you are interested to use the current version of libgirara you need to pull
 the source from our git repository and build it by hand:
 
     $ git clone https://git.pwmt.org/pwmt/girara.git
-    $ make
-    $ make install
+    $ cd girara
+    $ mkdir build
+    $ meson build
+    $ cd build
+    $ ninja
+    $ ninja install
