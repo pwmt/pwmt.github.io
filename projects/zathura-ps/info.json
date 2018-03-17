@@ -7,6 +7,13 @@
   },
   "versions" : [
       {
+        "name": "0.2.6",
+        "date": "2018/03/17",
+        "changelog": [
+          "Replace build system with meson"
+        ]
+      },
+      {
         "name": "0.2.5",
         "date": "2017/12/20",
         "changelog": [
