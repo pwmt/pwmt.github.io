@@ -16,8 +16,11 @@ by hand:
 
     $ tar xfv zathura-cb-<version>.tar.gz
     $ cd zathura-cb-<version>
-    $ make
-    $ make install
+    $ mkdir build
+    $ meson build
+    $ cd build
+    $ ninja
+    $ ninja install
 
 ## Known supported distributions
 * [Arch Linux](https://aur.archlinux.org/packages/zathura-cb/)
@@ -31,5 +34,8 @@ instructions:
     $ git clone https://git.pwmt.org/pwmt/zathura-cb.git
     $ cd zathura-cb
     $ git checkout --track -b develop origin/develop
-    $ make
-    $ make install
+    $ mkdir build
+    $ meson build
+    $ cd build
+    $ ninja
+    $ ninja install

@@ -7,6 +7,14 @@
   },
   "versions" : [
       {
+        "name": "0.2.9",
+        "date": "2018/03/16",
+        "changelog": [
+          "Provide page labels",
+          "Convert build system to meson"
+        ]
+      },
+      {
         "name": "0.2.8",
         "date": "2017/12/20",
         "changelog": [

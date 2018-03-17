@@ -13,10 +13,13 @@ It is recommended to install it from your prefered package manager. Otherwise
 you can grab the latest version of the source code from our website and build it
 by hand:
 
-    $ tar xfv zathura-pdf-poppler-<version>.tar.gz
+    $ tar xfv zathura-pdf-poppler-<version>.tar.xz
     $ cd zathura-pdf-poppler-<version>
-    $ make
-    $ make install
+    $ mkdir build
+    $ meson build
+    $ cd build
+    $ ninja
+    $ ninja install
 
 ## Known supported distributions
 * [Arch Linux](https://www.archlinux.org/packages/community/x86_64/zathura-pdf-poppler/)
@@ -32,5 +35,8 @@ instructions:
     $ git clone https://git.pwmt.org/pwmt/zathura-pdf-poppler.git
     $ cd zathura-pdf-poppler
     $ git checkout --track -b develop origin/develop
-    $ make
-    $ make install
+    $ mkdir build
+    $ meson build
+    $ cd build
+    $ ninja
+    $ ninja install
