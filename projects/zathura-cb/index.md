@@ -14,7 +14,7 @@ It is recommended to install it from your prefered package manager. Otherwise
 you can grab the latest version of the source code from our website and build it
 by hand:
 
-    $ tar xfv zathura-cb-<version>.tar.gz
+    $ tar xfv zathura-cb-<version>.tar.xz
     $ cd zathura-cb-<version>
     $ mkdir build
     $ meson build

@@ -13,7 +13,7 @@ It is recommended to install it from your prefered package manager. Otherwise
 you can grab the latest version of the source code from our website and build it
 by hand:
 
-    $ tar xfv zathura-ps-<version>.tar.gz
+    $ tar xfv zathura-ps-<version>.tar.xz
     $ cd zathura-ps-<version>
     $ mkdir build
     $ meson build
