@@ -39,6 +39,7 @@ the source from our git repository and build it by hand:
 
     $ git clone https://git.pwmt.org/pwmt/girara.git
     $ cd girara
+    $ git checkout --track -b develop origin/develop
     $ mkdir build
     $ meson build
     $ cd build

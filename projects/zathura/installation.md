@@ -51,6 +51,7 @@ have to install the latest version of girara:
 
     $ git clone https://git.pwmt.org/pwmt/girara.git
     $ cd girara
+    $ git checkout --track -b develop origin/develop
     $ mkdir build
     $ meson build
     $ cd build
@@ -62,6 +63,7 @@ version of zathura and install it:
 
     $ git clone https://git.pwmt.org/pwmt/zathura.git
     $ cd zathura
+    $ git checkout --track -b develop origin/develop
     $ mkdir build
     $ meson build
     $ cd build
