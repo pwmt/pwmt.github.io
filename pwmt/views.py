@@ -24,18 +24,24 @@ def index():
 @app.route('/about/')
 def about():
     page = page_manager.get("about")
+    if page is None:
+        abort(404)
     return render_template('about.html', page=page)
 
 
 @app.route('/contact/')
 def contact():
     page = page_manager.get("contact")
+    if page is None:
+        abort(404)
     return render_template('contact.html', page=page)
 
 
 @app.route('/help/')
 def help():
     page = page_manager.get("help")
+    if page is None:
+        abort(404)
     return render_template('help.html', page=page)
 
 
