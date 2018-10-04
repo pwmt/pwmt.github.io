@@ -1,4 +1,4 @@
-DEBUG = True
+DEBUG = False
 PAGE_PATH = "pages/"
 PROJECTS_PATH = "projects/"
 NEWS_PATH = "news/"
