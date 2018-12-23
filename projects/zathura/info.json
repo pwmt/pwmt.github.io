@@ -3,6 +3,14 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "0.4.3",
+        "date": "2018/12/22",
+        "changelog" : [
+          "Various fixes and improvements",
+          "Updated translations"
+        ]
+      },
+      {
         "name": "0.4.1",
         "date": "2018/09/20",
         "changelog" : [
