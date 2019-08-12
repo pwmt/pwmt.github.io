@@ -8,7 +8,7 @@
   "versions": [
       {
         "name": "0.3.5",
-        "date": "2018/08/11",
+        "date": "2019/08/11",
         "changelog": [
           "Compatible with mupdf 1.16"
         ]
