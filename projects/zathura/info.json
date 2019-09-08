@@ -3,6 +3,17 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "0.4.4",
+        "date": "2019/09/08",
+        "changelog" : [
+          "Fix expansion of ~ and ~user when opening files",
+          "Add fish completion",
+          "Various fixes and improvements",
+          "Drop support for old libsyntex",
+          "Updated translations"
+        ]
+      },
+      {
         "name": "0.4.3",
         "date": "2018/12/22",
         "changelog" : [
