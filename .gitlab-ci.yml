@@ -1,13 +1,13 @@
 image: python:3.7
 
 pages:
-	tags:
-		- pwmt
+  tags:
+    - pwmt
   script:
-		- pip install --no-cache-dir -r requirements.txt
-		- python run freeze
+    - pip install --no-cache-dir -r requirements.txt
+    - python run freeze
   artifacts:
     paths:
-			- public
+      - public
   only:
-		- master
+    - master
