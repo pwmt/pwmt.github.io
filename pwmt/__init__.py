@@ -52,10 +52,10 @@ from pwmt.menu import Menu, MenuItem
 
 menu = Menu(html_class="nav navbar-nav navbar-right")
 
-menu.addItem(MenuItem("About Us", "/about"))
-menu.addItem(MenuItem("News", "/news"))
+menu.addItem(MenuItem("About Us", "/about/"))
+menu.addItem(MenuItem("News", "/news/"))
 
-menuItem = MenuItem("Projects", "/projects")
+menuItem = MenuItem("Projects", "/projects/")
 
 for project in project_manager.getAll():
     if project.options and "show_index" in project.options and project.options["show_index"] == False:
@@ -65,7 +65,7 @@ for project in project_manager.getAll():
             MenuItem(project.name, "/projects/" + project.name))
 menu.addItem(menuItem)
 
-menuItem = MenuItem("Help", "/help")
+menuItem = MenuItem("Help", "/help/")
 menuItem.addSubItem(MenuItem("Bug tracker", "http://bugs.pwmt.org"))
 menuItem.addSubItem(MenuItem("Localization", "/help/localization/"))
 menuItem.addSubItem(MenuItem("Donate", "/help/donate/"))

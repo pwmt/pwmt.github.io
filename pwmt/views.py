@@ -47,7 +47,7 @@ def help():
 
 
 @app.route('/news/', defaults={'page': 1})
-@app.route('/news/page/<int:page>')
+@app.route('/news/page/<int:page>/')
 def posts(page):
     tags = news_manager.getAllTags()
     categories = news_manager.getAllCategories()
@@ -76,6 +76,8 @@ def posts():
     posts = news_manager.getAllByDate()
     per_page = int(app.config['POSTS_PER_PAGE'])
     count = len(posts)
+
+    yield {}
 
     for p in range(1, int(count / per_page)):
         yield {'page': p}
@@ -119,13 +121,13 @@ def render_posts(posts, page):
 
 
 @app.route('/news/tag/<string:tag>/', defaults={'page': 1})
-@app.route('/news/tag/<string:tag>/page/<int:page>')
+@app.route('/news/tag/<string:tag>/page/<int:page>/')
 def tags(tag, page):
     posts = news_manager.getByTag(tag)
     return render_posts(posts, page)
 
 @app.route('/news/category/<string:category>/', defaults={'page': 1})
-@app.route('/news/category/<string:category>/page/<int:page>')
+@app.route('/news/category/<string:category>/page/<int:page>/')
 def category(category, page):
     posts = news_manager.getByCategory(category)
     return render_posts(posts, page)
@@ -149,7 +151,7 @@ def project_download(project_name, path=None):
 
 
 @app.route('/projects/<project_name>/changelog/')
-@app.route('/projects/<project_name>/changelog/<path:version_number>')
+@app.route('/projects/<project_name>/changelog/<path:version_number>/')
 def project_changelog(project_name, version_number=None):
     project = project_manager.getByName(project_name)
     if project:
@@ -225,6 +227,15 @@ def project(project_name, path="index"):
                 abort(404)
     else:
         abort(404)
+
+@freezer.register_generator
+def project():
+    projects = project_manager.getAll()
+    for project in projects:
+        yield {'project_name': project.name}
+
+        for path in project.pageManager._pages.keys():
+            yield {'project_name': project.name, 'path': path}
 
 
 @app.route('/<path:path>/')
