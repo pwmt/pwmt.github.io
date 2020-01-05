@@ -1,5 +1,7 @@
-DEBUG = False
+DEBUG = True
 PAGE_PATH = "pages/"
 PROJECTS_PATH = "projects/"
 NEWS_PATH = "news/"
+FREEZER_DESTINATION = "../build"
+FREEZER_RELATIVE_URLS = True
 POSTS_PER_PAGE = 5

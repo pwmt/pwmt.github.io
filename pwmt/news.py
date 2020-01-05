@@ -16,7 +16,7 @@ def slugify(text, delim=u'-'):
     result = []
     for word in _punct_re.split(text.lower()):
         result.extend(unidecode(word).split())
-    return unicode(delim.join(result))
+    return delim.join(result)
 
 
 class NewsItem():
@@ -36,8 +36,16 @@ class NewsItem():
 
     def __parse_file(self, filepath):
         with codecs.open(filepath, 'r', 'utf8') as fd:
-            head = ''.join(itertools.takewhile(unicode.strip, fd))
-            self.body = fd.read()
+            content = fd.readlines()
+
+            head = ""
+            for idx, line in enumerate(content):
+                if line == "\n":
+                    break
+
+                head += line
+
+            self.body = " ".join([x.strip() for x in content[idx:]]).strip()
             self.meta = yaml.safe_load(head) or {}
 
             self.meta['tags'] = self.meta['tags'].split(

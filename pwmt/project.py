@@ -29,7 +29,7 @@ class Version():
                 self.path = os.path.join(project.path, "download", self.filename)
             self.sha2 = calculate_sha2_of_file(self.path)
         except:
-            print "Can not read file for version '%s-%s'" % (self.project.name, self.name)
+            print("Can not read file for version '%s-%s'" % (self.project.name, self.name))
             pass
 
     def getNewsItem(self):
@@ -89,7 +89,7 @@ class Project():
             try:
                 self.versions.append(Version(project=self, meta=tmp_version))
             except Exception:
-                print "Could not parse version information: %s" % tmp_version
+                print("Could not parse version information: %s" % tmp_version)
 
     def __exit__(self, type, value, traceback):
         pass
@@ -100,7 +100,7 @@ class Project():
     def getMenu(self):
         pages = self.pageManager.getAll()
         keylist = pages.keys()
-        keylist.sort()
+        keylist = sorted(keylist)
         menu = Menu(html_class="nav navbar-nav")
         menu.addItem(MenuItem('Home', "/projects/" + self.name))
 

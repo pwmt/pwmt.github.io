@@ -8,8 +8,11 @@
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/animate.min.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='css/pwmt.css') }}" rel="stylesheet">
     <link href="{{ url_for('pygments_css') }}" rel="stylesheet">
+
+    {% assets "app-css" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}">
+    {% endassets %}
 
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
 

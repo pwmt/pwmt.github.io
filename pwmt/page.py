@@ -4,21 +4,33 @@ import os
 import yaml
 import itertools
 import werkzeug
+from pathlib import Path
 
 class Page(object):
 
     def __init__(self, filePath, endpoint):
+        filePath = Path(filePath).resolve()
         try:
-            with io.open(filePath, encoding='utf8') as fd:
-                self.head = ''.join(itertools.takewhile(unicode.strip, fd))
-                self.body = fd.read()
+            with open(filePath) as fd:
+                content = fd.readlines()
+
+                head = ""
+                for idx, line in enumerate(content):
+                    if line == "\n":
+                        break
+
+                    head += line
+
+                self.body = " ".join(content[idx:]).strip()
+                self.head = head
 
             self.meta = yaml.safe_load(self.head) or {}
             self.type = "page"
-            self.filePath = filePath
+            self.filePath = Path(filePath).resolve()
             self.page_url = "#"
+            self.endpoint = endpoint
         except:
-            raise ValueError("File '%s' does not exist", filePath)
+            raise ValueError("File '%s' does not exist" % filePath)
 
     def path(self):
         return self.filePath

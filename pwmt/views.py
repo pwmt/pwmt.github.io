@@ -1,10 +1,11 @@
-from pwmt import app, project_manager, news_manager, page_manager
+from pwmt import app, project_manager, news_manager, page_manager, freezer
 from flask import render_template, send_file, abort, request, url_for
 from flask.ext.paginate import Pagination
 from pygments.formatters import HtmlFormatter as PygmentsHtmlFormatter
-from urlparse import urljoin
+from urllib.parse import urljoin
 from werkzeug.contrib.atom import AtomFeed
 from datetime import datetime
+from pathlib import Path
 import os
 
 
@@ -70,10 +71,26 @@ def posts(page):
         pagination=pagination)
 
 
+@freezer.register_generator
+def posts():
+    posts = news_manager.getAllByDate()
+    per_page = int(app.config['POSTS_PER_PAGE'])
+    count = len(posts)
+
+    for p in range(1, int(count / per_page)):
+        yield {'page': p}
+
+
 @app.route('/news/<path:slug>/')
 def post(slug):
     post = news_manager.getBySlug(slug) or abort(404)
     return render_template('post.html', post=post)
+
+
+@freezer.register_generator
+def post():
+    for item in news_manager.posts:
+        yield {'slug': item.slug}
 
 
 def render_posts(posts, page):
@@ -107,22 +124,11 @@ def tags(tag, page):
     posts = news_manager.getByTag(tag)
     return render_posts(posts, page)
 
-
 @app.route('/news/category/<string:category>/', defaults={'page': 1})
 @app.route('/news/category/<string:category>/page/<int:page>')
 def category(category, page):
     posts = news_manager.getByCategory(category)
     return render_posts(posts, page)
-
-
-# fix old plugin downloads
-@app.route('/projects/zathura/plugins/download/<path>')
-def zathura_plugin_download(path):
-    project = path.rsplit("-", 1)
-    if project and project[0]:
-        return project_download(project[0], path)
-    else:
-        abort(404)
 
 
 @app.route('/projects/<project_name>/download/')
@@ -161,6 +167,14 @@ def project_changelog(project_name, version_number=None):
     return abort(404)
 
 
+@freezer.register_generator
+def project_changelog():
+    projects = project_manager.getAll()
+    for project in projects:
+        for ver in project.versions:
+            yield {'project_name': project.name, 'version_number': ver.name}
+
+
 @app.route('/projects/<project_name>/doxygen/')
 @app.route('/projects/<project_name>/doxygen/<path:filename>')
 def project_doxygen(project_name, filename="index.html"):
@@ -171,6 +185,16 @@ def project_doxygen(project_name, filename="index.html"):
         except:
             return abort(404)
     return abort(404)
+
+
+@freezer.register_generator
+def project_doxygen():
+    projects = project_manager.getAll()
+    for project in projects:
+        doxygen_path = os.path.join(project.path, "doxygen")
+        pathlist = Path(doxygen_path).glob('**')
+        for path in pathlist:
+            yield {'project': project.name, 'path': path}
 
 
 @app.route('/projects/<project_name>/')
@@ -216,6 +240,12 @@ def page(path):
             abort(404)
 
 
+@freezer.register_generator
+def page():
+    for page in page_manager._pages.keys():
+        yield {'path': page}
+
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html')
@@ -239,7 +269,7 @@ def recent_feed():
     posts = news_manager.getAllByDate()
 
     for post in posts:
-        feed.add(post['title'], unicode(post.body),
+        feed.add(post['title'], post.body,
 
                  content_type='html',
                  author="pwmt.org",

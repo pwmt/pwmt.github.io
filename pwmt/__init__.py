@@ -1,14 +1,31 @@
 from flask import Flask
 from flaskext.markdown import Markdown
-from flaskext.sass import sass
+from flask_assets import Environment, Bundle
+from flask_frozen import Freezer
 import os
 
 # read configuration
 app = Flask(__name__, instance_relative_config=True)
 app.config.from_object('config')
 
+freezer = Freezer(app)
+
 # setup sass css
-sass(app, input_dir='assets/scss', output_dir='css')
+assets = Environment(app)
+assets.load_path = [os.path.join(os.path.dirname(__file__), 'assets'), os.path.join(os.path.dirname(__file__), 'node_modules')]
+assets.config['LIBSASS_INCLUDES'] = assets.load_path
+# sass(app, input_dir='assets/scss', output_dir='css')
+
+css = Bundle(
+    Bundle(
+        'scss/pwmt.scss',
+        filters='pyscss',
+        depends=('**/*.scss', '**/**/*.scss'),
+    ),
+    output='dist/pwmt.css'
+)
+
+assets.register('app-css', css)
 
 # setup markdown
 Markdown(app, extensions=['codehilite', 'extra', 'toc'])
