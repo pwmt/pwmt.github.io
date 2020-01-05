@@ -66,7 +66,7 @@ for project in project_manager.getAll():
 menu.addItem(menuItem)
 
 menuItem = MenuItem("Help", "/help/")
-menuItem.addSubItem(MenuItem("Bug tracker", "http://bugs.pwmt.org"))
+menuItem.addSubItem(MenuItem("Bug tracker", "http://git.pwmt.org"))
 menuItem.addSubItem(MenuItem("Localization", "/help/localization/"))
 menuItem.addSubItem(MenuItem("Donate", "/help/donate/"))
 menuItem.addSubItem(MenuItem("Coding standard", "/help/coding-standard/"))
