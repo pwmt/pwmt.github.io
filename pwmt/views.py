@@ -150,6 +150,18 @@ def project_download(project_name, path=None):
         abort(404)
 
 
+@freezer.register_generator
+def project_download():
+    projects = project_manager.getAll()
+    for project in projects:
+        yield {'project_name': project.name}
+
+        path = '../projects/' + project.name + "/download/"
+        pathlist = Path(path).glob('**')
+        for path in pathlist:
+            yield {'project_name': project.name, 'path': path}
+
+
 @app.route('/projects/<project_name>/changelog/')
 @app.route('/projects/<project_name>/changelog/<path:version_number>/')
 def project_changelog(project_name, version_number=None):
