@@ -7,6 +7,13 @@
   },
   "versions" : [
       {
+        "name": "0.2.9",
+        "date": "2020/01/06",
+        "changelog": [
+          "Fix crash on search without results"
+        ]
+      },
+      {
         "name": "0.2.8",
         "date": "2018/03/17",
         "changelog": [
