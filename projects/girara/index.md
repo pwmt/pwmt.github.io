@@ -12,6 +12,7 @@ enhance the user interface that is used by zathura and jumanji and other
 features that those applications share.
 
 ## Wide range of features
+
 * Map certain key bindings to specific functions
 * Usage of so-called bufferd commands that allows the user to map whole words
   like *foo* and *bar* to functions
@@ -30,6 +31,7 @@ features that those applications share.
 * Support for either GTK2 or GTK3 applications
 
 ## Source code
+
 If you are interested in the source code you can either
 [browse](http://git.pwmt.org) it online or clone the repository:
 

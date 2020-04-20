@@ -3,7 +3,7 @@ import io
 import os
 import yaml
 import itertools
-import werkzeug
+from werkzeug.utils import cached_property
 from pathlib import Path
 
 class Page(object):
@@ -38,7 +38,7 @@ class Page(object):
     def url(self):
         return self.page_url
 
-    @werkzeug.cached_property
+    @cached_property
     def html(self):
         return self.body
 
@@ -61,7 +61,7 @@ class PageManager(object):
     def __init__(self, dirPath):
         self.root = dirPath
 
-    @werkzeug.cached_property
+    @cached_property
     def _pages(self):
         pages = {}
 

@@ -16,7 +16,8 @@
 
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
 
-    <link href="{{ url_for('recent_feed') }}" rel="alternate" title="Recent Changes" type="application/atom+xml">
+    <link href="{{ url_for('atom_feed') }}" rel="alternate" title="Recent Changes" type="application/atom+xml">
+    <link href="{{ url_for('rss_feed') }}" rel="alternate" title="Recent Changes" type="application/rss+xml">
 
     <!--[if lt IE 9]>
       <script href="{{ url_for('static', filename='js/html5shiv.min.js') }}"></script>

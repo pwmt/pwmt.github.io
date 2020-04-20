@@ -6,9 +6,11 @@ libgirara depends on [GTK+ 3](http://www.gtk.org/), a cross-platform widget
 toolkit.
 
 ### Core dependencies
+
 * [GTK+](http://www.gtk.org/), a cross-platform widget toolkit
 
 ### Optional and build dependencies
+
 * [intltool](https://launchpad.net/intltool), utility scripts for internationalization
 * [check](http://check.sourceforge.net/), a unit testing framework for C
 

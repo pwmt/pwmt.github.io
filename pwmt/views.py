@@ -1,12 +1,13 @@
 from pwmt import app, project_manager, news_manager, page_manager, freezer
 from flask import render_template, send_file, abort, request, url_for
-from flask.ext.paginate import Pagination
+from flask_paginate import Pagination
 from pygments.formatters import HtmlFormatter as PygmentsHtmlFormatter
 from urllib.parse import urljoin
-from werkzeug.contrib.atom import AtomFeed
+from feedgen.feed import FeedGenerator
 from datetime import datetime
 from pathlib import Path
 import os
+import pytz
 
 
 def url_for_other_page(page):
@@ -285,19 +286,40 @@ def make_external(url):
     return urljoin(request.url_root, url)
 
 
-@app.route('/atom.xml')
 def recent_feed():
-    feed = AtomFeed('Recent Articles', feed_url=request.url,
-                    url=request.url_root)
+    feed = FeedGenerator()
+
+    feed.id(request.url_root)
+    feed.title('pwmt.org')
+    feed.description('Recent Articles')
+    feed.link(href='https://pwmt.org')
+
     posts = news_manager.getAllByDate()
 
+    timezone = pytz.timezone('Europe/Vienna')
+
     for post in posts:
-        feed.add(post['title'], post.body,
+        fe = feed.add_entry()
+        fe.link(href=make_external(post.slug), rel='alternate')
 
-                 content_type='html',
-                 author="pwmt.org",
-                 url=make_external(post.slug),
-                 updated=datetime.strptime(post.date, "%Y/%m/%d"),
-                 published=datetime.strptime(post.date, "%Y/%m/%d"))
+        date = datetime.strptime(post.date, "%Y/%m/%d")
+        date = timezone.localize(date)
 
-    return feed.get_response()
+        fe.title(post['title'])
+        fe.content(post.body, type='html')
+        fe.id(make_external(post.slug))
+        fe.author({'name': "pwmt.org"})
+        fe.updated(date)
+        fe.published(date)
+
+    return feed
+
+@app.route('/atom.xml')
+def atom_feed():
+    feed = recent_feed()
+    return feed.atom_str(pretty=True)
+
+@app.route('/news.xml')
+def rss_feed():
+    feed = recent_feed()
+    return feed.rss_str(pretty=True)
