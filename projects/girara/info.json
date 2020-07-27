@@ -3,6 +3,14 @@
   "description": "an interface library",
   "versions" : [
       {
+        "name": "0.3.5",
+        "date": "2020/07/27",
+        "changelog": [
+          "Various fixes and improvements",
+          "Update translations"
+        ]
+      },
+      {
         "name": "0.3.4",
         "date": "2020/01/06",
         "changelog": [
@@ -36,7 +44,7 @@
         "name": "0.3.0",
         "date": "2018/05/20",
         "changelog": [
-          "Make colors changeable during tunrime",
+          "Make colors changeable during runtime",
           "Various fixes and improvements",
           "Update translations"
         ]
