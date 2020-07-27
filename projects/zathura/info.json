@@ -3,6 +3,16 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "0.4.6",
+        "date": "2020/07/27",
+        "changelog" : [
+          "Add --find option to the CLI",
+          "Support recolor with transparency",
+          "Various fixes and improvements",
+          "Updated translations"
+        ]
+      },
+      {
         "name": "0.4.5",
         "date": "2020/01/06",
         "changelog" : [
