@@ -3,6 +3,14 @@
   "description": "an interface library",
   "versions" : [
       {
+        "name": "0.3.6",
+        "date": "2021/07/24",
+        "changelog": [
+          "Various fixes and improvements",
+          "Update translations"
+        ]
+      },
+      {
         "name": "0.3.5",
         "date": "2020/07/27",
         "changelog": [
