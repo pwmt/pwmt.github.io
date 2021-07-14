@@ -7,6 +7,15 @@
   },
   "versions": [
       {
+        "name": "0.3.7",
+        "date": "2021/07/14",
+        "changelog": [
+          "Compatible with mupdf 1.18",
+          "Various fixes and improvements"
+        ]
+      },
+
+      {
         "name": "0.3.6",
         "date": "2020/09/06",
         "changelog": [
