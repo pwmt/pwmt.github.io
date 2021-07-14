@@ -3,10 +3,21 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "0.4.8",
+        "date": "2021/07/14",
+        "changelog" : [
+          "Account for page padding in full scroll",
+          "Add forefground color for links",
+          "Add :save and :save! aliases for :write and :write!",
+          "Various fixes and improvements",
+          "Updated translations"
+        ]
+      },
+      {
         "name": "0.4.7",
         "date": "2020/09/03",
         "changelog" : [
-          "Fix invalid zoom when opening document withl'adjust-open width' option",
+          "Fix invalid zoom when opening document with 'adjust-open width' option",
           "Various fixes and improvements",
           "Updated translations"
         ]
