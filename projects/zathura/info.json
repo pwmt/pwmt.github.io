@@ -3,6 +3,17 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "0.4.9",
+        "date": "2022/02/13",
+        "changelog" : [
+          "Add '$f' and '$p' expansions to 'exec' shortcut function",
+          "Fix build with meson 0.60",
+          "Add :source command",
+          "Various fixes and improvements",
+          "Updated translations"
+        ]
+      },
+      {
         "name": "0.4.8",
         "date": "2021/07/14",
         "changelog" : [
