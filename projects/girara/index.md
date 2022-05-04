@@ -37,4 +37,4 @@ If you are interested in the source code you can either
 
     $ git clone https://git.pwmt.org/pwmt/girara.git
 
-In addition a doxygen documentation is [available](doxygen).
+In addition, a doxygen documentation can be built from the source.
