@@ -3,6 +3,13 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "0.5.1",
+        "date": "2022/09/09",
+        "changelog" : [
+          "seccomp: Make glibc fallback to clone instead of using clone3"
+        ]
+      },
+      {
         "name": "0.5.0",
         "date": "2022/09/08",
         "changelog" : [
