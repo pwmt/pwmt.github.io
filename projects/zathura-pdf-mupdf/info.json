@@ -8,7 +8,7 @@
   "versions": [
       {
         "name": "0.4.0",
-        "date": "2022/18/27",
+        "date": "2022/11/27",
         "changelog": [
           "Implement better text selection"
         ]
