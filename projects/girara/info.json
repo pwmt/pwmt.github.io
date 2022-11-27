@@ -3,6 +3,15 @@
   "description": "an interface library",
   "versions" : [
       {
+        "name": "0.3.8",
+        "date": "2022/11/27",
+        "changelog": [
+          "Switch to json-glib",
+          "Various fixes and improvements",
+          "Update translations"
+        ]
+      },
+      {
         "name": "0.3.7",
         "date": "2022/02/13",
         "changelog": [
