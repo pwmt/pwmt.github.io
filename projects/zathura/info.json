@@ -3,6 +3,15 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "0.5.2",
+        "date": "2022/11/27",
+        "changelog" : [
+          "Improve text selection",
+          "Various fixes and improvements",
+          "Updated translations"
+        ]
+      },
+      {
         "name": "0.5.1",
         "date": "2022/09/09",
         "changelog" : [
