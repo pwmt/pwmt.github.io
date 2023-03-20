@@ -3,32 +3,65 @@
   <head>
     <title>pwmt.org</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='css/animate.min.css') }}" rel="stylesheet">
-    <link href="{{ url_for('pygments_css') }}" rel="stylesheet">
+    <link
+      href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='css/font-awesome.min.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='css/animate.min.css') }}"
+      rel="stylesheet"
+    />
+    <link href="{{ url_for('pygments_css') }}" rel="stylesheet" />
 
     {% assets "app-css" %}
-    <link rel="stylesheet" href="{{ ASSET_URL }}">
+    <link rel="stylesheet" href="{{ ASSET_URL }}" />
     {% endassets %}
 
-    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='img/favicon.ico') }}"
+    />
 
-    <link href="{{ url_for('atom_feed') }}" rel="alternate" title="Recent Changes" type="application/atom+xml">
-    <link href="{{ url_for('rss_feed') }}" rel="alternate" title="Recent Changes" type="application/rss+xml">
+    <link
+      href="{{ url_for('atom_feed') }}"
+      rel="alternate"
+      title="Recent Changes"
+      type="application/atom+xml"
+    />
+    <link
+      href="{{ url_for('rss_feed') }}"
+      rel="alternate"
+      title="Recent Changes"
+      type="application/rss+xml"
+    />
+
+    <meta name="flattr:id" content="m75yo6" />
 
     <!--[if lt IE 9]>
-      <script href="{{ url_for('static', filename='js/html5shiv.min.js') }}"></script>
-      <script href="{{ url_for('static', filename='js/respond.min.js') }}"></script>
+      <script
+        href="{{ url_for('static', filename='js/html5shiv.min.js') }}"
+      ></script>
+      <script
+        href="{{ url_for('static', filename='js/respond.min.js') }}"
+      ></script>
     <![endif]-->
   </head>
   <body>
     <nav class="navbar navbar-default" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#navbar-collapse"
+          >
             <span class="sr-only">Toggle navigation</span>
             <i class="fa fa-lg fa-th-large"></i>
           </button>
@@ -40,18 +73,16 @@
 
         <div class="collapse navbar-collapse" id="navbar-collapse">
           {{ main_menu.render()|safe }}
-        </div><!-- /.navbar-collapse -->
+        </div>
+        <!-- /.navbar-collapse -->
       </div>
     </nav>
 
-    {% block content %}
-    {% endblock %}
+    {% block content %} {% endblock %}
 
     <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/waypoints.min.js') }}"></script>
-    {% block extrajs %}
-    {% endblock %}
+    {% block extrajs %} {% endblock %}
   </body>
 </html>
-
