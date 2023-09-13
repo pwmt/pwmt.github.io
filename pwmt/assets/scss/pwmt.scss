@@ -676,23 +676,24 @@ a {
 }
 
 @media (max-width: 767px) {
-.feature {
-  .item {
-    img {
-      margin: 0 auto;
+  .feature {
+    .item {
+      img {
+        margin: 0 auto;
+      }
     }
-  }
-  .page-title {
-    height: auto;
+    .page-title {
+      height: auto;
 
-    h1 {
-      padding-top: 0;
-      padding-bottom: 0;
-      font-size: 36px;
-      small {
-        margin-top: 5px;
-        display: block;
-        margin-bottom: 20px;
+      h1 {
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 36px;
+        small {
+          margin-top: 5px;
+          display: block;
+          margin-bottom: 20px;
+        }
       }
     }
   }
