@@ -7,6 +7,13 @@
   },
   "versions": [
       {
+        "name": "0.4.1",
+        "date": "2023/09/14",
+        "changelog": [
+          "Fix handling of links"
+        ]
+      },
+      {
         "name": "0.4.0",
         "date": "2022/11/27",
         "changelog": [
