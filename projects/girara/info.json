@@ -3,6 +3,17 @@
   "description": "an interface library",
   "versions" : [
       {
+        "name": "0.4.1",
+        "date": "2023/12/08",
+        "changelog": [
+          "Add keyboard device to simulated key events",
+          "Fix placement of bottom box",
+          "Run tests under xvfb if required",
+          "Rework data structures",
+          "Update translations"
+        ]
+      },
+      {
         "name": "0.4.0",
         "date": "2023/03/18",
         "changelog": [
