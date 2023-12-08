@@ -3,6 +3,18 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "0.5.3",
+        "date": "2023/12/08",
+        "changelog" : [
+          "Add support to display signatures",
+          "Fix clearing of highlighted links",
+          "Make some key modifiers configurable",
+          "Fix text selection on rotated pages",
+          "Fix gap between pages",
+          "Updated translations"
+        ]
+      },
+      {
         "name": "0.5.2",
         "date": "2022/11/27",
         "changelog" : [
