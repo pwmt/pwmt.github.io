@@ -7,6 +7,14 @@
   },
   "versions" : [
       {
+        "name": "0.3.2",
+        "date": "2023/12/08",
+        "changelog": [
+          "Implement support for document signature",
+          "Fix double encoding in document index"
+        ]
+      },
+      {
         "name": "0.3.1",
         "date": "2022/11/27",
         "changelog": [
