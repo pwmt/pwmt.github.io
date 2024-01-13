@@ -3,6 +3,14 @@
   "description": "an interface library",
   "versions" : [
       {
+        "name": "0.4.2",
+        "date": "2024/01/13",
+        "changelog": [
+          "Ellipsize status bar",
+          "Various fixes and improvements"
+        ]
+      },
+      {
         "name": "0.4.1",
         "date": "2023/12/08",
         "changelog": [
