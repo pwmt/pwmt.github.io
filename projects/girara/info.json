@@ -3,6 +3,15 @@
   "description": "an interface library",
   "versions" : [
       {
+        "name": "0.4.3",
+        "date": "2024/03/02",
+        "changelog": [
+          "Fix font weight mapping",
+          "Remove deprecated functions",
+          "Various fixes and improvements"
+        ]
+      },
+      {
         "name": "0.4.2",
         "date": "2024/01/13",
         "changelog": [
