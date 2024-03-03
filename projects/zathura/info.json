@@ -3,6 +3,17 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "0.5.5",
+        "date": "2024/03/03",
+        "changelog" : [
+          "Compatibility with girara 0.4.3",
+          "Remove highlight-transparency setting. Set the alpha component of highlight-color, highlight-active-color and highlight-fg instead.",
+          "Remove smooth-reload setting. Smooth reloading is now always enabled.",
+          "Remove plain database backend. The sqlite database backend imports the data from the plain database the first time. sqlite is now a hard dependenc.",
+          "Fix a segfault if dbus is not enabled."
+        ]
+      },
+      {
         "name": "0.5.4",
         "date": "2023/12/09",
         "changelog" : [
