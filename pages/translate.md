@@ -22,7 +22,7 @@ If you don't want to signup on [transifex](http://transifex.net), there is
 another possibility to help us: At first you have to check out the "develop"
 branch of girara or zathura. For girara this is done like this:
 
-    $ git clone https://git.pwmt.org/pwmt/girara.git
+    $ git clone https://github.com/pwmt/girara.git
     $ cd girara
     $ git checkout -b develop origin/develop
 

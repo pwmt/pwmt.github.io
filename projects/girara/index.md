@@ -33,8 +33,8 @@ features that those applications share.
 ## Source code
 
 If you are interested in the source code you can either
-[browse](http://git.pwmt.org) it online or clone the repository:
+[browse](http://github.com) it online or clone the repository:
 
-    $ git clone https://git.pwmt.org/pwmt/girara.git
+    $ git clone https://github.com/pwmt/girara.git
 
 In addition, a doxygen documentation can be built from the source.

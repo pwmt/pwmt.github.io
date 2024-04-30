@@ -39,7 +39,7 @@ the latest version of the source code from our website and build it by hand:
 If you are interested to use the current version of libgirara you need to pull
 the source from our git repository and build it by hand:
 
-    $ git clone https://git.pwmt.org/pwmt/girara.git
+    $ git clone https://github.com/pwmt/girara.git
     $ cd girara
     $ git checkout --track -b develop origin/develop
     $ mkdir build

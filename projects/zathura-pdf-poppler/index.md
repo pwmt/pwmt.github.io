@@ -32,7 +32,7 @@ by hand:
 For the installation of the *zathura-pdf-poppler* plugin follow the
 instructions:
 
-    $ git clone https://git.pwmt.org/pwmt/zathura-pdf-poppler.git
+    $ git clone https://github.com/pwmt/zathura-pdf-poppler.git
     $ cd zathura-pdf-poppler
     $ git checkout --track -b develop origin/develop
     $ mkdir build
