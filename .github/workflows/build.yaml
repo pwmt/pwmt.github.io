@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    - "master"
+
+jobs:
+  build:
+    name: Test on Debian trixie
+    runs-on: ubuntu-latest
+    container:
+      image: python:3.7
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build website
+        run: |
+          pip install -r requirements.txt
+          python run.py freeze
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: "public/"
+
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
