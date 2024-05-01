@@ -2,8 +2,7 @@ name: CI
 
 on:
   push:
-    branches:
-      - "master"
+  pull_request:
 
 jobs:
   build:
@@ -27,6 +26,8 @@ jobs:
           path: "public/"
 
   deploy:
+    name: Deploy website
+    if: github.ref_name == "master"
     needs: build
     permissions:
       pages: write
