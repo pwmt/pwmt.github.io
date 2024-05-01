@@ -4,3 +4,7 @@ updates:
   directory: "/"
   schedule:
     interval: "daily"
+- package-ecosysem: "pip"
+  directory: "/"
+  schedule:
+    interval: "daily"
