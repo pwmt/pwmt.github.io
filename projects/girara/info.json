@@ -3,6 +3,14 @@
   "description": "an interface library",
   "versions" : [
       {
+        "name": "0.4.4",
+        "date": "2024/05/01",
+        "changelog": [
+          "Move to Github",
+          "Reduce minimum glib verson"
+        ]
+      },
+      {
         "name": "0.4.3",
         "date": "2024/03/02",
         "changelog": [
