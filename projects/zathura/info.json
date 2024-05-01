@@ -3,6 +3,16 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "0.5.6",
+        "date": "2024/05/01",
+        "changelog" : [
+          "Move to Github",
+          "Reduce minimum glib version",
+          "Remove normal sandbox mode",
+          "Various fixes and improvements"
+        ]
+      },
+      {
         "name": "0.5.5",
         "date": "2024/03/03",
         "changelog" : [
