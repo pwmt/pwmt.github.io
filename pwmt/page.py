@@ -6,7 +6,7 @@ import itertools
 from werkzeug.utils import cached_property
 from pathlib import Path
 
-class Page(object):
+class Page:
 
     def __init__(self, filePath, endpoint):
         filePath = Path(filePath).resolve()
@@ -54,7 +54,7 @@ class Page(object):
         return None
 
 
-class PageManager(object):
+class PageManager:
 
     suffix = ".md"
 

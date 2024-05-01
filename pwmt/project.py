@@ -22,19 +22,19 @@ class Version():
         self.changelog = meta["changelog"] if "changelog" in meta else {}
 
         try:
-            self.filename = "%s-%s.tar.gz" % (project.name, self.name)
+            self.filename = "{}-{}.tar.gz".format(project.name, self.name)
             self.path = os.path.join(project.path, "download", self.filename)
             if not os.path.exists(self.path):
-                self.filename = "%s-%s.tar.xz" % (project.name, self.name)
+                self.filename = "{}-{}.tar.xz".format(project.name, self.name)
                 self.path = os.path.join(project.path, "download", self.filename)
             self.sha2 = calculate_sha2_of_file(self.path)
         except:
-            print("Can not read file for version '%s-%s'" % (self.project.name, self.name))
+            print("Can not read file for version '{}-{}'".format(self.project.name, self.name))
             pass
 
     def getNewsItem(self):
         news = NewsItem()
-        news["title"] = "%s %s" % (self.project.name, self.name)
+        news["title"] = "{} {}".format(self.project.name, self.name)
         news["date"] = self.date
         news["tags"] = ["release"]
         news["categories"] = [self.project.name]
@@ -66,7 +66,7 @@ class Project():
         tmp_versions = {}
         info_file = os.path.join(path, "info.json")
         try:
-            with io.open(info_file, encoding='utf8') as fd:
+            with open(info_file, encoding='utf8') as fd:
                 try:
                     self.json = json.load(fd)
                     self.name = self.json["name"]

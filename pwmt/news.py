@@ -12,7 +12,7 @@ import codecs
 _punct_re = re.compile(r'\W+')
 
 
-def slugify(text, delim=u'-'):
+def slugify(text, delim='-'):
     result = []
     for word in _punct_re.split(text.lower()):
         result.extend(unidecode(word).split())

@@ -12,7 +12,7 @@ class MenuItem():
     def render(self):
         render_string = ""
 
-        if len(self.items) is not 0:
+        if len(self.items) != 0:
             render_string += (
                 '<li class="dropdown">'
                 '<a href="#" class="dropdown-toggle" data-toggle="dropdown">'
