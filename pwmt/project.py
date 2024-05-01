@@ -22,19 +22,19 @@ class Version():
         self.changelog = meta["changelog"] if "changelog" in meta else {}
 
         try:
-            self.filename = "{}-{}.tar.gz".format(project.name, self.name)
+            self.filename = f"{project.name}-{self.name}.tar.gz"
             self.path = os.path.join(project.path, "download", self.filename)
             if not os.path.exists(self.path):
-                self.filename = "{}-{}.tar.xz".format(project.name, self.name)
+                self.filename = f"{project.name}-{self.name}.tar.xz"
                 self.path = os.path.join(project.path, "download", self.filename)
             self.sha2 = calculate_sha2_of_file(self.path)
         except:
-            print("Can not read file for version '{}-{}'".format(self.project.name, self.name))
+            print(f"Can not read file for version '{self.project.name}-{self.name}'")
             pass
 
     def getNewsItem(self):
         news = NewsItem()
-        news["title"] = "{} {}".format(self.project.name, self.name)
+        news["title"] = f"{self.project.name} {self.name}"
         news["date"] = self.date
         news["tags"] = ["release"]
         news["categories"] = [self.project.name]
