@@ -27,7 +27,7 @@ jobs:
 
   deploy:
     name: Deploy website
-    if: github.ref_name == "master"
+    if: github.ref_name == 'master'
     needs: build
     permissions:
       pages: write
