@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: Test on Debian trixie
+    name: Build website
     runs-on: ubuntu-latest
     container:
       image: python:3.7
