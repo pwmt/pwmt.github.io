@@ -13,6 +13,11 @@ appreciate it!
 
 <div class="row feature">
   <div class="col-sm-4 item">
+    <img src="/static/img/icon-github.png" />
+    <h1>Github Sponsors</h1>
+    <p>Sponsor us on <a href="https://github.com/pwmt/zathura">Githuhb</a>!
+  </div>
+  <div class="col-sm-4 item">
     <img src="/static/img/icon-bitcoin.png" />
     <h1>Bitcoin</h1>
     <p>Send us bitcoins: 1KA1y1FtWimYdNA2WG4g5t89x26rHTBM96</p>
@@ -23,10 +28,5 @@ appreciate it!
     <p><a
     href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VZG8ZQJWALXV6">Donate</a>
     with PayPal!
-  </div>
-  <div class="col-sm-4 item">
-    <img src="/static/img/icon-flattr.png" />
-    <h1>Flattr</h1>
-    <p><a href="https://flattr.com/thing/254992/pwmt-on-Flattr">Flattr</a> us!
   </div>
 </div>
