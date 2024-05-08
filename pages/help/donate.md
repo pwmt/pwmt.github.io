@@ -15,7 +15,7 @@ appreciate it!
   <div class="col-sm-4 item">
     <img src="/static/img/icon-github.png" />
     <h1>Github Sponsors</h1>
-    <p>Sponsor us on <a href="https://github.com/pwmt/zathura">Githuhb</a>!
+    <p>Sponsor us on <a href="https://github.com/pwmt/zathura">Github</a>!
   </div>
   <div class="col-sm-4 item">
     <img src="/static/img/icon-bitcoin.png" />
