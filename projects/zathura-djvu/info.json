@@ -7,6 +7,13 @@
   },
   "versions" : [
       {
+        "name": "0.2.10",
+        "date": "2024/08/04",
+        "changelog": [
+          "Implement basic selection rectangle"
+        ]
+      },
+      {
         "name": "0.2.9",
         "date": "2020/01/06",
         "changelog": [
