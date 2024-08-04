@@ -3,6 +3,13 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "0.5.8",
+        "date": "2024/08/04",
+        "changelog" : [
+          "Bump plugin ABI"
+        ]
+      },
+      {
         "name": "0.5.7",
         "date": "2024/08/03",
         "changelog" : [
