@@ -3,6 +3,14 @@
   "description": "an interface library",
   "versions" : [
       {
+        "name": "0.4.5",
+        "date": "2024/12/09",
+        "changelog": [
+          "Swith to glib-based testing framework",
+          "Various fixes and improvements"
+        ]
+      },
+      {
         "name": "0.4.4",
         "date": "2024/05/01",
         "changelog": [
