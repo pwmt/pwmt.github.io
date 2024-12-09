@@ -3,6 +3,17 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "0.5.9",
+        "date": "2024/12/09",
+        "changelog" : [
+          "Fix build on macOS",
+          "Hide page label if the same as page number",
+          "Cache synctex parser for faster operation",
+          "Revert changes for documents with multiple page sizes",
+          "Various fixes and improvements"
+        ]
+      },
+      {
         "name": "0.5.8",
         "date": "2024/08/04",
         "changelog" : [
