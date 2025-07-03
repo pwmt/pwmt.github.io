@@ -3,6 +3,16 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "0.5.12",
+        "date": "2025/06/03",
+        "changelog" : [
+          "Add shortcut to open files via file chooser dialog",
+          "Refactor rendering of pages",
+          "Add lightness adjustment for recolering",
+          "Initial support for OpenBSD sandbox"
+        ]
+      },
+      {
         "name": "0.5.11",
         "date": "2024/12/18",
         "changelog" : [
