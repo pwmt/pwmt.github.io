@@ -21,7 +21,7 @@ class Page:
 
                     head += line
 
-                self.body = " ".join(content[idx:]).strip()
+                self.body = "".join(content[idx:]).strip()
                 self.head = head
 
             self.meta = yaml.safe_load(self.head) or {}
