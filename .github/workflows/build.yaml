@@ -22,7 +22,7 @@ jobs:
       - name: Build website
         run: |
           python run.py freeze
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: "public/"
 
