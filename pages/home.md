@@ -3,11 +3,9 @@ description: programs with movie titles
 
 ## Contact
 If you have any suggestions, ideas, problems or just want to talk feel free to
-join us on our IRC channel, contact us per e-mail or discuss it on one of our
-mailing lists.
+join us on our IRC channel or contact us per e-mail.
 
 * [#pwmt@irc.oftc.net](irc://irc.oftc.net/#pwmt)
-* [Subscribe](http://lists.pwmt.org) to our mailing lists
 
 ## Donations
 All our projects are free and open source software. You can download, use and
