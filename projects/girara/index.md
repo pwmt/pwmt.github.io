@@ -14,7 +14,7 @@ features that those applications share.
 ## Wide range of features
 
 * Map certain key bindings to specific functions
-* Usage of so-called bufferd commands that allows the user to map whole words
+* Usage of so-called buffered commands that allows the user to map whole words
   like *foo* and *bar* to functions
 * Respond to mouse events like clicking/releasing of certain buttons, scrolling
   and even mouse movement
