@@ -8,6 +8,6 @@ an easy usage that mainly focuses on keyboard interaction like vimperator does.
 
 ## Source code
 If you are interested in the source code you can either
-[browse](http://git.pwmt.org) it online or clone the repository:
+[browse](https://git.pwmt.org) it online or clone the repository:
 
     $ git clone https://github.com/pwmt/jumanji.git

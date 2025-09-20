@@ -3,10 +3,10 @@ description: PostScript support
 
 
 The *zathura-ps* plugin adds PostScript support to zathura by using the
-[libspectre](http://libspectre.freedesktop.org/) library.
+[libspectre](https://libspectre.freedesktop.org/) library.
 
 ## Dependencies
-* [libspectre](http://libspectre.freedesktop.org/)
+* [libspectre](https://libspectre.freedesktop.org/)
 
 ## Installation
 It is recommended to install it from your prefered package manager. Otherwise
@@ -23,9 +23,9 @@ by hand:
 
 ## Known supported distributions
 * [Arch Linux](https://www.archlinux.org/packages/community/x86_64/zathura-ps/)
-* [Debian](http://packages.debian.org/en/sid/zathura-ps)
+* [Debian](https://packages.debian.org/en/sid/zathura-ps)
 * [Fedora](https://admin.fedoraproject.org/pkgdb/acls/name/zathura-ps)
-* [Gentoo](http://packages.gentoo.org/package/app-text/zathura-ps)
+* [Gentoo](https://packages.gentoo.org/package/app-text/zathura-ps)
 * [Ubuntu](https://launchpad.net/ubuntu/saucy/+package/zathura-ps)
 
 ## Installation (Developer version)

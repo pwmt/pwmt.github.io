@@ -6,11 +6,11 @@ translations as of version 0.1.1. Since we currently only provide German
 translation files we need your help to get them translated into other languages.
 
 ## Transifex
-[transifex](http://transifex.com) is an open source platform for localization
+[transifex](https://transifex.com) is an open source platform for localization
 which offers users an easy-to-use interface to submit translations to various
 projects hosted on a number of hosting platform types.
 
-All of our projects are available on [transifex](http://transifex.com) and can
+All of our projects are available on [transifex](https://transifex.com) and can
 be translated smoothly online:
 
 * [girara on transifex](https://explore.transifex.com/pwmt/girara/)
@@ -18,7 +18,7 @@ be translated smoothly online:
 
 ## Manually
 
-If you don't want to signup on [transifex](http://transifex.com), there is
+If you don't want to signup on [transifex](https://transifex.com), there is
 another possibility to help us: At first you have to check out the "develop"
 branch of girara or zathura. For girara this is done like this:
 

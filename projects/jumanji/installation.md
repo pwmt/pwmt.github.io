@@ -4,14 +4,14 @@ description:
 
 ## Dependencies
 jumanji depends on several external libraries, 
-[girara](http://pwmt.org/projects/girara), our simplistic user interface library and
-[GTK+](http://www.gtk.org/), a cross-platform widget toolkit and
-[webkitgtk](http://webkitgtk.org/), the web rendering engine for GTK+.
+[girara](https://pwmt.org/projects/girara), our simplistic user interface library and
+[GTK+](https://www.gtk.org/), a cross-platform widget toolkit and
+[webkitgtk](https://webkitgtk.org/), the web rendering engine for GTK+.
 
-* [girara](http://pwmt.org/projects/girara/), our simplistic user interface library
-* [GTK+](http://www.gtk.org/), a cross-platform widget toolkit
-* [webkitgtk](http://webkitgtk.org/), a web rendering engine for GTK+
-* [libsoup](http://live.gnome.org/libsoup/), a http client/server library
+* [girara](https://pwmt.org/projects/girara/), our simplistic user interface library
+* [GTK+](https://www.gtk.org/), a cross-platform widget toolkit
+* [webkitgtk](https://webkitgtk.org/), a web rendering engine for GTK+
+* [libsoup](https://live.gnome.org/libsoup/), a http client/server library
 
 ## Stable version
 No official version of jumanji has been released yet.

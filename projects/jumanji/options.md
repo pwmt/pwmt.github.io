@@ -34,7 +34,7 @@ The default download directory
 The page padding defines the home page that is loaded by default
 
 * Value-type: String
-* Default value: http://pwmt.org
+* Default value: https://pwmt.org
 
 ### scroll-step
 Defines the amount of pixels that are scrolled on each step:

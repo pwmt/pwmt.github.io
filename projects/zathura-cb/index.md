@@ -6,7 +6,7 @@ The *zathura-cb* plugin adds comic book support to zathura.
 
 ## Dependencies
 
-* [libarchive](http://www.libarchive.org/)
+* [libarchive](https://www.libarchive.org/)
 
 
 ## Installation
@@ -24,8 +24,8 @@ by hand:
 
 ## Known supported distributions
 * [Arch Linux](https://aur.archlinux.org/packages/zathura-cb/)
-* [Debian](http://packages.debian.org/en/sid/zathura-cb)
-* [Gentoo](http://packages.gentoo.org/package/app-text/zathura-cb)
+* [Debian](https://packages.debian.org/en/sid/zathura-cb)
+* [Gentoo](https://packages.gentoo.org/package/app-text/zathura-cb)
 
 ## Installation (Developer version)
 For the installation of the *zathura-cb* plugin follow the

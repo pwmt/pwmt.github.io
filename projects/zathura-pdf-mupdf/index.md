@@ -3,14 +3,14 @@ description: PDF support
 
 
 The *zathura-pdf-mupdf* plugin adds PDF support to zathura by using the
-[mupdf](http://mupdf.com/) rendering library. *mupdf* has to be built with
+[mupdf](https://mupdf.com/) rendering library. *mupdf* has to be built with
 *-fPIC* before it can be linked successfully to our plugin. For the latest
 version you have to use at least mupdf >= 1.16. If you are using the git version
 of *mupdf*, make sure you checkout the *mupdf-git* branch in our plugin
 repository.
 
 ## Dependencies
-* [mupdf](http://mupdf.com/)
+* [mupdf](https://mupdf.com/)
 
 ## Installation
 It is recommended to install it from your prefered package manager. Otherwise
@@ -27,7 +27,7 @@ by hand:
 
 ## Known supported distributions
 * [Arch Linux](https://www.archlinux.org/packages/community/x86_64/zathura-pdf-mupdf/)
-* [Gentoo](http://packages.gentoo.org/package/app-text/zathura-pdf-mupdf)
+* [Gentoo](https://packages.gentoo.org/package/app-text/zathura-pdf-mupdf)
 
 ## Installation (Developer version)
 For the installation of the *zathura-pdf-mupdf* plugin follow the

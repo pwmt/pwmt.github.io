@@ -2,7 +2,7 @@ title: girara
 description: user interface library
 
 girara is a library that implements a user interface that focuses on simplicity
-and minimalism. Currently based on [GTK+](http://www.gtk.org/), a cross-platform
+and minimalism. Currently based on [GTK+](https://www.gtk.org/), a cross-platform
 widget toolkit, it provides an interface that focuses on three main components:
 A so-called view widget that represents the actual application (e.g. a website
 (browser), an image (image viewer) or the document (document viewer)), an input
@@ -33,7 +33,7 @@ features that those applications share.
 ## Source code
 
 If you are interested in the source code you can either
-[browse](http://github.com) it online or clone the repository:
+[browse](https://github.com) it online or clone the repository:
 
     $ git clone https://github.com/pwmt/girara.git
 

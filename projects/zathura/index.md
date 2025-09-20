@@ -119,7 +119,7 @@ focuses on keyboard interaction.
         and attachments, opening encrypted documents and printing them. You can
         search through the document or browse its index or checkout the document
         meta information. We offer an optional <a
-        href="http://sqlite.org">sqlite</a> database backend and we support the
+        href="https://sqlite.org">sqlite</a> database backend and we support the
         <a href="https://tools.suckless.org/tabbed/">tabbed</a> tool.
       </p>
     </div>

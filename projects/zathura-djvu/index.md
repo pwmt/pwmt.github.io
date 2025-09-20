@@ -3,10 +3,10 @@ description: Support for DjVu documents
 
 
 The *zathura-djvu* plugin adds DjVu support to zathura by using the
-[djvulibre](http://djvu.sourceforge.net/) library.
+[djvulibre](https://djvu.sourceforge.net/) library.
 
 ## Dependencies
-* [djvulibre](http://djvu.sourceforge.net)
+* [djvulibre](https://djvu.sourceforge.net)
 
 ## Installation
 It is recommended to install it from your prefered package manager. Otherwise
@@ -23,9 +23,9 @@ by hand:
 
 ## Known supported distributions
 * [Arch Linux](https://www.archlinux.org/packages/community/x86_64/zathura-djvu/)
-* [Debian](http://packages.debian.org/en/sid/zathura-djvu)
+* [Debian](https://packages.debian.org/en/sid/zathura-djvu)
 * [Fedora](https://admin.fedoraproject.org/pkgdb/acls/name/zathura-djvu)
-* [Gentoo](http://packages.gentoo.org/package/app-text/zathura-djvu)
+* [Gentoo](https://packages.gentoo.org/package/app-text/zathura-djvu)
 * [Ubuntu](https://launchpad.net/ubuntu/saucy/+package/zathura-djvu)
 
 ## Installation (Developer version)

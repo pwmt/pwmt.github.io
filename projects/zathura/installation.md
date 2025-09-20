@@ -4,20 +4,20 @@ description: Get it up and running
 ## Dependencies
 The core of zathura depends on two external libraries,
 [girara](/projects/girara/), our simplistic user interface
-library and [GTK+](http://www.gtk.org/), a cross-platform widget toolkit.
+library and [GTK+](https://www.gtk.org/), a cross-platform widget toolkit.
 Depending on which filetypes should be supported you are going to need
 additional libraries to build those file type plugins.
 
 ### Core dependencies
 * [girara](/projects/girara/), our simplistic user interface library (>= 0.2.9)
-* [GTK+](http://www.gtk.org/), a cross-platform widget toolkit (>= 3.22)
+* [GTK+](https://www.gtk.org/), a cross-platform widget toolkit (>= 3.22)
 
 ### Optional and build dependencies
 * [sqlite3](https://www.sqlite.org/), a SQL database engine
 * [intltool](https://launchpad.net/intltool), utility scripts for internationalization
-* [check](http://check.sourceforge.net/), a unit testing framework for C
-* libmagic from [file](http://www.darwinsys.com/file/), a file type guesser
-* [docutils](http://docutils.sourceforge.net), documentation utilities
+* [check](https://check.sourceforge.net/), a unit testing framework for C
+* libmagic from [file](https://www.darwinsys.com/file/), a file type guesser
+* [docutils](https://docutils.sourceforge.net), documentation utilities
 
 ## Stable version
 Since zathura packages are available in many distributions it is recommended to
@@ -34,15 +34,15 @@ the latest version of the source code from our website and build it by hand:
 
 ## Known supported distributions
 
-* [Arch Linux](http://www.archlinux.org/packages/community/x86_64/zathura)
-* [Debian](http://packages.debian.org/en/sid/zathura)
-* [Fedora](http://pkgs.org/fedora-rawhide/fedora-i386/zathura-0.0.8.5.fc17.i686.rpm.html)
-* [Gentoo](http://packages.gentoo.org/package/app-text/zathura)
-* [Ubuntu](http://packages.ubuntu.com/precise/zathura)
-* [openSUSE](http://software.opensuse.org/package/zathura)
-* [OpenBSD](http://openports.se/textproc/zathura)
+* [Arch Linux](https://www.archlinux.org/packages/community/x86_64/zathura)
+* [Debian](https://packages.debian.org/en/sid/zathura)
+* [Fedora](https://pkgs.org/fedora-rawhide/fedora-i386/zathura-0.0.8.5.fc17.i686.rpm.html)
+* [Gentoo](https://packages.gentoo.org/package/app-text/zathura)
+* [Ubuntu](https://packages.ubuntu.com/precise/zathura)
+* [openSUSE](https://software.opensuse.org/package/zathura)
+* [OpenBSD](https://openports.se/textproc/zathura)
 * [MacPorts](https://www.macports.org/ports.php?by=name&substr=zathura)
-* [Source Mage](http://mirror.sobukus.de/files/sourcemage/codex/test/doc/zathura/)
+* [Source Mage](https://mirror.sobukus.de/files/sourcemage/codex/test/doc/zathura/)
 
 ## Developer version
 If you are interested in testing the very latest versions with all its new

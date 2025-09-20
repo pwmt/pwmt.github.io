@@ -4,7 +4,7 @@ description:
 
 ## User scripts
 jumanji supports user scripts from sites like
-[userscripts.org](http://userscripts.org) which are used to modify and
+[userscripts.org](https://userscripts.org) which are used to modify and
 customize the behaviour, functionality and look of certain websites. Those
 scripts are loaded automatically when the according website has been opened.
 
@@ -12,7 +12,7 @@ To use those scripts you just have to download and save them into your
 *~/.config/jumanji/scripts/* directory.
 
 ## Adblocking
-jumanji supports [adblock plus](http://adblockplus.org) filter lists that can
+jumanji supports [adblock plus](https://adblockplus.org) filter lists that can
 be downloaded from the [subscriptions](https://adblockplus.org/en/subscriptions)
 website of adblock plus.
 

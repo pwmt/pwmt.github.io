@@ -2,17 +2,17 @@ title: Installation
 description: How to install girara on your system
 
 ## Dependencies
-libgirara depends on [GTK+ 3](http://www.gtk.org/), a cross-platform widget
+libgirara depends on [GTK+ 3](https://www.gtk.org/), a cross-platform widget
 toolkit.
 
 ### Core dependencies
 
-* [GTK+](http://www.gtk.org/), a cross-platform widget toolkit
+* [GTK+](https://www.gtk.org/), a cross-platform widget toolkit
 
 ### Optional and build dependencies
 
 * [intltool](https://launchpad.net/intltool), utility scripts for internationalization
-* [check](http://check.sourceforge.net/), a unit testing framework for C
+* [check](https://check.sourceforge.net/), a unit testing framework for C
 
 ## Stable version
 Since girara packages are available in many distributions it is recommended to
@@ -29,10 +29,10 @@ the latest version of the source code from our website and build it by hand:
 
 ## Known supported distributions
 
-* [Arch Linux](http://www.archlinux.org/packages/community/x86_64/girara)
-* [Debian](http://packages.debian.org/en/source/experimental/girara)
-* [OpenSUSE](http://software.opensuse.org/package/girara)
-* [Gentoo](http://packages.gentoo.org/package/dev-libs/girara)
+* [Arch Linux](https://www.archlinux.org/packages/community/x86_64/girara)
+* [Debian](https://packages.debian.org/en/source/experimental/girara)
+* [OpenSUSE](https://software.opensuse.org/package/girara)
+* [Gentoo](https://packages.gentoo.org/package/dev-libs/girara)
 * [MacPorts](https://www.macports.org/ports.php?by=name&substr=girara)
 
 ## Developer version
