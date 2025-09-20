@@ -120,7 +120,7 @@ focuses on keyboard interaction.
         search through the document or browse its index or checkout the document
         meta information. We offer an optional <a
         href="http://sqlite.org">sqlite</a> database backend and we support the
-        <a href="http://tools.suckless.org">tabbed</a> tool.
+        <a href="https://tools.suckless.org/tabbed/">tabbed</a> tool.
       </p>
     </div>
     <div class="col-xs-4">
