@@ -10,4 +10,4 @@ an easy usage that mainly focuses on keyboard interaction like vimperator does.
 If you are interested in the source code you can either
 [browse](http://git.pwmt.org) it online or clone the repository:
 
-    $ git clone https://git.pwmt.org/pwmt/jumanji.git
+    $ git clone https://github.com/pwmt/jumanji.git

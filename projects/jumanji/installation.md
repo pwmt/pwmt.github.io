@@ -20,7 +20,7 @@ No official version of jumanji has been released yet.
 If you are interested to use the current version of jumanji you need to pull
 the source from our git repository and build it by hand::
 
-    $ git clone https://git.pwmt.org/pwmt/jumanji.git
+    $ git clone https://github.com/pwmt/jumanji.git
     $ make
     $ make install
 
@@ -29,7 +29,7 @@ If you are interested in testing the very latest versions with all its new
 features, that we are working on, type in the following commands. At first you
 have to install the latest version of girara::
 
-    $ git clone https://git.pwmt.org/pwmt/girara.git
+    $ git clone https://github.com/pwmt/girara.git
     $ cd girara
     $ make GIRARA_GTK_VERSION=3
     $ make GIRARA_GTK_VERSION=3 install
@@ -41,7 +41,7 @@ accordingly.
 After the successful installation of the user interface library, grab the latest
 version of jumanji and install it::
 
-    $ git clone https://git.pwmt.org/pwmt/jumanji.git
+    $ git clone https://github.com/pwmt/jumanji.git
     $ cd jumanji
     $ git checkout --track -b develop origin/develop
     $ make
