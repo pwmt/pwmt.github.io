@@ -14,7 +14,7 @@
       },
       {
         "name": "0.5.12",
-        "date": "2025/06/03",
+        "date": "2025/07/03",
         "changelog" : [
           "Add shortcut to open files via file chooser dialog",
           "Refactor rendering of pages",
