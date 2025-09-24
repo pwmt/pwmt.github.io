@@ -3,6 +3,16 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "0.5.13",
+        "date": "2025/09/24",
+        "changelog" : [
+          "Validate appstream files with appstreamcli",
+          "Split page-padding into page-h-padding and page-v-padding",
+          "Fix memory leak and callback type error",
+          "Warn if plugins do not support exporting images or attachments"
+        ]
+      },
+      {
         "name": "0.5.12",
         "date": "2025/06/03",
         "changelog" : [
