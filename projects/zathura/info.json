@@ -3,6 +3,19 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "0.5.14",
+        "date": "2025/10/27",
+        "changelog" : [
+          "Switch default database to sqlite and drop plain database",
+          "Notify users if no attachments and images are available to export",
+          "Make index-* configurable after init (#799)",
+          "Support numberic keypad mappings",
+          "Provide correct number of pages (#814)",
+          "Undo size-allocate callback changes",
+          "Fix temporary file nams for better content-type detection"
+        ]
+      },
+      {
         "name": "0.5.13",
         "date": "2025/09/24",
         "changelog" : [
