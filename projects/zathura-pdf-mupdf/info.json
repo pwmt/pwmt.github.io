@@ -7,6 +7,16 @@
   },
   "versions": [
       {
+        "name": "0.4.6",
+        "date": "2025/10/28",
+        "changelog": [
+          "Upgrade to mupdf 1.26",
+          "Add support for user-provided CSS styles",
+          "Add support for attachment export",
+          "Various fixes and improvements"
+        ]
+      },
+      {
         "name": "0.4.4",
         "date": "2024/08/04",
         "changelog": [
