@@ -7,6 +7,13 @@
   },
   "versions" : [
       {
+        "name": "0.1.12",
+        "date": "2025/10/28",
+        "changelog": [
+          "Various bug fixes and improvements"
+        ]
+      },
+      {
         "name": "0.1.11",
         "date": "2024/08/04",
         "changelog": [
