@@ -3,6 +3,17 @@
   "description": "an interface library",
   "versions" : [
       {
+        "name": "2026.01.30",
+        "date": "2026/01/30",
+        "changelog": [
+          "SONAME bump: libgirara-gtk3-4 -> libgirara-gtk3-5",
+          "Remove viewport and replace GtkScrolledWindow in view with GtkStack",
+          "Display shortcut info if no function is passed",
+          "Remove unused functions",
+          "Various fixes and improvements"
+        ]
+      },
+      {
         "name": "0.4.5",
         "date": "2024/12/09",
         "changelog": [
