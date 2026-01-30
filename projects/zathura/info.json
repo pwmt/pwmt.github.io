@@ -3,6 +3,19 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "2026.01.30",
+        "date": "2026/01/30",
+        "changelog" : [
+          "Switch to date-based version numbers",
+          "Fix warnings from CSS generation (#824)",
+          "Apply correect shacling when recoloring (#836)",
+          "Make sure jumplist stays valid after close (#835)",
+          "Disable message in incremental search (#227, #847)",
+          "Fix seccomp rules with musl (#843)",
+          "Implement custom drawing for document widget (#580, #657, #736, #785, #795, #797, #826)"
+        ]
+      },
+      {
         "name": "0.5.14",
         "date": "2025/10/27",
         "changelog" : [
