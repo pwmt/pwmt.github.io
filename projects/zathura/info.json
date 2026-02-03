@@ -3,6 +3,16 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "2026.02.03",
+        "date": "2026/02/03",
+        "changelog" : [
+          "Fork to background if opening with multiple files only if --fork is specified (#855)",
+          "Fix handling of PageUp and PageDown (#861)",
+          "Fix handling of mappings with special keys (#862)",
+          "Integrate Gtk+-specific parts of girara"
+        ]
+      },
+      {
         "name": "2026.01.30",
         "date": "2026/01/30",
         "changelog" : [
