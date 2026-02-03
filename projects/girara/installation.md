@@ -9,11 +9,6 @@ toolkit.
 
 * [GTK+](https://www.gtk.org/), a cross-platform widget toolkit
 
-### Optional and build dependencies
-
-* [intltool](https://launchpad.net/intltool), utility scripts for internationalization
-* [check](https://check.sourceforge.net/), a unit testing framework for C
-
 ## Stable version
 Since girara packages are available in many distributions it is recommended to
 install it from there with your prefered package manager. Otherwise you can grab
@@ -30,7 +25,7 @@ the latest version of the source code from our website and build it by hand:
 ## Known supported distributions
 
 * [Arch Linux](https://www.archlinux.org/packages/community/x86_64/girara)
-* [Debian](https://packages.debian.org/en/source/experimental/girara)
+* [Debian](https://packages.debian.org/en/source/unstable/girara)
 * [OpenSUSE](https://software.opensuse.org/package/girara)
 * [Gentoo](https://packages.gentoo.org/package/dev-libs/girara)
 * [MacPorts](https://www.macports.org/ports.php?by=name&substr=girara)

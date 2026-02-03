@@ -1,15 +1,18 @@
 title: girara
-description: user interface library
+description: common components for zathura
 
-girara is a library that implements a user interface that focuses on simplicity
-and minimalism. Currently based on [GTK+](https://www.gtk.org/), a cross-platform
-widget toolkit, it provides an interface that focuses on three main components:
+girara was a library that implements a user interface that focuses on simplicity
+and minimalism. Based on [GTK+](https://www.gtk.org/), a cross-platform
+widget toolkit, it provided an interface that focuses on three main components:
 A so-called view widget that represents the actual application (e.g. a website
 (browser), an image (image viewer) or the document (document viewer)), an input
 bar that is used to execute commands of the application and the status bar which
 provides the user with current information. girara was designed to replace and
 enhance the user interface that is used by zathura and jumanji and other
 features that those applications share.
+
+The user interface library has been integrated into zathura. girara now contains common
+datastructures and utilities for the zathura ecosystem.
 
 ## Wide range of features
 
