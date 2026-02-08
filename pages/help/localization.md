@@ -1,9 +1,8 @@
 title: Localization
 description: Help us translating our projects
 
-Both [zathura](/projects/zathura) and [girara](/projects/girara) support
-translations as of version 0.1.1. Since we currently only provide German
-translation files we need your help to get them translated into other languages.
+[zathura](/projects/zathura) supports translations as of version 0.1.1. We need your help to get
+them translated into other languages.
 
 ## Transifex
 [transifex](https://transifex.com) is an open source platform for localization
@@ -13,7 +12,6 @@ projects hosted on a number of hosting platform types.
 All of our projects are available on [transifex](https://transifex.com) and can
 be translated smoothly online:
 
-* [girara on transifex](https://explore.transifex.com/pwmt/girara/)
 * [zathura on transifex](https://explore.transifex.com/pwmt/zathura/)
 
 ## Manually
