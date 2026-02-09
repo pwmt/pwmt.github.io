@@ -3,6 +3,17 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "2026.02.09",
+        "date": "2026/02/09",
+        "changelog" : [
+          "Implement single page layout and equal height/widht modes (#706, #724, #447, #289)",
+          "Use single page layout for presentation mode (#686, #666)",
+          "Fix blurry rendering and repeated loading messages (#864, #860)",
+          "Allow to disable copying to clipboard (#835)",
+          "Fix smooth scrolling using Ctrl and arrow keys (#872)"
+        ]
+      },
+      {
         "name": "2026.02.03",
         "date": "2026/02/03",
         "changelog" : [
