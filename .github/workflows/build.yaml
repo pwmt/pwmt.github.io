@@ -22,6 +22,10 @@ jobs:
       - name: Build website
         run: |
           python run.py freeze
+      - name: Verify domain for flathub
+        run: |
+          mkdir -p public/.well-known
+          touch public/.well-known/org.flathub.VerifiedApps.txt
       - uses: actions/upload-pages-artifact@v4
         with:
           path: "public/"
