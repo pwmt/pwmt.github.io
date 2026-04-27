@@ -25,7 +25,7 @@ jobs:
       - name: Verify domain for flathub
         run: |
           mkdir -p public/.well-known
-          echo 68847139-8645-4add-9dc6-95fba3bd8874 > public/.well-known/org.flathub.VerifiedApps.txt
+          cp org.flathub.VerifiedApps.txt public/.well-known
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9
         with:
           path: "public/"
