@@ -283,13 +283,13 @@ def pygments_css():
 
 
 def make_external(url):
-    return urljoin(request.url_root, url)
+    return urljoin(app.config['BASE_URL'], url)
 
 
 def recent_feed():
     feed = FeedGenerator()
 
-    feed.id(request.url_root)
+    feed.id(app.config['BASE_URL'])
     feed.title('pwmt.org')
     feed.description('Recent Articles')
     feed.link(href='https://pwmt.org')
@@ -300,14 +300,14 @@ def recent_feed():
 
     for post in posts:
         fe = feed.add_entry()
-        fe.link(href=make_external(post.slug), rel='alternate')
+        fe.link(href=make_external(app.config['NEWS_PATH'] + post.slug), rel='alternate')
 
         date = datetime.strptime(post.date, "%Y/%m/%d")
         date = timezone.localize(date)
 
         fe.title(post['title'])
         fe.content(post.body, type='html')
-        fe.id(make_external(post.slug))
+        fe.id(make_external(app.config['NEWS_PATH'] + post.slug))
         fe.author({'name': "pwmt.org"})
         fe.updated(date)
         fe.published(date)

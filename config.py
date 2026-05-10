@@ -5,3 +5,4 @@ NEWS_PATH = "news/"
 FREEZER_DESTINATION = "../public"
 FREEZER_RELATIVE_URLS = True
 POSTS_PER_PAGE = 5
+BASE_URL = "https://pwmt.org"
