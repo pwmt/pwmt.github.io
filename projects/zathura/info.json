@@ -3,6 +3,17 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "2026.05.10",
+        "date": "2026/05/10",
+        "changelog" : [
+          "Handle key press events for notification area (#897)",
+          "Fix documentation of mouse buttons (#912)",
+          "Make shortcuts available as commands (#225)",
+          "Fix more cases of flickering when rendering pages (#864)",
+          "Various fixes and improvements"
+        ]
+      },
+      {
         "name": "2026.03.27",
         "date": "2026/03/27",
         "changelog" : [
