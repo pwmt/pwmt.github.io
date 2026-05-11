@@ -3,6 +3,13 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "2026.05.11",
+        "date": "2026/05/11",
+        "changelog" : [
+          "Handle unsigned integer values in set command"
+        ]
+      },
+      {
         "name": "2026.05.10",
         "date": "2026/05/10",
         "changelog" : [
