@@ -18,7 +18,7 @@
       <td><code>{{ version.sha2 }}</code></td>
       <td><a href="{{ url_for("project_download", project_name=project.name,path=version.filename) }}">Download</a></td>
       <td>
-      {%if version.signature_filename is not None %}
+      {%if version.signature_filename is not none %}
           <a href="{{ url_for("project_download", project_name=project.name,path=version.signature_filename) }}">Signature</a>
       {% else %}
           N/A
