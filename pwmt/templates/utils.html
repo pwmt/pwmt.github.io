@@ -6,6 +6,7 @@
       <th>Release Date</th>
       <th>SHA-2</th>
       <th>Download</th>
+      <th>Signature</th>
       <th>Changelog</th>
     </tr>
   </thead>
@@ -15,8 +16,14 @@
       <td>{{ version.name }}</td>
       <td>{{ version.date }}</td>
       <td><code>{{ version.sha2 }}</code></td>
-      <td><a href="{{ url_for("project_download",
-          project_name=project.name,path=version.filename) }}">Download</a></td>
+      <td><a href="{{ url_for("project_download", project_name=project.name,path=version.filename) }}">Download</a></td>
+      <td>
+      {%if version.signature_filename is not None %}
+          <a href="{{ url_for("project_download", project_name=project.name,path=version.signature_filename) }}">Signature</a>
+      {% else %}
+          N/A
+      {% endif %}
+      </td>
       <td><a href="{{ url_for("project_changelog",
           project_name=project.name,version_number=version.name) }}">Changelog</a></td>
     </tr>

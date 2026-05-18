@@ -27,6 +27,10 @@ class Version():
             if not os.path.exists(self.path):
                 self.filename = f"{project.name}-{self.name}.tar.xz"
                 self.path = os.path.join(project.path, "download", self.filename)
+            if os.path.exists(f"{self.filename}.asc"):
+                self.signature_filename = f"{self.filename}.asc"
+            else:
+                self.signature_filename = None
             self.sha2 = calculate_sha2_of_file(self.path)
         except:
             print(f"Can not read file for version '{self.project.name}-{self.name}'")
