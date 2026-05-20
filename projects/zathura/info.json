@@ -3,6 +3,16 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "2026.05.20",
+        "date": "2026/05/20",
+        "changelog" : [
+          "Fix sandbox on X11 (#928)",
+          "Fix crashes on document releoad (#164, #462, #729, #993)",
+          "Add option to keep selection highlights (#693)",
+          "Add user feedback to copy_filepath"
+        ]
+      },
+      {
         "name": "2026.05.11",
         "date": "2026/05/11",
         "changelog" : [
