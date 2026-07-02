@@ -9,15 +9,18 @@ Depending on which filetypes should be supported you are going to need
 additional libraries to build those file type plugins.
 
 ### Core dependencies
-* [girara](/projects/girara/), our simplistic user interface library (>= 0.2.9)
-* [GTK+](https://www.gtk.org/), a cross-platform widget toolkit (>= 3.22)
+* [girara](/projects/girara/) (>= 2026.01.30)
+* [GTK+](https://www.gtk.org/) (>= 4.12)
+* [sqlite3](https://www.sqlite.org/)
+* libmagic from [file](https://www.darwinsys.com/file/)j
+* [json-glib](https://gitlab.gnome.org/GNOME/json-glib)
+* [libxxhash](https://xxhash.com/)
 
 ### Optional and build dependencies
-* [sqlite3](https://www.sqlite.org/), a SQL database engine
-* [intltool](https://launchpad.net/intltool), utility scripts for internationalization
-* [check](https://check.sourceforge.net/), a unit testing framework for C
-* libmagic from [file](https://www.darwinsys.com/file/), a file type guesser
-* [docutils](https://docutils.sourceforge.net), documentation utilities
+* [libsynctex](https://launchpad.net/intltool) for SyncTeX support
+* [libseccomp](https://docutils.sourceforge.net) for sandbox support
+* [librvsg-bin](https://gitlab.gnome.org/GNOME/librsvg) for PNG icons
+* [Sphinx](https://www.sphinx-doc.org/) for manpages
 
 ## Stable version
 Since zathura packages are available in many distributions it is recommended to
@@ -36,7 +39,7 @@ the latest version of the source code from our website and build it by hand:
 
 * [Arch Linux](https://www.archlinux.org/packages/community/x86_64/zathura)
 * [Debian](https://packages.debian.org/en/sid/zathura)
-* [Fedora](https://pkgs.org/fedora-rawhide/fedora-i386/zathura-0.0.8.5.fc17.i686.rpm.html)
+* [Fedora](https://src.fedoraproject.org/rpms/zathura)
 * [Gentoo](https://packages.gentoo.org/package/app-text/zathura)
 * [Ubuntu](https://packages.ubuntu.com/precise/zathura)
 * [openSUSE](https://software.opensuse.org/package/zathura)

@@ -3,11 +3,25 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "2026.07.02",
+        "date": "2026/07/02",
+        "changelog" : [
+          "Port to Gtk 4 (#871). Note that due to changes between Gtk 3 and 4, window embedding is no longer supported (#216, #432). Also, the setting 'window-icon-document' has been removed.",
+          "Fix issues with forking on macOS (#907)",
+          "Fix first-page-column handling regression (#948)",
+          "Support SIGSTOP in sandbox (#945)",
+          "Add setting to open documents in single-page mode",
+          "Bind toggle-single-page to w (#966)",
+          "Make link confirmation optional",
+          "Replace use of SHA256 with XXH3-128 for faster file hashing"
+        ]
+      },
+      {
         "name": "2026.05.20",
         "date": "2026/05/20",
         "changelog" : [
           "Fix sandbox on X11 (#928)",
-          "Fix crashes on document releoad (#164, #462, #729, #993)",
+          "Fix crashes on document reload (#164, #462, #729, #993)",
           "Add option to keep selection highlights (#693)",
           "Add user feedback to copy_filepath"
         ]
