@@ -3,6 +3,17 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "2026.07.07",
+        "date": "2026/07/07",
+        "changelog" : [
+          "Add page-mode setting",
+          "Fix reloading of files (#969)",
+          "Fix CSS handling (#970)",
+          "Replace test feature with test-x11 and test-wayland features",
+          "Various fixes and improvements"
+        ]
+      },
+      {
         "name": "2026.07.02",
         "date": "2026/07/02",
         "changelog" : [
