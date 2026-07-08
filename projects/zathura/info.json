@@ -3,8 +3,8 @@
   "description": "a document viewer",
   "versions" : [
       {
-        "name": "2026.07.07",
-        "date": "2026/07/07",
+        "name": "2026.07.08",
+        "date": "2026/07/08",
         "changelog" : [
           "Add page-mode setting",
           "Fix reloading of files (#969)",
