@@ -3,6 +3,13 @@
   "description": "common components for zathura",
   "versions" : [
       {
+        "name": "2026.07.18",
+        "date": "2026/07/18",
+        "changelog": [
+          "Various fixes and improvements"
+        ]
+      },
+      {
         "name": "2026.07.07",
         "date": "2026/07/07",
         "changelog": [

@@ -7,6 +7,13 @@
   },
   "versions" : [
       {
+        "name": "2026.07.18",
+        "date": "2026/07/18",
+        "changelog": [
+          "Update for new version handling"
+        ]
+      },
+      {
         "name": "2026.07.08",
         "date": "2026/07/08",
         "changelog": [

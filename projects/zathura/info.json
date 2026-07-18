@@ -3,6 +3,16 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "2026.07.18",
+        "date": "2026/07/18",
+        "changelog" : [
+          "Fix crash on error (#992)",
+          "Fix page number at top/bottom (#988)",
+          "Remove use of G_GNUC_CONST for *_get_type (985)",
+          "Various fixes and improvements"
+        ]
+      },
+      {
         "name": "2026.07.08",
         "date": "2026/07/08",
         "changelog" : [
