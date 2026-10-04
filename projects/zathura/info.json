@@ -3,6 +3,20 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "2026.10.4",
+        "date": "2026/10/04",
+        "changelog" : [
+          "Fix German translation (#1000)",
+          "Add window-decoration setting (#1021)",
+          "Disable a11y connection running in sandbox mode (#1031)",
+          "Fix hidding of inputbar (#1035)",
+          "Fix navigation on Wayland (#1028)",
+          "Fix horizontal scrolling (#1010)",
+          "Add asynchronus document and widget loading",
+          "Various fixes and improvements"
+        ]
+      },
+      {
         "name": "2026.07.18",
         "date": "2026/07/18",
         "changelog" : [
