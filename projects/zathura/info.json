@@ -3,6 +3,16 @@
   "description": "a document viewer",
   "versions" : [
       {
+        "name": "2026.10.23",
+        "date": "2026/10/23",
+        "changelog" : [
+          "Fix document flicker on reload (#1049)",
+          "Implement per-page rotation (#771)",
+          "Skip buffered command shortcuts when matching on keys (#1050)",
+          "Various fixes and improvements"
+        ]
+      },
+      {
         "name": "2026.10.4",
         "date": "2026/10/04",
         "changelog" : [
